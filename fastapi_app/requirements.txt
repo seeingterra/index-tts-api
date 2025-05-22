@@ -1,0 +1,7 @@
+fastapi[all]
+flask
+uvicorn
+gradio_client
+python-dotenv  # 如果使用 .env 文件
+tenacity
+python-multipart

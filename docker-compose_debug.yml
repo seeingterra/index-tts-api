@@ -1,0 +1,30 @@
+services:
+  indextts-command:
+    container_name: indextts-command
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/python-docker
+      - ./checkpoints:/python-docker/checkpoints
+      - ./test_data:/python-docker/test_data
+      - ./output:/python-docker/output
+    environment:
+      - HF_ENDPOINT=https://hf-mirror.com
+    command: tail -f /dev/null
+    ports:
+      - "7860:7860"  # Gradio接口
+      - "8010:8010"  # FastAPI接口
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: "all"
+              capabilities: [gpu]
+    networks:
+      - indextts-network
+
+networks:
+  indextts-network:
+    driver: bridge

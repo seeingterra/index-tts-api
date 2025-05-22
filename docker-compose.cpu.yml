@@ -1,0 +1,52 @@
+services:
+  cpu-indextts-gradio:
+    container_name: cpu-indextts-gradio
+    build:
+      context: .
+      dockerfile: Dockerfile.cpu
+    volumes:
+      - .:/python-docker
+      - ./checkpoints:/python-docker/checkpoints
+      - ./test_data:/python-docker/test_data
+      - ./output:/python-docker/output
+    environment:
+      - HF_ENDPOINT=https://hf-mirror.com
+      - GRADIO_LISTEN_HOST=0.0.0.0
+    ports:
+      - "7860:7860"
+    command: python webui.py --host 0.0.0.0
+    networks:
+      - cpu-indextts-network
+    healthcheck:
+        test: ["CMD", "curl", "-f", "http://0.0.0.0:7860"]
+        interval: 5s
+        timeout: 5s
+        retries: 100
+        start_period: 75s
+
+  cpu-indextts-fastapi:
+    container_name: cpu-indextts-fastapi
+    build:
+      context: .
+      dockerfile: Dockerfile.cpu
+    volumes:
+      - .:/python-docker
+      - ./checkpoints:/python-docker/checkpoints
+      - ./test_data:/python-docker/test_data
+      - ./output:/python-docker/output
+    environment:
+      - HF_ENDPOINT=https://hf-mirror.com
+      - GRADIO_URL=http://indextts-gradio:7860/
+    ports:
+      - "8010:8010"
+    command: bash -c "cd fastapi_app && python main.py"
+    #command: tail -f /dev/null
+    depends_on:
+      cpu-indextts-gradio:
+        condition: service_healthy
+    networks:
+      - cpu-indextts-network
+
+networks:
+  cpu-indextts-network:
+    driver: bridge
