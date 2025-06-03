@@ -13,3 +13,6 @@ build/
 fastapi_app/model_wav/*.wav
 checkpoints-1.5/*
 checkpoints/config.yaml
+*.py[cod]
+*.egg-info/
+.venv
