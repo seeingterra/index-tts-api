@@ -17,7 +17,24 @@ GRADIO_URL = os.getenv("GRADIO_URL", "http://127.0.0.1:7860/")
 gradio_client = None
 
 MODEL_PROMPT_MAP = {
-    "chixiaotu": "model_wav/chixiaotu.wav"
+    "chixiaotu": "model_wav/chixiaotu.wav",
+    "chixiaotu2" : "model_wav/chixiaotushanghaijiguanqiang.wav",
+    "chixiaotu3" : "model_wav/chixiaotu3.wav",   #上海话+普通话合集
+    "chixiaotu5" : "model_wav/cxt5.wav",   #上海话+普通话合集abs
+    "chixiaotu6" : "model_wav/cxt6.wav",   #上海话+普通话合集
+
+
+
+
+
+
+
+
+
+
+
+
+    "chixiaotu4" : "model_wav/cxt4.wav"   #上海话+普通话合集
 }
 
 DEFAULT_PROMPT_AUDIO_PATH = "model_wav/default_prompt.wav"
@@ -58,17 +75,22 @@ async def create_speech(speech_request: SpeechRequest):
         
         file_data = handle_file(full_prompt_path)
         
+        print(f"要转换为语音的文本是:\n{speech_request.input}")
+
         result = call_gradio_with_retry(
             gradio_client,
             prompt=file_data,
             text=speech_request.input,
-            infer_mode="批次推理",
+            #infer_mode="批次推理",
+            infer_mode="普通推理",
             max_text_tokens_per_sentence=80,
             sentences_bucket_max_size=6,
-            param_5=True, param_6=0.8, param_7=30, param_8=1, param_9=0, param_10=3, param_11=10, param_12=600,
+            param_5=True, param_6=0.9, param_7=70, param_8=1.5, param_9=0, param_10=5, param_11=8, param_12=600,
             api_name="/gen_single"
         )
         
+       
+
         result_path = None
         if isinstance(result, dict):
             if 'value' in result:
