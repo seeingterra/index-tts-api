@@ -1,0 +1,17 @@
+# .github/workflows/sync.yml
+name: Sync Fork
+
+on:
+  push: # push 时触发, 主要是为了测试配置有没有问题
+  schedule:
+     - cron: '0 7 * * *' # 每天 UTC 时间 7:00 运行
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: TG908/fork-sync@v1.6.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          owner: index-tts # fork 的上游仓库 user
+          head: main # fork 的上游仓库 branch
+          base: main # 本地仓库 branch
