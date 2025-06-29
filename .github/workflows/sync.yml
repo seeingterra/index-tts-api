@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: TG908/fork-sync@v1.6.3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }} # 将 github_token 改为 token
           owner: index-tts # fork 的上游仓库 user
           head: main # fork 的上游仓库 branch
           base: main # 本地仓库 branch
