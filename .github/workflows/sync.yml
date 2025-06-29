@@ -4,18 +4,27 @@ name: Sync Fork
 on:
   push:
   schedule:
-     - cron: '0 7 * * *'
+    - cron: '0 7 * * *'
+
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
     steps:
-      - uses: TG908/fork-sync@v1.6.3
+      # 这个 Action 需要先 checkout 你自己的仓库
+      - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          owner: index-tts    # 正确：上游仓库的所有者是 index-tts
-          repo: index-tts     # 新增：明确指定上游仓库的名称是 index-tts
-          head: main          # 上游仓库的分支
-          base: main          # 你自己仓库的分支
+          # 必须使用 Personal Access Token (PAT) 才能触发其他 workflow
+          # 如果不需要触发其他 workflow，可以使用默认的 GITHUB_TOKEN
+          token: ${{ secrets.GITHUB_TOKEN }} 
+
+      - name: Sync Fork with Upstream
+        uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
+        with:
+          # 上游仓库的完整路径
+          upstream_repository: index-tts/index-tts
+          # 上游仓库的分支
+          upstream_branch: main
+          # 你自己仓库要同步的分支
+          target_branch: main
+          # 使用 GITHUB_TOKEN
+          github_token: ${{ secrets.GITHUB_TOKEN }}
