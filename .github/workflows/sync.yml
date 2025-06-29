@@ -9,22 +9,22 @@ on:
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
-    steps:
+       steps:
       # 这个 Action 需要先 checkout 你自己的仓库
       - uses: actions/checkout@v4
         with:
-          # 必须使用 Personal Access Token (PAT) 才能触发其他 workflow
-          # 如果不需要触发其他 workflow，可以使用默认的 GITHUB_TOKEN
           token: ${{ secrets.GITHUB_TOKEN }} 
-
       - name: Sync Fork with Upstream
         uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
         with:
           # 上游仓库的完整路径
-          upstream_repository: index-tts/index-tts
+          upstream_sync_repo: index-tts/index-tts
+          
           # 上游仓库的分支
-          upstream_branch: main
+          upstream_sync_branch: main
+          
           # 你自己仓库要同步的分支
-          target_branch: main
-          # 使用 GITHUB_TOKEN
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          target_sync_branch: main
+          
+          # 提供 Token
+          target_repo_token: ${{ secrets.GITHUB_TOKEN }}
