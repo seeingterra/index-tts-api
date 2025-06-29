@@ -1,0 +1,1569 @@
+/workspace/index-tts-api/fastapi_app/main.py:40: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Started server process [1531]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8010 (Press CTRL+C to quit)
+🚀 尝试连接 Gradio 后端服务...
+Loaded as API: http://127.0.0.1:7860/ ✔
+✅ Gradio 客户端连接成功！尝试次数: 1
+
+🌟 服务启动成功！尝试发送一个自动请求...
+📝 收到请求：要转换为语音的文本是: '您好。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2da4c28cc3502c539f7a7693483aea2c4215a0aa2c627510e3705469cab7b79d/spk_1750316371.wav
+INFO:     127.0.0.1:55094 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+✅ 自动请求发送成功！状态码: 200, 响应内容类型: audio/wav
+--- 自动请求任务完成 ---
+📝 收到请求：要转换为语音的文本是: '第5章 大盈仙人'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/62f20c5faad6f760fd45d637cf16e0e8bfe959bf83ac67b7392e4cad935339c5/spk_1750316388.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就在李昂拷问乞丐的时候，当铺对面的酒楼二楼有两名身材高大的男子全程目睹了他以一敌四的壮举。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/e26bbfeb51e1c3b940623a9e9a3d70abfa6e0e3455edd919099da11fba18d0df/spk_1750316390.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“这小子打架够凶的啊。”其中一名西装革履的眼镜男子靠在栏杆之上，饶有兴致的看着正在搜刮战利品的李昂说道，“而且筋骨强壮，精气饱满.”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8574fa944036e3d119fdfcbb4ca5efc604ff7c4297c4b4ebcfd3dd879c90c744/spk_1750316396.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　说到这，他微微眯起了自己的双眼。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/73428cfb8c840054e8b64e2529bd43e2da8a0fac2153e215b5b05fb320fcce58/spk_1750316404.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　所谓精气饱满，说简单点就是小厨男，眼镜男倒是没想到底下那公子哥这么大年纪了还是个雏。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/381e4a33452803eb58dfe1e6c046def584fc45f7c8274f1075e6133912cb1556/spk_1750316407.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“可惜，就是年纪大了些。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c78c1fbcba724eb003adecae3131fea5b6b552f457569187372d89ae48f5464b/spk_1750316412.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　拥有名为‘神明灵’能力的男子当然能感知到对方体内的炁和普通人一样平平无奇。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/e76536a4b0f44c6715231e1b0d494e80f1934ec88ff5b8007b80d86cbd915294/spk_1750316415.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　不过眼镜男身边面容桀骜的长发男子却没有接话，只是有些心事重重的问道：“掌门准备怎么帮我？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d0556fdf29f68ec3aeec1bc5b907b5d889a336efd084c71a1f45f95fb7a3e476/spk_1750316420.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　闻言，眼镜男收敛了脸上笑容，随即用下巴示意了一下从远方走来的两名身穿灰色练功服的少年：“那是已经确定拜入三一门的张家兄弟”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/01edb76f2d6fca40150aaaddea842881ad6d9e63504349046f227ade67de6d07/spk_1750316426.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　另一边，李昂并不知道自己被议论了一番，他正在清点着自己的战利品。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/6b404874c17295b1733b2e9d628803967f1c1f4b5d5c7ca0453434511ee164e8/spk_1750316434.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　该说不说，乞丐就是乞丐，他搜遍全身也只获得了十几枚铜板，将将只够买一个包子。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/16a2473e3513cba0bc80307aa5ed3af926392ab2eab448ce0ee28d7859efae58/spk_1750316438.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　不过好在李昂已经获得了自己需要的信息。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f5d7fbaffb7bfcb877ff97eb1e0f21cb28b2121e72567add0e57cd233a0652da/spk_1750316442.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“三一门.”心中默念着这个有些熟悉的名字，他忍不住微微眯起了自己的双眼，“一人之下？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/abb00e7f2f841bde04a1fd87f3f1ef102ffb7c115567f10cea95ae75066be2a3/spk_1750316445.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　三一门是李昂穿越前看过的漫画《一人之下》中的玄门门派，但如果他没记错的话，原著剧情开始的时候这个门派就已经覆灭了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0cfedab7ba13fb31a3e324c2555f0a8197f4e51b694338caac87273ecec404fc/spk_1750316453.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　只不过原著剧情是在现代，而李昂现在是在民国，这样算一算时间倒是也对的上。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/a7ef141d731e803d02d193d4277c6853e45da8d3f7be7d0bc2ac0c1166f5a07f/spk_1750316461.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂对于自己穿越到《一人之下》中倒是并没有大惊小怪，毕竟穿越这种事情都发生了，那穿越到自己看过的漫画中好像也不是什么值得在意的事情。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f80a91103c6bc03855e27672452809004bd29b4982c65cb2e0058c4b55023a41/spk_1750316465.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　倒不如说这样反而更方便他寻求力量。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/4bfc255ed11295f50a9a87cc90c81a9638fa9760c0b0222898867f80adf811ff/spk_1750316474.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“所以说我这次要经历的大事件就是三一门覆灭？”因为只从乞丐口中得知了这一个名字以及当下的年份，所以李昂便自然而然的冒出了这个念头，“还是说此三一门非彼三一门？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/dd85a06833782039dca0ac774c8c56272c313b84f56657f93f332ebe9a68ea34/spk_1750316477.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他并没有第一时间就下定论，毕竟到底是什么情况他亲自去看看就知道了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/effce76144a8eb5ae3e64a28f45f5874e4fbbe46226933cbabc8fd5eff0947ae/spk_1750316486.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　想到这，李昂没有多做停顿，当即便向着乞丐所指的方向走去，也就是这时，两名身穿灰色练功服的少年路过了他身边。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ff14ca974712ac7c8c4e3ce85d24db0d81f9bfed6ff05d5fa4024631d63eb05d/spk_1750316490.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　三一门所在山门距离李昂降临的小镇并不算特别遥远，也或许是因为这个原因，他一路上都没遇见山贼土匪之类的东西。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1817b1362d0508073d5bc64359cb0f5acf479cb7fb2cc56817c9533faf1cb2f4/spk_1750316498.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　很快，一座座落在山脚下的小院便出现在了李昂的视线之中。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/4ab571d84513ded2078104c5997e010fd38b024a2bbe980b574e9e7663e8cf98/spk_1750316505.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　看着小院大门上方的三一门字样，他知道自己找对了地方。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1242f0254bff3d2ce706721d8b9afd4bdde02f42f78b3a84c2032503a335619d/spk_1750316508.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　怀揣着有些忐忑的心思，李昂上前敲了敲大门，紧接着没过多久便有一名身穿白色道袍样式衣物的年轻男子推开了门。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/45d53ecba09a5ff03fb8859978f8bfd73e98326308bd2a3ee0f7be5459fb36ef/spk_1750316511.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　年轻男子上下打量了一下因为斗殴而浑身有些脏兮兮的李昂，出声问道：“何事？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7984b09e8ad61b29f0e281626c610cd1417b9c2fdbad9f7db002a9b698ed860c/spk_1750316519.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　闻言，李昂有些不伦不类的作揖道：“我自幼便十分仰慕三一门，此番前来自然为了拜师求道。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f02904bcbee6fdc07ab3e9e20b6df5e91400d1f5bd7669e4b94d645f77783fd4/spk_1750316525.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听到这句话后，年轻男子的面色顿时变得古怪起来，随即略微斟酌了一下才说道：“虽然我们三一门收徒时并不在意弟子的出身.”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ff5f10fbc3e4bdb7a77ff2b11ce5c3c31ef1f967032b668776fbf9abd0a8ca40/spk_1750316531.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“但你的年纪未免有些大了。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b3761b00618399de8f2a9cd5d974cdfbb56a0d3ab9a1b34750ee9179af0da58f/spk_1750316538.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他这还是比较委婉的说法，一般玄门正宗收徒都会挑选幼童，哪怕年纪大些也最多就是十多岁的少年，但眼前这位.'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b277d3539e1dbc6c0beb71da19c1847acb449a8a251d46bbf09e0bc04e5d225d/spk_1750316540.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　恕他直言，最起码也要二十岁往上了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5b4fb098c6d112aae5da213d98abb2f2089b71df14a0cbcf76c0684e31019c12/spk_1750316547.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　这很明显不符合三一门的规矩。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/4cb9eac5a0d3c2741472c9583c26c535f9562d5950ef602886e8d5bd221391dc/spk_1750316550.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　倒不是说年纪大就不能求道了，而是年纪小的孩童心性宛如白纸一般，各家玄门更容易染上自己的颜色。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/476f927d38d7ecbb509a5ce11ec28d6024ab340f255287505d19245a4d506f07/spk_1750316552.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　再加上筑基之类的事情也是小时候更加合适，因此很少会收年纪大的弟子。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/58a45775c943db5a2439ba254a1483de22218955eee4cb2d0b0778255f5fe0e4/spk_1750316558.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　如此想着，年轻男子微微摇头，丢下一句话后便准备关上大门：“抱歉，阁下另寻他路吧。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ec9f8e8d7a9e958eb19f635500fe8c35e8d48cbca7f9f326f8369b92e3634e2e/spk_1750316562.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　见此情形，李昂不由有些着急，他很想说年龄能不能不要卡那么死啊，他也是花季少男啊。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/4d11fbccc1ba9e5ccf4b38c2c4a46ee51e59958e63c5378b360d1190e003cd1e/spk_1750316568.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '第6章 漫画书也是书！'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/622abdc9e1928b62c8cb0bc1ec3da6df5a062fd5436bb78c6eae0d3920f5917c/spk_1750316572.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　见左若童静静的注视着自己，李昂忍不住咽了口唾沫。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f5506e32bf02a1569978bb03c9e12bbf9e5d19fdb0b89f3f0ae21dc53d81d2ea/spk_1750316574.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他现在的压力很大，甚至要比他找工作面对hr时更紧张。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/00c0d691eb38b7b1820a980b5c965a84247c58bbb46fbd158ec61825ba663f98/spk_1750316578.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　不过也是，毕竟以战斗力来说，100个hr也不够面前这大盈仙人打。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b876192666b8ed8bf54ce82948d05cdb5a1144dd7bfc1593cbd6302f60004686/spk_1750316581.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　偏殿内一时间陷入了诡异的沉默，李昂也不知道自己该站着还是坐下。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/a4e6c44d6bf234de08afb535dbf2f419be0a3c7bb76493d539a11ac0b0d6aaa3/spk_1750316585.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就这样过去了一会，一道听不出感情的声音才在偏殿内响起。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0f34efce6d57f92ea1d52953e03413da214701cd06b1507be1f7fa48e6f22b8b/spk_1750316589.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“我还以为小朋友你有话要对我说。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7523c8c14a9562f11c18a4be145eb1e852fd387b0e116ad927be13f081fc47c7/spk_1750316592.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　左若童率先开口了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0891aab6fc7c0a5e21bbe06a24b63e90f2849c7a40ff6f125a8e0e314aa3fdef/spk_1750316594.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听到这句话，李昂麻溜的跪倒在了地面：“我自幼就十分仰慕三一门，还希望左门长能收我为徒！”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7227bb6771db7abaf71f99a06ccdd26045b78a827b6244abb50928f39cdcdda3/spk_1750316596.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　说着，他就磕了一个头。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/a93b2af41ce5db2d50f10a3f41acd7b0b2df026bfc85ee3205b1dbe8b1ba4d03/spk_1750316603.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '第6章 漫画书也是书！'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f1f85f1bd87c22df459faa50e055a09e16381ea08ec36f985b8491a8b449425f/spk_1750316621.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　见左若童静静的注视着自己，李昂忍不住咽了口唾沫。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/3f29340efd7a28d586aa71403d3a7894e9541c001882d5d9c9da8a303c3d4489/spk_1750316623.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他现在的压力很大，甚至要比他找工作面对hr时更紧张。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2776aa027d8cce016c0d9d565aedd280a796cf720f28cf0f213edec39a8c6c70/spk_1750316627.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　不过也是，毕竟以战斗力来说，100个hr也不够面前这大盈仙人打。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/097b85d01fe92ea1737b32453e582a6d1d112b1e7fb57e4cd645eac1ee327440/spk_1750316630.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　偏殿内一时间陷入了诡异的沉默，李昂也不知道自己该站着还是坐下。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/bc1464903858a847fcef3ade3319ce6c1bff111c6d30ff30bc51bc7832ae2f5d/spk_1750316634.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就这样过去了一会，一道听不出感情的声音才在偏殿内响起。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b59e0e4a7de6df0bf84730d96816c728a92dd6d15f08e46f4f39c3d2b659da79/spk_1750316638.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“我还以为小朋友你有话要对我说。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ff36c9b12ce720dee9c871abb9ddf65b92123eaf44ad0718d1cf74dd69f65cc1/spk_1750316641.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　左若童率先开口了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/a0083cbf710ff5b2af2a98d2557cc570b5c658e6751e8d4bf475d8fd589b206b/spk_1750316644.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听到这句话，李昂麻溜的跪倒在了地面：“我自幼就十分仰慕三一门，还希望左门长能收我为徒！”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/cc231670bde6a36fe9782cd2f6ce8e854efc5df6db00181eb6d75c29f13bcb22/spk_1750316646.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　说着，他就磕了一个头。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/462646fd9a070d009c6889a5846924f9fd3e445cbc8bc9d9fc4b2d06bdc575bf/spk_1750316653.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　对于自己这般作态，李昂倒是没什么不好意思的。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b7a971c0451f454ee8cbd08076e2823827f7ee3cf902cd6cb44bcc67010ce2bd/spk_1750316654.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　拜师嘛，不寒掺。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/caab2e35621786bfdf940e8b4b862b74c2c1d90d54cd0601a909cf8856b5444a/spk_1750316657.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　时间一分一秒的过去了，李昂就这么一直保持着跪伏的动作，也不敢抬头看左若童是什么表情。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/cd4a48bb93b76dca9a14e89d587b28203786f599a7efdaa07eec070840daa20f/spk_1750316659.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　直到他浑身攀满了冷汗，这位三一门门长的声音才再度响起。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/16e50c42ec20dfd9097a0e04c6dfcd355ae4369e04a371ed8a862de5ecc6ed8c/spk_1750316664.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“你先起来吧，我有些话问你。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ba294a68296231963d68c2901a61c322ce6b938a6b7cdcf75bbc261f0a42c635/spk_1750316668.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　闻言，李昂心中一跳，但还是站起身准备回答问题。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1365d038b84d8127633a7740b3bf475a1941252a37cfe73e1607736736287127/spk_1750316671.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　左若童看着身前皮肤白皙的青年，语气平静的问道：“是有人强迫小朋友你向我递话？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/a0cd6e6c048afeadec4d50f34b713499e337afb94a5b48fd027a9835983b5011/spk_1750316674.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　被称作大盈仙人的他自然能看出身前之人只是一名普通人，不论是从心性还是修为来说。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1e1a4b958f978178a259ef825f6ee9da338607f57cbefa8d0bfc3902a14773c3/spk_1750316679.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而先前弟子告诉他的那些话语，显然对于他的情况十分了解。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/71a24a2184b74be31cd917dbd2cf9ed2c96da4c026002e7a7fabe932976b95ec/spk_1750316684.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　对于逆生三重'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1accf6ee087acb6e6db7a6b3ac281d21726c18146b6749287f3d84e023f5035e/spk_1750316688.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　也十分了解。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f99836a4a17f70460cd38259a1e7c27d873cd8e2004e3d8428e8af9e6fa430fb/spk_1750316689.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　因此左若童有此疑惑，并不奇怪。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/3844f64fa84e986331708eea5ea9233676b3b6d0cccdcd81a1907bbdfce8f0d7/spk_1750316691.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　然而李昂此时却只是微微摇头，说道：“没有人强迫我，那些话就是我说的。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/a56e7eb986bc34009e860282d8a64bdc4d53379f824de71229ddd82cf2553e99/spk_1750316693.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　但紧接着，他就补充道：“不过都是我从书上看来的。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/82f9896c08f7c2522fb12df7b1b3f636d61aa7ef82c665d8663c58a123f9aefb/spk_1750316697.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　漫画书也是书，没毛病。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/cd213dfc76dca3cd3411bded5d17f1df710d0f736b55373f1e22b5308b52a07c/spk_1750316701.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听闻此话，左若童先是一愣，随即便微微蹙起了自己的眉头。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/120cb68f90ba9a07fd1531b04c21ed93feca68cebd0639c620f9cd955c804570/spk_1750316703.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　在他看来，李昂的话语并不是没有可能的事情。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/6939eb645fac2d16e7365e2bddbc1c6332d599e08f3ca7ad6ddddb2146fede74/spk_1750316706.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　因为三一门的先辈在尝试突破至逆生第三重时，往往都会外出云游寻求契机，所以若是留下过什么手书，又恰好被面前这位小朋友所得到，虽说概率很低，但并不是不可能的事情。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b681bc9031fc668b57af623646cb2d823e2943f5bb54e1a328486b8d522f1aa8/spk_1750316709.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　沉默了片刻，左若童才再度问道：“书上还有写什么吗？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/e1dc3886494b83e7ec9bf952898e4b349128539d7e88f2cf8aff1d3580910d64/spk_1750316720.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“有尽头的路就不配通天。”面对询问，李昂一边回忆着原著的剧情，一边回答道，“球是球，人是人，球永远变不成第二个头颅。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/eab85deca19c7a9c59d22ab6431f12e11ccd5c720d89109072382dc961988836/spk_1750316724.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '第7章 【入门炼炁士】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2af559b41c211f18c279e1c0521d74e73294eefb87f49da7bd1bc30bb417362e/spk_1750316732.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　获取正文失败'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/57d9d6cf3d98c8a84d68ba56e9fe13e3873a49be000a64fa63dd3fabe5335575/spk_1750316734.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　内容为空'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/656d9539d2c3e1e604d809799f0cf8f06f6c86cc18ee8a769740f48787d74f3e/spk_1750316735.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '第7章 【入门炼炁士】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/583450d9f9d79badb6f91a2d68c36e82639341df9f7ff07eba87e84ce15c4ffb/spk_1750316755.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　获取正文失败'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2892f6f6a1d14c712dd31670e7e00e2e52d48d668797a18e2a3ecb3f245fdb3c/spk_1750316757.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　内容为空'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/a584555abcaf697e3f2a8fd9adea59f92d75757ced7e3776292e840c8318218c/spk_1750316758.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '第8章 去留'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/be07460287a7bab27a25d839d7baa2f601137cde56e5f5f88195b34627762d66/spk_1750316759.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '若童对于自己的猜想更加确认了几分：“这样.”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5425a544075ad5f864aecebe5097de6bbbda473aa1e410e96061bf975d68d82a/spk_1750316829.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“不知道小朋友可否将那本书给我看一下？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f7c71271db0b92026b68fe7e01a5a735388c7f3f6082db2dee565048e09e5565/spk_1750316831.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂闻言不由一呆。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c096dc92ee4901e1b42c7843ff8c4e154c029b878b90fe491d9b1592e10b6242/spk_1750316834.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　先不提他从哪掏出《一人之下》，就算真有，他也不敢给左若童看啊。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/34fda563226a5af06d0bb4deae93f227df82bc871a94f54933863e532ff90243/spk_1750316836.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　还没等李昂找借口敷衍过去，左若童就微微摇头说道：“罢了，小朋友就当没听见我这句话吧。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d61344151fbf24f78c553ae451b3a5a70140c8d3854e39d46c9cd5ac087ca85d/spk_1750316840.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“既然你获得了我三一门前辈留下的手书，那我们之间也算有一番缘法。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/3ef5f3fd0e178ba877cd43d396ca59b9a79d7b100a0674890723a77f1d25ed7a/spk_1750316845.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“你想要拜师的事，我同意了，不过根据规矩，你还得先去下院历练一番。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/15b45fb8ac00d7ec51fb47212f1c7692ad4e81b9cd0a379d3ca3053d0abcfee0/spk_1750316849.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　说到这，左若童的目光不由闪烁了一下。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/493999238165bb150978e03fa6acd1e353d785e8d3042a3f5af4a758430daa40/spk_1750316853.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他并没有说历练没通过会怎么样，因为到了那时，他自会安顿好李昂，也算是尽了双方的缘法。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b2114e8e3de34ae4b02376747955e6a2a2828c9752466da118d9f09a6c0bb5d0/spk_1750316855.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而至于为何没有索要身前之人口中的手书，一来是因为以他的目力，自然能够看出其身上并没有能够藏东西的地方，二来则是因为，那只是前人的一家之言。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/4b2b878d3369cc70cec7130271dc9bccab895f6ded176464214827f8619ef1c7/spk_1750316861.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　闻言，李昂内心不由松了口气。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/eabaff6f7c939c74e38cbd6662b0be3ed731ccf44464af5b7187a0c5ae1b1704/spk_1750316870.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　不管怎么说，他终于算是有机会接触到蕴含超凡之力的职业了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/94f10742627e97738cc5c05327dcbdca9472ccda82a619ebe90d2fb9f213dade/spk_1750316873.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　不过很快，丝丝缕缕的疑惑就浮上了李昂的心头。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/cbc8e7b9c32ad2f8a14b98dae5ace58f43a8b904d35c9f139f4e07ebd2d6417c/spk_1750316876.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他犹豫了一下，才开口说道：“门长，刚才我说的话”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/853ce1173c05dae0c4787d129cbfefdf40944b877d3d466e74c8cf7fb32fc983/spk_1750316879.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂觉得自己都已经将逆生三重不能通天的事说出来了，左若童多多少少应该会有些反应，但眼下却表现得波澜不惊，就好像他什么都没说一般。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5a1586414c1947f26e73dc6108298d72a800d05de31d04774844eb342c299415/spk_1750316882.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听到他的话语，左若童一向平静的面容此时露出了一丝笑意。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/a80c3495ab585fee3b6b44d902feb1be5ee8113303793f94bc3de2db02f54819/spk_1750316890.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　接着，这位大盈仙人便轻声说道：“自有后来人。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/4b5de8a9d92383d2580e9336419d0cf48c6e1d685cbfb5e22eb4f0cb03905e55/spk_1750316894.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　所谓后来人指的是代代相传的三一门人，其中自然也包括左若童本人。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/227122d78156568242a8890b22c776a5ac8d78300639ae4f09ae8173c14b718e/spk_1750316897.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　在没有亲身证一下逆生三重是不是真的不能成仙之前，他可不会轻易放弃。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c3706085bee3d5196060c3397a9e77db026e95428195bcaaaeccccaf2ce62e0c/spk_1750316901.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　回想起原著中这位大盈仙人的表现，李昂不禁沉默了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b18615a0217f3d947acda09e919f1c55e79fe811001200796cf2ad4505fbf852/spk_1750316905.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　过了一会，他才出声说道：“门长，我来这的路上听说全性似乎想要对三一门不利.”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1121bb960be98252ac0642c92567737de9726d415280ef4fe1f0e7846285435e/spk_1750316908.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂倒是想点出全性掌门无根生和恶童李慕玄想要潜入三一门搞事，但由于没办法解释消息来源，他也只能这般旁敲侧击了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/80380fe759d7194d4a70d4b1aa505961f136e2cd006bf33799c0a0399671bc44/spk_1750316913.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而左若童在听到‘全性’二字后，微微垂下了眼睑，一时间不知道在想些什么。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/125118e8ba879051ae16651bef812939b1ccb2ee87e9fdff4902d87c2333fd32/spk_1750316920.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　片刻后，他平静的声音在殿内响起。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/82f18c1c03ea743a85e97b0014e06cee18cee4ec6f5cdc19b74c71327fa423e3/spk_1750316924.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“我知道了，你先下去吧。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f0b7f9e8b3729dc513b4b467e4cadaa35c69f422d06e6912f39a1fc46978e296/spk_1750316927.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听闻此话，李昂抿了抿嘴唇，没有再多说些什么，只是在磕了一个头后，转身向门外走去。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b6674241b01e94b2dc526bbc83bc7fd8a9e0e3bdc7d9f83ff513dd5b300f9c63/spk_1750316929.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　也就在他即将推开门时，左若童的声音突然从他背后传来。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c6f166b509183e625f1054ddbcf1bcff8c8d3299b83fba35fc656c11d2132f67/spk_1750316934.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“今天这些话，不要对任何人说。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/225387a91ade30f2f4e49caf86f2193d4d753be12d3051abb12dd3dd60d09b9b/spk_1750316938.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂动作一顿，旋即重重地点了点头：“我知道了，门长。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/6e312fbcfa54885897daa7bbd85f430423b3dfc06c4b957b3184fa678c60b524/spk_1750316941.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　话毕，他便推门走了出去。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/66ae1a86c4347f3b4a9de3c30f2d4c0e649569dda6adff1d99f1cf272a678ee8/spk_1750316945.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　对于左若童为什么这么嘱咐自己，李昂是有些猜测的，其中应该很大一部分原因恐怕因为三一门中不是人人都像左若童那么大度，要是他刚才这些话让其他门人听去了，恐怕之后都没好日子过了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/95a9b0363bb4287d93d6a3b01bcda465e796b2e77ff3a8faea716901fd7d770d/spk_1750316947.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　走出偏殿，看到先前带自己上山的年轻男子依旧等着自己，李昂上前一步，语气恭敬地说道：“师兄，门长让我先去下院历练。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/05c79aee1d1030df55fc2b22faf547eddab4be4bfae95580d0e9cb2778ad279f/spk_1750316958.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听到这句话，年轻男子先是一怔，随即有些错愕的看向了李昂，他没想到这面前大龄青年居然真的能够让师父网开一面。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2ce37360dfa414d1b6344300e396038a4dded0963fa1e42c262ac47b70d7f428/spk_1750316964.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“我知道了，你跟我来吧。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/630576bee30a48d857cc935e2d0a0e367f3d0df5d9043c52102ac2083dfd80cb/spk_1750316971.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　不过师父这么做肯定有他的理由，年轻男子很快接受了这一事实并将其抛之脑后，带着李昂向山下的那座小院走去。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/9759501a1844e4dda346fe4b33ef9c7b365be6c1e5dd03e778ed33e3a871679f/spk_1750316973.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　也就在李昂踏进小院的那一刻，许久没有动静的职业面板突然弹出了一条提示。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/82ed0ac7533f2cdd540a3ac0ce169b60d809bce419a0f9a54b3b77a616f098e4/spk_1750316980.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　是职业信息。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f955323a756a0cc2da5d76de7b17f7ba29e5443e8306052fb1ba77235b75bbf0/spk_1750316985.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【职业：入门炼炁士】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/68b9e6afda5142f54adcc4b088ee78ae1b9fe8696f5086ebf449638923f54c48/spk_1750316987.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【就职条件：'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/4671810ca15d042d9b879a2e3a200f46ecb4c8b379019e242e6f59d848131d96/spk_1750316988.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　1、精神强度属性达到1.1（√）'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/00dfea02bfb0c9982489f566c9807b7bf3e0f37f62a2cb1c684cd162a68e2856/spk_1750316990.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　2、参加任一玄门门派的弟子选拔仪式（√）】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1453c1964b4fe6ea1b403ecb8377e4831dae3d3bfa8cf685780805740b1b7ce1/spk_1750316993.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【就职后：'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1d1fc23678b91161820ad939c48ad506c99fc4505ad913b075525f4cb113eea7/spk_1750316996.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　1、属性增长'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f611e960f722cc0c147bf48a60ede122cd6e992c93ec7b1149857a900c0d2f61/spk_1750316997.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　2、获得职业技能——控炁'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d0a35a2aa253c226933adea96c2ea5d058cc773c3a68dab1d75b4f3e56d4b500/spk_1750316999.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　3、获得职业专长——平心静气'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c1ef81b613538f9d3529b8d690050015adac58c4b7414c92ad3a0fb6a46f1eb1/spk_1750317001.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　4、获得特殊加成：'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/33712af11cdc68572b455e8bf76298c781f327101fc5890f05d847c3774eb407/spk_1750317003.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　阅读道教典籍时阅读速度会得到轻微提升】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/98049d98fefe849b6d0b44a643e8f5c41e94df39032af8618a3f8e586ac242a9/spk_1750317005.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂并没有犹豫，当即便选择了就职【入门炼炁士】，毕竟他原本就是为了这个来的。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/66fcf3eb0de178f47b4ebdd342839cdf1bed5ebf44d7153ebc0dc8fddb19fa21/spk_1750317008.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　下一刻，他就只觉得自己精神一阵冰凉，似乎脑袋都清明了许多，与此同时体内也多出了一股力量。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/688a9c4033c0f58b84ce63fc389367fd8356c03a737e5c47ccb03bde11d4af78/spk_1750317013.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　不，不是多出，倒不如说是李昂第一次感受到了这股力量。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/34b90094f5f884fb85fe06a57e109e5e32e6383970c2f1cc03f0f003b1042ca6/spk_1750317019.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　接着他还没来得及弄明白发生了什么，【入门炼炁士】的职业信息便出现在了眼前。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/805f026a089fb528031b0cbefb454996778da3afedbcf4f21aca161dc5aa0abd/spk_1750317023.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【等级：1/10（0/100）】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/cf09054cc87e1210d57c9fa490dda135786df31b416caa0c978a64c9bcb94e51/spk_1750317027.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【属性加成：身体强度0.1每级、精神强度0.1每级、能量1每级】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8f98edd58e532f40299ec98139ca6076ba3e7509ebbfd8cf0ee387448a174659/spk_1750317029.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【职业技能：控炁（入门0/10）】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/668f2dd1469e5ffa4c626aa3f4faf3e651d600f591949f1fa75ec0ec5bb599b0/spk_1750317033.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '李昂上前一步，语气恭敬地说道：“师兄，门长让我先去下院历练。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/42253f0b787518fb186729d0006b7c79018078e526a988268e62617758001f72/spk_1750317035.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '若童的声音突然从他背后传来。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/9dac86fd4cd48076b439269f01ca82bbcd3dbc59c80745e0a32e56b858ddb1b7/spk_1750317039.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【职业技能：控炁（入门0/10）】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/34ca6f0bdac8c0817fda692e0d9e2ad3d17d9476e35fe45b317f070efd3adffa/spk_1750317042.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '李昂上前一步，语气恭敬地说道：“师兄，门长让我先去下院历练。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7e1c065f4bee770760219b9618ecb8733a6385bd788c9356863e4843e7189222/spk_1750317044.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【职业技能：控炁（入门0/10）】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/181f7773fc20d469ef656888164679ddb7c05f822bc70a551ab096df8e902547/spk_1750317048.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【职业技能：控炁（入门0/10）】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b02ba7410635da2f54dde2844c6302fb10ab361992cea218aea8ae01a5ba9e8e/spk_1750317050.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【职业技能：控炁（入门0/10）】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/771f8b49d86b172fe6f12a2c5c23837eb97e9529438fffe194538ae8fc6b8cf0/spk_1750317052.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂并没有犹豫，当即便选择了就职【入门炼炁士】，毕竟他原本就是为了这个来的。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/9b5b9a9dda49d242a24f6ae4500b83518c1ae196ab592e07712a1a2b822cdd6a/spk_1750317054.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　下一刻，他就只觉得自己精神一阵冰凉，似乎脑袋都清明了许多，与此同时体内也多出了一股力量。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b36650211497d399613484c8064aed3ac0e54eba7d832b4ebd5a7d08c74e5af6/spk_1750317058.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　不，不是多出，倒不如说是李昂第一次感受到了这股力量。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/74405874eb97f483739f60dcfc78382268cb75959246bcd70d837fc5a3610017/spk_1750317064.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　接着他还没来得及弄明白发生了什么，【入门炼炁士】的职业信息便出现在了眼前。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b872c87d680de5ad45c371534ddbfb4505abdcaf774859803431cf933e5123c7/spk_1750317068.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【职业：入门炼炁士】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/6d7ad60d2f19ac8323c6a56f1e5d3f8d80d9beef11a3cf1dfd109d45805eec27/spk_1750317072.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【等级：1/10（0/100）】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ab330ca6fabf46499692d8b84663fe3f436454dc00413d4d4555a41244b6d550/spk_1750317074.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【属性加成：身体强度0.1每级、精神强度0.1每级、能量1每级】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/3bffc9166c7cfdb66a1548d8f8541478446aece61b388391b0f4c446b41e76ce/spk_1750317076.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【职业技能：控炁（入门0/10）】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5198686158eedc50bfc12381b3032e6983328f932e1bd8d58c9e8f7bf4316730/spk_1750317081.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【职业专长：平心静气】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/fe6684d6efa59f113d80eb1f90494cc7eec75e26491346f802b4ccf60d4a84d2/spk_1750317083.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【转职路线：炼炁士（三一）、炼炁士（龙虎）、炼炁士（武当）】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/9c8bae2c0555f0a2b0f59832bc0a8e0385a5fa02f43fc65295b4c455078fb2df/spk_1750317085.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“果然不是囚徒这种下水道职业能比的啊”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/612eeef719c7c9e0cad2e2f437f306d1be97241e49f1ba39891c88e156fe89c1/spk_1750317088.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“也难怪那个世界的人那么在意职业。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/3b1989fd32ce9c549aea59adc1acc48edfef0871705daaeea314709f46f85dcb/spk_1750317091.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　和【囚徒】相比，【入门炼炁士】不仅职业等级上限高了五级，而且还多了精神强度和能量的属性加成，四舍五入下来就是一个亿。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/58ff80a769b7fce7e32c78b4d92813ad91534ba5f6606a482c1bab94b2bec350/spk_1750317094.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　这还没算上职业技能和专长，不然二者的差距只会更大，要知道【入门炼炁士】只不过是一个勉强有点超凡手段的基础职业而已。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/e7b168c2c63a97e8dd6e7debb2a00228b6c834fafb96cecc31ad0e6ed29b1a63/spk_1750317101.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　当然更关键的是，【入门炼炁士】的后续转职职业也明显要比【囚徒】强上许多。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/bf9de0de5e19f864c4f4a7f315269df565aba5860970d60128050d44109af3aa/spk_1750317107.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就比如【炼炁士（三一）】。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0c4644d524f21bf558ba24f204bd9a4f3acae1e42258009c5eabd6cff7eb739b/spk_1750317111.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【职业：炼炁士（三一）】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1875092d83179c1885a7d0cd5c042bedd1c9d2f21b455e24e52b06c8a4837862/spk_1750317113.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【就职条件：'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5b86c2f34ab0a7b5a5dee679488d49a5ed6a19d683017405ef589740e2625b2e/spk_1750317115.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　1、获得前置职业【入门炼炁士】（√）'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/6e3577974e7a47d3dff706c2c1e0d212f4e5c3b659bc580dfec333f54cfdb913/spk_1750317116.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　2、参加玄门门派三一门的传法仪轨（x）】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ed947e3b0962245a073bd8881976b581df65b7402d7bd6869801447a74a97ede/spk_1750317120.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【就职后：'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7fd09b04048f84fd72939beab3c29572af7531b8e596c514410a7448d64b27bd/spk_1750317123.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　1、属性增长'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ccf4bf2eab9202b501257ac78f2b18b6d14a3315a5bbfc628c056bcc00569675/spk_1750317124.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　2、获得职业技能——逆生三重'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5bf6db648015b1e5c5ce1e30b3a21787c7d508107415d529aab13a646f08c44f/spk_1750317126.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　3、获得职业专长——炼精化炁、逆返先天'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5b0bcf29da920493735de2b463ce40194d48aa992c6c953b544cff82fb0c8dd4/spk_1750317128.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　4、获得特殊加成：'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/e3bd7ece95f0311cd3ca80ea62e60f003a6ef2f2d9f9c8795b78d5fe037c0b8c/spk_1750317132.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　能量恢复速度略微提升'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/98eabdb1a99df30a15ca771cb05ce43626775c79e831d92e0c1a010fd53dd0d1/spk_1750317133.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　练习玄门术法时经验值获取会得到轻微加成】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/50f213f281abff79896688d908ce925cdf63c39850e98ec97b8fd207557fe1bb/spk_1750317136.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【炼炁士（三一）】显然又要比【入门炼炁士】强上许多，让李昂眼馋无比。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/15a2762e1de3e744cdf8789280ee9004306972f3bb6d976ee7fe847f9a683b42/spk_1750317139.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　其中光是一个逆生三重就足够他放手一搏，更别提其他属性加成、特殊加成了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/448c55eb09830462be082ef6708bbd2406334e3988df86450f1f4ae27ab9a494/spk_1750317143.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“参加不同门派的传法仪轨，应该就能转职成对应的炼炁士了.”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/baa6dc9c49785243a92d1b4656ef7308e010f540d018f27c6ad02df7abf5955d/spk_1750317148.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　根据【炼炁士（三一）】的转职要求，李昂还推测出了一些其他职业的信息。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/3a741b5192d784644845cc84ad0ee1d06b89707816fbc2fe4da3dba89be4c18a/spk_1750317151.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就比如【炼炁士（龙虎）】，如果他在天师府受箓，应该就能转职成这个职业，配套技能也会变成金光咒、雷法之类的，强度想来要比三一门更高。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/787a3bf359ea91c4b2a3ec67df48a94711fb03d6cae63b490a3fd03ae8043b1d/spk_1750317155.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　想到这，他点开其余转职路线，果然和他猜测的大差不差。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8baf7dc598add20bbd3dba692fc90402ca06a723d21f762c6b9f4ea891099539/spk_1750317165.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　不过李昂倒是没什么患得患失的感觉，毕竟他的职业栏数量没有限制，今后肯定还能获得更强更劲的职业。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ddc7db23f2e5487a321657b3889a38907a41513292488f71998e0953bb07ed3c/spk_1750317168.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他对于三一门愿意收下自己已经很感激了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/69adb81762d15543dac0efd3ea47d54ec27f50e3f00b36413661e84ac962ff07/spk_1750317174.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而且既然有通用技能栏，之后他说不定也能学到天师府的绝学，甚至还没出世的八奇技也不是没可能。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d83dc80504614eb2629809b7d781cc05f06a5241ef3b2d19742b5429df89c28b/spk_1750317177.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就在李昂发散着自己思维的时候，他身旁的年轻男子开口说道：“这些日子你就先住在这，每天要做的事情就是打水砍柴。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/e07f1f8743f1f5c5141980292ba078917483bc688e7399e50d49952155e8b4f6/spk_1750317183.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　说着，年轻男子伸手指了指不远处的巨大水缸，以及摞在角落的木材。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ab9d7c2a7f2085033bbd15d1f385b8626e52783bd5b59eda525a312a956b2127/spk_1750317189.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　说着，年轻男子伸手指了指不远处的巨大水缸，以及摞在角落的木材。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c53fe31d1224b339d10be80885bffb82483cd4af8822c4731ea6dff0c748517c/spk_1750317193.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“若是历练通过了，会有人通知你的。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/50b3557767fc6da04be5867021a47d94cdc25c46fd3423a2ce9a69028c78bfd8/spk_1750317197.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“对了，还不知道师弟如何称呼？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f1a322612faae66e47783466a9e5f8eb0f731065eb157fe68fdf87ccb191faa0/spk_1750317200.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听到这，李昂才意识到自己一直没有说出名字，立马回复道：“李昂，木子李，高昂的昂。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7730431651c16c16eca4e074317d1efc48d8167c555cb568ec69728a1370bcd7/spk_1750317202.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“李师弟，今日时候也不早了，你随便找一个床位休息吧，被褥之后我会为你送来。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/269514400d1734811ecefbc3c709d815a91d09cbf8ff6b62347b4f2e10f055ad/spk_1750317206.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　话毕，年轻男子转身向着山上走去。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1bae0d75efbc27ca512ce334f7a7a7fd781a1205b9628a5005bffaf183c8ceb9/spk_1750317211.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂挠了挠脸颊，抬头看了眼已经渐黑的天色，随即便按照年轻男子的话语在一旁的屋内随意找了个床位。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/bad7a5bb41e0a75aad8489e0e85f491549510e3702ebdb675f05aea6b4a7c85b/spk_1750317214.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　经过一天的奔波，他此时也已经有些疲惫，因此当即便脱鞋上床看起了【入门炼炁士】的职业技能与专长。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/90198a5b0a9e5424a65ef270ccb3991bb1b1b3e82b5e4e7f182060b98eb6d2e2/spk_1750317220.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【控炁：你现在可以对体内的炁进行简单的操控了。】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/206d4658a3ee921465758a59754bd3473ce03218473d23b471cdd1c892e5cba1/spk_1750317227.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【平心静气：你将更容易平复自己的情绪，进入入定状态。】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/244a20625b12a7b65e9dee8a4fe5ecd0a198178d66287e94d6cef8e3b5e8c4a6/spk_1750317230.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　第一个技能平平无奇，对于李昂来说属于纯纯是白送的。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7b7b04063e010073612030834dae433bf2133c6a73e1b9bc246766d4a6f996fb/spk_1750317234.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他倒是尝试操控了一下所谓的炁，但只觉得身体内有一股暖流，除此之外就没别的感觉了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/730471522a54fd2bc1346a665423dd9f21a37ae469b8f36ffcef2cd189257213/spk_1750317237.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　哦，还加了一点技能经验。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b84742b33a88f55e39b9fe04cfa222e9a6eadf21155d490f682662748db2a6e6/spk_1750317242.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【操控体内的炁，技能经验+1】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/a471e214a1e8796fa4457b8c4365ca27709068e507e9bd7a462647869d772404/spk_1750317244.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他忍不住在心中吐槽了一句：“居然连外放攻击都做不到吗，而且也没办法强化躯体，那这控炁有什么用啊？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2019680eb2606d5c0dfc6227cbaee50c346638d5d8b2849c9950c330e7042c68/spk_1750317246.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　想到这，李昂有些不爽的吐了口气，亏他还以为自己总算有攻击手段了，结果现实却给了他当头一棒。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/bf1b609adcb5e88e7b18243e4d1b938039d7e5bb1aeafdd1d6322a794ef82609/spk_1750317253.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他总不能在返回了先前那个世界后拿这个技能去吓唬那群虫子吧？'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/586e8c433d7a1ebdf1fd21baf280b41434cde663ea47a14ef4ada29af872fcb0/spk_1750317259.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　这和去国道吓唬大运有什么区别？'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/604c027c97471c2cb2427af0fb73995159196681dc341ba62c66f87b5c8390a1/spk_1750317262.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　当然李昂觉得也有可能是自己技能等级太低的缘故。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/6ed574eba7ffc939545e8a6cb1e9976c2458072ef3766dd925776eccc6f797d5/spk_1750317264.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　入门、熟练、精通、专家、大师，或许等级高了，【控炁】就有别的能力了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/de78315c2cd3ee597b988d3269f9012573dd30c323df910fb66f9974fcd98bd7/spk_1750317267.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　不过也不是没有好消息。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5cf5a984c46df9951b01cf3bbb48ea817292cb4374d3bc1d0b7fdcbedabba515/spk_1750317272.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【平心静气】这一个职业专长倒是与囚徒的【缓慢回复】产生了一些奇妙的化学反应。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1d5802da1a5d86da139faf16ad727c818067ae4c9491914137beef64dc49bff3/spk_1750317273.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　因为李昂发现入定状态也算休息。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0a5ae2fcb0b60ca6ad28fa5b6ed698d6113e20fe8177dc1b171be696c9cdb19c/spk_1750317278.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　至于是怎么发现的.'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/9e9382b81120edd6b8e68af7b09e067d3cab7bfdd5aa605f117e36f04a9c3861/spk_1750317280.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　等年轻男子带着被褥返回的时候，就发现李昂已经盘坐着陷入了深沉的睡梦之中。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/362839a2e93ae03be95f336307468b2007c93252439202cfc6da6a48943bec17/spk_1750317282.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他扯了扯嘴角，随即便将手中的被子披在了李昂身上。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/14abfefaee5abdb6aa6cf0080a56e7e558e2a0f563f749333bfc7cad111a5313/spk_1750317286.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“这位李师弟的心性.”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/3027ab3a6bcd8b127dfb06aceed2679001760c9ae649dbe43d34708d20db4564/spk_1750317290.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“倒是颇为不俗。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/97fe711f2e6d50317d3935fb41ee610d7ea1b073c8ea1578ee5a08cb65b4b2b2/spk_1750317292.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【进行打坐，职业经验+1】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/653b994ad404cc437056fd8e2f7dfa1a3b6e9a70580116a8aee4a14420f2f1ac/spk_1750317293.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　等李昂第二天被屋外的公鸡叫醒的时候，他赫然发现眼前面板上【入门炼炁士】的经验涨了32点。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2fa7ba722025f784be6e15af3afb999c00035679f6446d1b98f2b2840ca3bbdc/spk_1750317295.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“睡觉也能变强？！”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/014fc2300ed4ee33b4bb9f95e7fafe7b3dffe047c96e65a020f10fc785763f45/spk_1750317301.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂惊了，他没想到居然会有这种好事。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/234fe9cc47067dd22d84ec462f82c06c9e268f16cd5c20898da4f46e0c35e00c/spk_1750317303.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　可惜一晚上也就加了32点经验，想要指望靠这个快速提升等级是不太现实了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1141bd8b055eb5ce3048953c546997795a8c1c44da6a4cebef3d35c50332350b/spk_1750317305.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而且李昂白天也需要外出进行劳作。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0dddf51bfdf52b6bf093f829f644d6a03600f5a66b7d205b9bd091d8f1136511/spk_1750317310.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　想到这，他快速翻起身整理好了床铺，随即便出门按照昨日那位不知名师兄的吩咐干起了活。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/67fdebeaa244a7c83abcd3d159420afcdee3c51f65334abb8058fcd2c4bd8f4f/spk_1750317313.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　经历过十二小时死亡流水线的拷打之后，只是挑水砍柴对于李昂来说根本算不上什么。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/98a30fa09c087717ef6bb27e63a181e68377c4d0cdfdcb5d7146ffec752bb33e/spk_1750317319.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　更何况他还能从中获取经验值。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/fa0c4a08ecd74c6623100da8ce46502761a328bfb4c65aed624e4fb5aecd381b/spk_1750317323.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【挑水砍柴，职业经验+1】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1903fe7af9f7f4ff2269eea794d8c43aefe91065725e5d999ed34819e667a0f5/spk_1750317326.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【挑水砍柴，职业经验+1】.'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/741c5374fcde47b0f75cc4c24557b07e419b064a743f571ebe8cdb75f4e88206/spk_1750317328.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　虽然不知道为什么干杂活【入门炼炁士】也能加经验，但对于李昂来说终究是件好事。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/67acbf963a762956ecd37086bd38be11c8fdb12b9d41f7a70ab7a5935cb6248a/spk_1750317330.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　日子就这样枯燥乏味的过去了一周，在李昂干了睡，睡了干的不懈努力下，【入门炼炁士】已经来到了3级。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/cfca8d987a61becde24cde89b6a68c5b524812bddc3e2ef53c4079071635faaf/spk_1750317335.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　也就在李昂猛猛肝经验的时候，一场关于他去留的交谈正在三一门中悄然发生。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/85c76b367144d11326019594698058c100ed923d4eaba381924821630b8d99ab/spk_1750317342.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '第8章 去留'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/6e152a0c12fc2e0d2a0bcd2058ea9409dd9d41cae975acac2db6d38feac8f3b1/spk_1750317346.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　三一门，大殿。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f44689b0b9942871a5dce614a2526c8c93455dfc31529f30e8bbc448d8b440c9/spk_1750317348.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　左若童坐在上首位置，在他下方依次坐着几位在门内担任要职的弟子。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2358cbb659d29905669cbd1137899329acb910cf3b47c9ecb0ccada0c552448f/spk_1750317350.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“师兄，前两日我听门人说，你收下了一名年轻人？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/dd21d7181be55d999c30be87716dfac8e3cd3a6921fb66bc75d58ed1a30a6cd2/spk_1750317353.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　率先开口的是一名须发皆白的壮实老者，名为似冲。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/3dcce79063690942437982ac433158287907291acf0b8541e3478476bbbeebd8/spk_1750317357.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　似冲是左若童的师弟，平日在三一门内除了左若童以外，就属他的地位最高。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2074b955a00c12c9f935ea34c146cbde062be55b62b2d0a8be820bc766142e2a/spk_1750317360.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“那位年轻人可是有什么特殊的地方？居然能让师兄你破例收下。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d530efd401bb962e806c8306a4644c0bd7856b1d088762567b82bd54cc8e1836/spk_1750317364.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　在似冲看来，自己这位师兄虽说是一个好人，但绝对不会随随便便的就收下一个来路不明的弟子。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/bbee177c7a80f10b120999e0fe64c2125e618033261ea1c3f0ba8e04872822da/spk_1750317369.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就像当初那位三一门大金主的儿子李慕玄，也得老老实实去参加下院试炼。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/494f0c426388518916d40ef1f753a66fe368933ede167bcb629e41a14ecbc41c/spk_1750317375.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　只是结果'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d959dbcc52c6b749664e2cdf52d588f420e213c7d34ba5c79c72654247814fbc/spk_1750317380.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '第8章 去留'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2bb9ee4feb8d6fc6fe09ed697227710e44b89e2dc493a5a0e73ddfd286c20269/spk_1750317415.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　三一门，大殿。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d9ceaa126e3d15e610a8d85d568462b2fe27ccb3eb3334d42b816fc9271cdf1f/spk_1750317417.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　左若童坐在上首位置，在他下方依次坐着几位在门内担任要职的弟子。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c3d26e9053de73c6854e1e6ef7cc08a9cf3d0be51227a668eec2788ae5b06236/spk_1750317418.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“师兄，前两日我听门人说，你收下了一名年轻人？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d07f78919007eddcdef5e7db616d768f9c88e20b8eef976d99010dbe4fdbdef8/spk_1750317423.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　率先开口的是一名须发皆白的壮实老者，名为似冲。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7552ef6d6ab443a675696794d372abf64a47513bb3e49e9154df84d8580e8ee2/spk_1750317427.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　似冲是左若童的师弟，平日在三一门内除了左若童以外，就属他的地位最高。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/a6625e50fcede348cf0ac0a69d7577dc792049dc2758b119338ecf08830c2b25/spk_1750317430.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“那位年轻人可是有什么特殊的地方？居然能让师兄你破例收下。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/47692b4527ddd6d06d2b6a9210592ebd1dd581d6cf9237c538d11071bcb89b58/spk_1750317435.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　在似冲看来，自己这位师兄虽说是一个好人，但绝对不会随随便便的就收下一个来路不明的弟子。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/58f2e8c2bee32c8aa090a1b9ec7cc1cd9cb60b5af5d097f07783dadff2419e82/spk_1750317438.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就像当初那位三一门大金主的儿子李慕玄，也得老老实实去参加下院试炼。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/bff4285b25f167157d4988d0ed249440ca1c916898da4070cf6b15bd9f481213/spk_1750317444.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　只是结果'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/9fbdc63c7c5db9bb95f9c89931484a9da4ddac4247373c4b92b442e7c6b556da/spk_1750317449.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听到似冲的话语，左若童微微摇头，语气平静的说道：“那孩子只是和三一门有一些缘法。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d74bbedc7e09eae161ed4188f98f562f4fb9f9b82e2581441e97b54d9d221752/spk_1750317450.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　说着，不待似冲追问，他就看向了坐在最后一个蒲团上的白发年轻男子，陆瑾。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/13ac957ae01dbce13a5f926cecc4e9d3ed420bf9124614370e56efb1e80e073e/spk_1750317455.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“瑾儿觉得那孩子如何？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1999c0140abf7fa001de6dc349f21b7ee265b6338174e0e94e0f37aabc131414/spk_1750317460.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就在那天同意李昂进入下院进行试炼之后，左若童便让自己这位弟子前去观察李昂的所作所为。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/3a12e94ebd749f2577335443907ee3084ae82b388b07f80d48f90af1a0a386ec/spk_1750317462.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　因此眼下在场这几人中，陆瑾可以说是最了解李昂的人了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/6c56280b8bccac6e501d18e997e4644cf41e855aa98e1842567e3979c49667b7/spk_1750317468.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　面对师父的询问，白发青年的脸色顿时变得诡异起来。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c0e1c7c9cee33f15e2b318423fb2fc4faafe1f5f55c0685911a34489ed9d6775/spk_1750317471.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他犹豫了一下，才试探着将自己的看法说了出来：“师父，这几日里那李昂每日都会劈柴挑水至晚上，中间也只有吃饭的时候会稍稍休息一会。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8180b4a05869a4e6a36e00b94fdd56634f1664cb72d7491a8142bf3783e0a55d/spk_1750317475.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“而且根据我的观察”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/31ef08758b54a165ef7b96edc3b756cf99714d8997f0eed1978c98f9fc531784/spk_1750317484.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“他好像有点乐在其中。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/405ed997de04fc2c82be37871f44c1807a55ff8e99f8fe37f7b1bbaf86662583/spk_1750317486.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　此话一出，殿内顿时陷入了古怪的安静之中。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/75a3d3a1d893df3cc1286334d3bfbdfa5bea1932292d682bdfff37a2c78b580e/spk_1750317488.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　在场之人都暗中见过李昂，而李昂给他们的感觉就是养尊处优的公子哥，毕竟现在这个时代的穷苦人家人，皮肤哪会像他那样白净。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/6d13f7fe6d6b068e9434bc0b04ce09358b8e3812083ebcd7e519213aae1866ff/spk_1750317491.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　可眼下陆瑾的话无疑让他们大跌眼镜。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/98b1636badc0610ca8e22b69ff1499900d70e9e07c8027af646204bdc7330dd9/spk_1750317499.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“这小子脑袋莫不是坏的？”似冲下意识的喃喃出声道。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1cc6bf6102ae4d74c5d8b7613e232cd4c7fe2728006b8fcc79b8a1e342462704/spk_1750317501.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　但很快，老者就意识到了不对劲的地方：“他的身体撑得住？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2b0b6c7a291bc8402e7394ef1ed730a8da233c5fc98daa9b9012138a1130c8a8/spk_1750317505.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　劈柴挑水可不是什么轻松的动作，若是没有偷奸耍滑的话，那就只能说明李昂的身体素质好的夸张。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/046c6176279999a0ff22d6e89cf8ea0407c3443e4a4f24d3ba2b05cde85c3c15/spk_1750317508.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　若是他已经踏上了修行之路那没什么好奇怪的，但问题关键就在于李昂还只是一名普通人。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/30f30765bf847b7217eb519139f691bcbb0cb2b1c94dd1eb821907018892ac03/spk_1750317514.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　起码在殿内的几位三一门人看来是普通人，毕竟他们并不知道职业面板的存在。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1a749d9965dc89c83e275d474647e00aa1e21aea9d2e8a369bb3d827b39535b8/spk_1750317519.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　想到这，似冲下意识望向了左若童，忍不住在心中想道：“这就是师兄愿意收下他的原因？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2b967b6c6fb26422cbacf9a9f9a548d4763ebbe28bdbb1e7df311ccd481e29cb/spk_1750317524.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就在众人心思各异的时候，左若童出声问道：“瑾儿有问过他家里的事情吗？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/bb8445a6098ef2374e9e74cb4aaadf10637e4fd6b4b5d02b8d6c62e4db0c2cae/spk_1750317529.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　闻言，陆瑾张了张口，神情有些难看：“.师父，他说他回不去家了。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5b36abe28086796342c3bd6d8cfeff82371e52b8577711dbd7c508a8aeb68c8b/spk_1750317533.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“应该不是假的。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d23c34983aeb4d67091c6fa2e1f895c01f3dfefd9a7073ce6d03c4ef7e75fb7d/spk_1750317537.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　回不到地球=回不去家，没毛病。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2ef52092afd3306fa88c42ded974a70579373161586634fcb965d088ef471a22/spk_1750317538.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听到陆瑾的话语，左若童轻轻叹了口气。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b72d8d0e0bbfb052b2a8558e43ea6b0bf4aae2e028bcd900d52c711ecf1fc9ce/spk_1750317541.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　如今这世道，家破人亡本就是十分常见的事。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/98889058f1cd7a602638d92690e08504cd2b181be4170e84e5316c4c2c0f86ca/spk_1750317544.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　这时，陆瑾继续补充道：“不过这李昂家里先前应该也是富贵人家，他的术数不像是寻常人家能教导出来的。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/dbcd37bd99c015bc0b0bd05856c95cae5d2a890d36feccbeffcb752e0735872f/spk_1750317546.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“而且他还会说洋文。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/e0ebee6b9efb1d35d2eb551f665f005a74986a7dea36e2193d33e67255294910/spk_1750317553.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　同样富贵人家出身的陆瑾甚至觉得李昂除开有关玄门的事，其他杂七杂八的见识甚至要比他还宽广。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0e02da319a861df50ea958531b61a015c8a4547c0c09599157dff821041dcf6b/spk_1750317554.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而他的话语无疑证明了李昂脑袋并没有问题，甚至可以说很聪明。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ee94db757c80e1b685814f2d6a671a1ca7511064fa71133d1e01b559c336684c/spk_1750317560.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“所以师兄准备收下他吗？”此时似冲忍不住出声问道。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d165a1fe777bd4dfbff0878b522d9a7d875f1c27bea709bb552e1a6e26b104de/spk_1750317564.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　虽说现在在他心里，李昂的表现已经很好了，但三一门终究是玄门门派，还是十分讲究修道天赋的。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/86b21dbaac29f43548577ccfe3caab2288a6c4e6edcdfa742f542c72c1060a8e/spk_1750317567.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　此言一出，大殿内一时间陷入了寂静。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/01a9b70d28ab66b3a8eecf50e096c1f0cde475f0858724483242dd9270c60b0f/spk_1750317573.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　片刻后，左若童才轻出一口气，随即对着陆瑾说道：“你们先下去吧，瑾儿去带他来见我。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/523eb99637929b8772aa0f8a03e71c36fd4e25d554bb0e97da708f0d0b46d559/spk_1750317576.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听到他的话语，在场的三一门人有些不明所以，但还是老老实实的按照左若童的吩咐离开了大殿。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/4498c0420f128260eaec9259964439482d1fc50f7c351eeae5016bfbd6190dda/spk_1750317582.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　接着没过多久，李昂便在陆瑾的带领下来到了殿内。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/584d00572005f3162c52a4f3e1d7b2d70910233f56765e2005aca6b5d09d33a3/spk_1750317588.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“瑾儿你也先下去吧。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b703450a965fa02e0b757c1ee0ae767cca5bc886d8c2f7b0230329e52abd36df/spk_1750317591.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“是，师父。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7458ade99f412471b18175502e8481533ee21d164687eca6357de2a5f4657d2d/spk_1750317593.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　很快，殿内便只剩下了李昂与左若童二人。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/fca3b6a2496973ac7ba1937019b1ca2b4e339721be7231e75df18f6445856bc9/spk_1750317594.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂眼下一头雾水，他在下院肝经验肝的正欢，结果突然被叫了上来。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1c2fd65c4545e40f32ff79f3c17116805926c74cc97999da074e245a96d728f5/spk_1750317597.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他忍不住在内心想道：“难道是我表现得太差了？还是表现太好准备提前收下我？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8c54957fc1bebc8cbced10b289848668912452951a0cfc50fa2ff7921f7dd888/spk_1750317602.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就在李昂胡思乱想的时候，左若童的声音传入了他的耳中。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/65e9f8723f0cc02cf0d793166ffdc74c90d35dbf8f1b9000a4a227a271c0c050/spk_1750317606.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“李昂，有些事情我必须和你说清楚。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/313d3c6bffece1ca589f977ab986104fccac455efbc0df36ef118242c7396738/spk_1750317610.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“其实比起本门，这世界上还有更适合你的去处。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/031c7657b7f5d19ef5f9c7352c07d702391cbbe98bdf9ce1b30fb9e0725cce42/spk_1750317612.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　闻言，李昂先是一愣，随即心下大急。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c80ca624d9a918eb259cbef1084121a4edb4895062ed6a5eeac44d248cb2423d/spk_1750317615.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　可还不待他叙述自己如何向往三一门，左若童就继续说道：“但因为你看过本门前辈留下的手书，所以我也不能送你拜入其他门派。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/3213e82abdfdf6822c4f535b802aa799d6a04f77929fbf31109bac5a67161ad0/spk_1750317618.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“还希望你不要因此怨恨三一门。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8f4232d62015c5ed75c739a5c65bbe900e3e6a2b1dd1c8405e6b70af56a47ef0/spk_1750317625.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　法不可轻传，这种道理李昂还是懂的。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8bda8dbd589a275bce5cf5afc8fc52d8c403ab07bae139d9254d47719075e331/spk_1750317627.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　逆生三重作为三一门的传宗绝学，任何人在‘看过’有关内容后，左若童都不会轻易放其离开。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/dae27a3c6593ccb91caf6975950eff6f86edf7661495f9a651cbde0a24bdb70d/spk_1750317630.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而且这本就是李昂为自己打造的人设，当然不可能怨恨三一门。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/81ce9df4ed62462ae5df49ae0aa550ceb14c957b4a38c436670a9c351b3c9a4c/spk_1750317636.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就在李昂愣神的时候，左若童已经站起身来到了他身边，将自己的手掌轻轻搭上了他的肩膀。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d05c80d2064b12ec1da64093fa8069e37b2703a0a107cccad16c954f2a722777/spk_1750317639.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“既然你看过本门前辈的手书，应该也知道逆生三重破关无比凶险，但书上看来的终究没有实感。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2753348af42491c5061e0bc3712d268085257209fa4591f53091192990bfb196/spk_1750317644.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　说到这，左若童顿了顿。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/037866c7d55eeca1788c2fc868319b4bffb44e03735bb6741ab2103ee83c3937/spk_1750317650.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“跟我来吧，我带你见一些人，若是见过之后，你还愿意拜入三一门，那我便收了你这个徒弟。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/3ac04f81d0376ae9652bfe45c035c93de79d2e0079811754b1e978f739311f9f/spk_1750317652.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“但若是怕了”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/4e131003ce7e81d86e2652bceeea29ce5453355f485a325800f136626f252955/spk_1750317658.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“之后你便在本门门下的药房里做个账房先生吧。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/cd997f3cdf9ee58a2d49ee95fc3c57ab66362448adc8d862acbc9bab019897bc/spk_1750317659.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　话毕，这位大盈仙人就迈步向殿外走去。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/6a7a62b445eff9f207567222df00d4c8a1daef53ad87e6d57ebe03f80bb5d6e9/spk_1750317662.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　见状，李昂没有丝毫迟疑的跟了上去，对于他来说，这毫无疑问是一个单选题。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/e1cf81d44412b288d9db6d891b2fcfed8e4ceecea21a815f19a76d1db93508fb/spk_1750317665.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　沉默中，两人很快便来到了一处偏殿前。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/024a4a12b6ac1b450e151ad0bca7eabf33cba611a12661aed40cefe0ef6fb09b/spk_1750317669.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　伴随着左若童推开大门，数名面容枯槁的三一门人顿时出现在了李昂眼前。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/024b4cc0956d8e6ed802e28bad06fecc11636b8d63b3a9aabf11252722b4c827/spk_1750317672.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　显然，这就是修炼逆生三重失败的下场。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/802eb1608bd2564991d724851d5d66e3b900fd950ed0bfa3d98ade6b70434d53/spk_1750317676.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　只可惜，这种场景完全吓不到李昂，因为他根本不用冒这种风险。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/93f3076724087e706ac5ef8a222332e375ac00b39aecc46a385a88e4657ad456/spk_1750317678.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　只要成功就职【炼炁士（三一）】，他就能获得配套的职业技能逆生三重。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d7879b9ae3a0cee4974ddeabd71045734e2c02f73e6ec03e9c8af8b670a10f66/spk_1750317682.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　甚至于后续他也能通过肝技能熟练度提升逆生三重的境界，完全不用像正常的三一门人那般冒着生命危险破关。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/01d8670598af6d5dee2b6db318518458cbe36316c518f914501f27b5d59b8825/spk_1750317686.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　叽里咕噜说什么呢，他玩职业面板的。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/686c4995b1a318eb1a948ac607f69dccc5dd20849e6790faa84789b0e95ab737/spk_1750317693.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　‘职业面板，让我看看你的惊世智慧！’'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b3a46ad16d1a47586e2511615a7de1f833f10957c9c04335738286e556f82acd/spk_1750317695.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　这就是眼下李昂内心的想法。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/4ef1bf0904b62f5d72050422c0c5b8f9df798bb9f0496589e97994e82d3205cf/spk_1750317698.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　如此想着，他面容一肃，当即跪倒在地面，重重的向左若童磕了一个头，语气十分郑重的吐出了两个字。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8bd81c634df3d4e5bd39d69571f91c4e22bf47ca5698efaa2181732b249f9a65/spk_1750317700.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“师父。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/08a0ca990242d4aac86d4217f78a080e5243a098ba55d0d4b419b5da94db6d26/spk_1750317706.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '第9章 万中无一的修道奇才'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/fe96f3dba77c6d50a9f0a6b7b031e85490d488e99194da21c6f5e848abf78274/spk_1750317707.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂如愿以偿的拜入了三一门，但想要真正转职【炼炁士（三一）】还需要参加三一门的传法仪轨。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/cf1bd396f45e3a7d897c5eecea388e1c60a92cd691625978b226b6eea95e161c/spk_1750317710.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　逆生三重的修行过程无比凶险，因此在修行之前，所有三一门人都需要先将基础打好。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0ceec210dad02ea938e68ffb6b0cd52fef7d0b4c0657237f11590a6b774916f8/spk_1750317716.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　其中最重要的自然就是有关炁的修炼。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/649213a9c62939d6e2fb8701355c47925bdfc15d9aebd9d8818666e99f6271db/spk_1750317721.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而负责教导李昂，正是陆瑾。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2b8eff6e3a978d69555f5bb611f751f491a332001c867d30fd7248e6103d7cac/spk_1750317724.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　说实话李昂也没有想到这位一直在下院盯着自己的师兄居然就是原著后续剧情中的那位陆家家主，只能说前后样貌的差距实在是有些大了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/a58452c2771840d1f881fd8dd6a5b8b318c44aa3dc71642f50459b10e4594d7a/spk_1750317726.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　只不过眼下这位日后的陆家家主正一脸错愕的看着李昂：“师弟，你这”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/28024f1c08fd76fe9e29ed81142cd9819306f743b0b1a76d26ecfb195cd2ee4e/spk_1750317734.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　此刻在他眼中，自己这位师弟正盘腿坐在蒲团之上，闭眼根据自己的教导行炁。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1f12211328261e0a566c3cf33d91bd28ca58e6d7c0c3dcdfafd9312af60a2a0a/spk_1750317738.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　虽说能够成功得炁并不是什么值得惊讶的事情，但问题关键是'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/bddeb501f978c4c561f0414633f6b103f60fe4e9be4b82d3eab923e554d7afe6/spk_1750317742.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　今天才是陆瑾教导李昂的第一天啊！'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b1e14bbbf390e409e50f46553374ac6279e5d2ad700c844f22e5f3d8e09e13e8/spk_1750317746.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '第9章 万中无一的修道奇才'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8132fdf365b4482cf252ca362f4915275d6ab0325fe566f3e435d5a23bdbe153/spk_1750317766.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂如愿以偿的拜入了三一门，但想要真正转职【炼炁士（三一）】还需要参加三一门的传法仪轨。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5d2f370761667e36cf35c6743df0a4707bf1523b410ee2b5a7f37ac8864045c8/spk_1750317769.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　逆生三重的修行过程无比凶险，因此在修行之前，所有三一门人都需要先将基础打好。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/149dafda17f06bd29299d3df4acee1f4ad4dffa82c33a21ac4ac02c834c15d0c/spk_1750317775.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　其中最重要的自然就是有关炁的修炼。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/dc549917d26f614b5f35a479762c06e96b9393661bddf19f429182b3300aa404/spk_1750317780.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而负责教导李昂，正是陆瑾。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ef7ba3ea05d14b326e96694aa26a1188c3d0d78cffad374773510b3105f57387/spk_1750317782.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　说实话李昂也没有想到这位一直在下院盯着自己的师兄居然就是原著后续剧情中的那位陆家家主，只能说前后样貌的差距实在是有些大了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/591a171dc2cdc78ee1aa2a49a8fd01d7577bec5304a5ced92ef187b7a219070a/spk_1750317784.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　只不过眼下这位日后的陆家家主正一脸错愕的看着李昂：“师弟，你这”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f8e6b5999d7a597b3691397ef3f8f6b1775152e15b6cd2669305ab075e17d9d8/spk_1750317792.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　此刻在他眼中，自己这位师弟正盘腿坐在蒲团之上，闭眼根据自己的教导行炁。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/33bed367b9108ee9579a3a37fab5fb055b40465e8df52b0886c9fa7bbf41c667/spk_1750317796.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　虽说能够成功得炁并不是什么值得惊讶的事情，但问题关键是'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7cd2eeda581ff023f867912f55dce39f247c5b2d2bbc8580b9939d89caa47da3/spk_1750317801.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　今天才是陆瑾教导李昂的第一天啊！'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/4632b1c67d1f8f72ebddb47b62cf73b260b6f8aa000d771facbffa52a830387a/spk_1750317805.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　与此同时，李昂正在享受同时完成两个任务的快感。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b77fa161bd5902526a184033f01814c34cc139fca7d5c4103f205bc5e6087bcf/spk_1750317808.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【运功行炁，职业经验+3】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/195d358a7617cf8025fa38cfafbcbd6c3e4fa02dd4a426150499aece80784ac4/spk_1750317811.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【操控体内的炁，技能经验+1】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0c0022d9b8eb7187c95a6fff037b2d2c84513c5f3ac96bf88866671a95776225/spk_1750317814.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【操控体内的炁，技能经验+1】.'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/9f7204637c8b492ae6142c9f6d99e844701e339319fcef34c20707bbd1505893/spk_1750317816.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而他之所以能够立马跟着陆瑾教给他的运功路线行炁，还要多亏了【控炁（熟练77/100）】这个技能。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/3dfbafe1cd8183a1ddf9e5d317d1f59c8455ea5914c28ec8287e609ae2323eca/spk_1750317819.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　至于技能熟练度为什么会涨的这么快.'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/04d76ad03bafaf7d1cdc3d5d146b38bc911fe5f5c119a813160bdf2bb48e7621/spk_1750317825.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　自然是因为李昂每天晚上休息的时候，都会有事没事捣鼓两下。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/be863079424375af18e57d8e342dfaa04aab26e998d38463c631ba0cdb5df83d/spk_1750317827.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　不过很快，陆瑾就意识到了什么，随即神情古怪的问道：“师弟，你在拜师之前就能感受到炁？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d6807c27b310c396e1db037efb6c52dbb73155c724400009a8a23a5b1513c2c7/spk_1750317831.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　这个世界上是有天才的，陆瑾自然明白这一点。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c0d69e50bc13f964252c3b1f1789f94b6cdb3c9ad9f1a5ca172757ed5228dcfa/spk_1750317836.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而在听到他的问题后，李昂中断行炁，睁开了自己的双眼：“就是那几天劈柴挑水的时候感受到的。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5e1940d8dc141017dfa7299723bd800ef7486c4ad8db0e9050d9d7b8192de7d1/spk_1750317839.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　下院的试炼陆瑾也参加过，他怎么不知道还有这效果。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/3d696aba03790db3fa213266dce5f97600d43b0935d25b8ee3d68993d33f90c7/spk_1750317845.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　可惜陆瑾不知道的是，李昂是挂钩。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/9d5c873dab8f96ff2aef118a92720dcd20c371ac546f25afb9ebdf7adeed9d29/spk_1750317848.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“既然你已经得炁，那以后每天跟着门内的功课走就好。”见似乎已经没有自己的事情了，陆瑾挠了挠头说道。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/616ba27819283e1b4e27400d4a7a262b71accdf53fa50e0aad21dbd883fb9171/spk_1750317850.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他现在算是明白了，师父他老人家估计只是想让自己教导一下这位新入门的师弟如何行炁。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/46ca87f8c8968b1bf9e949b680474f370ad89ce904757de47f634bd93c9b308c/spk_1750317856.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就在这时，一道声音从二人身后传来。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7a72bad4be9f92f80a0ceaa830671f2a7c0432ab5decd13834e813d0ae9d3d40/spk_1750317861.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“如何，这几日在门内待的还习惯吗？”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f0662d0fee48179e618c033894c2aebbc9d34f63287894c48d50e84711e2072c/spk_1750317863.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　是左若童。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/64b0375b995b3bf649495122e1fb8d889feec700318d50444e32525610aecbf2/spk_1750317866.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听到声音，李昂当即便站起了身，随即微微躬身，语气恭敬的说道：“比弟子想象中要轻松许多。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/527ba5fab5a057c28c240705b59e20a4abcfb8f3f3ada5bb3214be7350c3b5eb/spk_1750317867.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　左若童站定在李昂面前，看着新收的徒弟，脸上露出一丝笑容：“那便好。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/da868e1819c307cc9ea9c200fcc6789ed2819154cb9f98c66ede435309eeeb04/spk_1750317873.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“三日后，我会为你传法。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/327793389ea98182fa8ad2a0115004a3441a112ddd4cfef6001a324b803e51ca/spk_1750317878.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听到这句话，李昂先是一愣，但紧接着心头就涌上了一股狂喜之情。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0efb000c01feed63eecef250b7e77c8f3091e48023473ad18e78d17d87c4b5ac/spk_1750317880.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　来到一人世界已经快半个月了，他终于能够完成最开始定下的目标了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f5604f24918687748f87d3ae48f6b6279fe4b00f72b537603b0c409cca60e25e/spk_1750317884.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　当然，最关键的是转职【炼炁士（三一）】后，李昂能够学会哪怕在一人世界中也算得上名列前茅的玄门手段。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c8422a5e26f16832e95a1eba8a0b198cd5e8cadbeb79df6faad1f52625258850/spk_1750317888.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　逆生三重！'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0037c4c3ed882ce3896237c4bc04651d0a22ebb99c615bff158c3b8eeb872fe0/spk_1750317895.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　想到这，他抿了抿嘴唇，当即便想要跪倒在地面。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7f9fcaeedae9b9e493e36c93bc65f895907701fcc36c896dd767379d67d1b214/spk_1750317896.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　可还没等李昂有什么动作，左若童就已经扶住了他的臂膀。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/cae2af504de6e265b95a480376d1108c19b1912ee011fcc169ca5a547ed282d2/spk_1750317899.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“要跪等三日之后再跪吧。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0e40469d343b2422c770673a92d23011026ba896f82b13f30a616bf70210b45f/spk_1750317903.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　对于李昂如此轻易的便得炁，左若童显得并不意外。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/48d1dde64f03943978ef2398015f76c3156616b7417a17415e5f70b984be8c11/spk_1750317905.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　只不过是一个天才而已，这么些年下来，他见过的也不少了，更何况他本人就是所谓的天才。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/13072be848a41abc41bfb2fc4081ae751b97bd11431d5b3535a0a1ad2dc2bcff/spk_1750317908.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　要不然外界也不会流传着大盈仙人这饱含敬意的称谓。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ec20cd2437f9e048e53c9e0dcfa9f9eba25b925070cd2bce122353fc2c9acd67/spk_1750317912.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　接着简单叮嘱了一句陆瑾好生照顾李昂后，左若童便转身离开了此处。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f11090f82b4f54ec86819d9e73536768b7b16fa7dd01062a55baf90125559943/spk_1750317916.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　二人就这么静静的目送着自己的师父远去。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d4552feac6f1c1949c18cb720bde80537e3e34cdf399ff85cdb528c05176aadd/spk_1750317920.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　过了一会，陆瑾用自己的肩膀撞了一下李昂：“师弟，师父他老人家倒是对你关心的紧。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/fcd100562ca01823ffa626211f16e850dc703e63a236fb8058d4d1bf328cc3e6/spk_1750317922.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“我那会都没那么快得授逆生三重。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/13b57b77d6def5bd6c188617f820c5edd0e1f0d131730ae8400e806c576c14aa/spk_1750317928.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而在几日的相处中已经和陆瑾混熟了的李昂嘴角一歪：“有没有可能我是万中无一的修道奇才。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/44404eec771dc94b2d6dec4ed30714008c0c035b74cd412514db5380a4181454/spk_1750317931.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“蛐蛐逆生三重”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/a92a0532d7bb88f02864758e09a00fec0bcfe47581c13b2ef9f28759e74ec28f/spk_1750317937.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他话还没说完，就被陆瑾手忙脚乱的捂住了嘴巴。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/49a43326709d9ab45b105bcda937465061cefd2da7f92e35e9b77eeefe8d759e/spk_1750317939.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　白发青年有些紧张的东张西望了一会后才低着声音说道：“师弟，这话可不能乱说，要是让似冲师叔或者澄真师兄他们听到了，你这两个月的功课恐怕就要翻倍了”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7d051d949b4ca59fc5fafb416262e4a86e5eddfa0528e5426476d7365ab71e5d/spk_1750317942.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　只是陆瑾话刚说完，就想起面前这人是一个劈柴挑水能干一整天不休息的狠人。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c6a10182d49aa27d20daae302a6380ca0c17719944ffae16c8edb2d908a982bc/spk_1750317951.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　所谓的功课翻倍恐怕起不到什么恐吓作用。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/37b8290c7aa6bb074747f1671cbbf4cfce97ca277ddbb1e85991a09565bedc4c/spk_1750317955.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　想到这，他一时间有些无奈：“反正这话你别说了。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/986356420c0ef049e72d45a2ec72eb87bc4d1dba5e333147dcb6beee2bd32aa9/spk_1750317958.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“我知道了，多谢师兄的提醒。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2e35b6d73a9f067f478cb987c9c7747d56b4e847822bc1e156fb2b786dfd189b/spk_1750317961.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂耸了耸肩膀，应付了一句。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/beb8fa0ddbd0878fc38d47e1c81edc62ca950ddb8bad6bfe6c82d279b1ee45e7/spk_1750317963.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　陆瑾当然能看出自己这位师弟是在应付自己，但也没有再多说些什么，只是随口叮嘱了一句：“晚课别忘了做。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/10b43a2c26666306771a81be3402c815f528ae3b5af178abc36b17f9eeff6f9c/spk_1750317965.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　话毕，他便转身离开去做自己的事情了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/a01cdbb38842d1ac4c333df46e7ac29b5ea3fa7cb19f00bcca5c8e6e20ee98ef/spk_1750317971.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　目送着陆瑾离去，李昂轻吸一口气，平复了一下心情。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0adf0638339e0b367bfdb0fc687dbcd1478c162b9c373d246eb53b41dbf946ed/spk_1750317973.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　说实话，三一门的生活要比他想象中的清闲不少。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2c4eaf1bbad08d31b346be21e918079cd16e914f2969e47063853d5525164c5c/spk_1750317977.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　站桩、行炁以及早晚课，这就是李昂每天必须要做的事情。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/21907f8c1e55eadd941a67ff4e798a64f31ec8bcea5e1139bd1c22d3386149c3/spk_1750317980.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　当然也有可能是他入门没多久，所以并没有给他安排太多的事情。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/aafb70a63a53d4ae3a1429f49b1c4a77c137aeec65065428639c8a546336b1e1/spk_1750317984.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　对此，李昂并没什么不满的，倒不如说他巴不得如此。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0cac750627740998309f69fd8ef94d028c4a8f26ca53143cf5ca8ffd575712ff/spk_1750317988.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　在简单用完了午餐之后，李昂便径直去往了存放着一众道藏的藏书阁。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8efd2652377cf9ead984a2f524a96c6a10b0527f0468978a8a905aa2c3e2f4e6/spk_1750317991.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他的目的很明确，那就是翻阅《太白阴经》、《金函奇门遁甲秘笈全书》这一些有关奇门遁甲的书籍，以期能够学会这一手段。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b5c2f2500df8416b449e815a3ac381deeeb03aa21ff2c4007532ea4b548d67a3/spk_1750317995.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　在一人世界，奇门遁甲是能够使出类似术法一样的手段的。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d740dec38c9dc89b0c6165faf34f2cffc3d2777881d900b3791073a5d89c6539/spk_1750318002.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　单单一个逆生三重让李昂始终觉得有些不保险，所以才想要尝试能不能多学一门技能。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/67ca2f43b596fcfbe749309fae16086e1b6668ad56ada47f91c2a0533519ae57/spk_1750318006.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而在【入门炼炁士】所带来的特殊加成帮助下，李昂翻阅这些道藏的速度要比常人快上不少。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b7bfaf3ff96be8874fdb789244d69473bff1ddb0fae2089e1d0a68888bc4b807/spk_1750318011.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　但奇门遁甲终究是极其复杂的术数之道，想要短时间内就吃透并且领悟出一门技能，显然并不现实。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f735d60ee19fbe579af3213a209942d21c9e96268cf6f959bb09f7ca8bde0204/spk_1750318016.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“将敌人定为目标，自己站在相应的位置，就能使出对应的术法”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b3d1bd7b7afd97a52ffeef6ec0d2347d4bad3c59951dfe954461a65160b95265/spk_1750318021.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“对吗？哦对的对的.哦.不对不对”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/cdf3432876d47651bbc154c42244dfe19b0795c029c8267de45cd72560af1f26/spk_1750318025.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　看的越多，李昂就越发愁眉苦脸。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5439932b5224148cd41d9085a4fc6f7d2e408f131d8cb54b5833bbf12d06b125/spk_1750318027.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　在他看来这奇门遁甲要比什么高数、线代还要难，好在还有一些职业经验能够安慰他受伤的心灵。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ded2dd99af0eeb00f0a3531f6008dcd42af673ebffe079224b055a436e9f3b27/spk_1750318029.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【翻看道藏，职业经验+1】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/daa2f39694b9765e546c2bdccc3cb923c98f796b99beaa18843fb69ecf24601c/spk_1750318035.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【翻看道藏，职业经验+1】.'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2123d35a46cb9d167676ef1bb5bfb5cf39f2d01cc0a85117001619f356dc334f/spk_1750318037.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　时间就这样过去了三日，可别说什么武侯奇门、风后奇门了，李昂就连最普通的奇门遁甲都还有些没搞明白。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/20ceed4473705d3670f09b8f2a7e24ed2ed75bc208a319ccbcb29716f07c8bcc/spk_1750318039.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　只不过他暂时也没功夫研究这些了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/e98d1c3ec4ff5f41e3d0b5050a567ce7081407cec2b94397982717f174028e7f/spk_1750318046.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　因为今天，就是李昂的传法仪轨。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/11275671cb177e6c752fde50f68150b5d4df4f484a0db269f2a8b4c17c32e360/spk_1750318048.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '第10章 蛐蛐逆生三重'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/9273bef92c530aee5fbd1a9ed249ee32c940ea7b276c3559bd1eedd11ec11a40/spk_1750318051.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“终于到这一天了”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f7a33544be1f4df5b259e9b4f3e577b8fd86f90f80325188bdc8950879cb60ba/spk_1750318053.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　天刚微微亮，李昂就已经醒了过来，激动的心情让他实在是难以入眠。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/e9bb3e949d62f11c0aa670344e6d7414137b67183a9240c117f2921604875ce9/spk_1750318054.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　既然睡不着，那就不睡了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/e9f665b2c0bd0cf144fdecdba1f173d82f603878b37fb1d41795028b3a6607b3/spk_1750318058.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　简单洗漱一番后，他便推开房门走了出去。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c64800898518934a633d6af558b0298babe2629372fffb6d220c391e5b355c9f/spk_1750318060.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听着耳边不时传来的虫鸣声，李昂开始打起了门中传授的动功。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0e14b7e23e3a1dbccb870ef174edbc8f3b1459737f16d0bd353cdd841fd9614d/spk_1750318063.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　没什么实战能力，只能够用来活络经血。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/03dafee047d4547dbb9ee9ca7b9298bd52867ff650711a56cb6759cae187e838/spk_1750318066.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　在【平心静气】的帮助下，他的内心很快便恢复了平静。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0711483e372600451723f693b7c7152952f7e830f149364196ebe094140cc27a/spk_1750318069.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就当李昂刚刚打完一套，就发现左若童正负手站在一旁静静的看着他。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/686dfb26bb366a08e6ce890bdb0cf54f089203f7d003be7e6686fba4313bf6a9/spk_1750318072.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“师父。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/cc4727ce4006410430090c55c73ba001b5e3d6cb9b64ab1c805bf970ca6b2fcd/spk_1750318076.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '第10章 蛐蛐逆生三重'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b3f633787206354ec271b3f8273cc55a46d6c254efa1e67d890bf90fb23c03fb/spk_1750318117.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“终于到这一天了”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/fd21fb35f806dcce45fdfd2531a07be6ede91cf662fe80993c82dc5e50b877a2/spk_1750318119.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　天刚微微亮，李昂就已经醒了过来，激动的心情让他实在是难以入眠。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/9c085d45c4872ea21cafe7c43675b056c5e0444308466f341bd6bf3435d2caf7/spk_1750318120.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　既然睡不着，那就不睡了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8bb82c8e77c56adac3b34205f36a9623161d98244b9953562399fbcea28b330a/spk_1750318124.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　简单洗漱一番后，他便推开房门走了出去。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f81bc74bc8b884784782811a02a2d9d4cec62bb7da277fe5dd1d57ab93b396ed/spk_1750318126.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听着耳边不时传来的虫鸣声，李昂开始打起了门中传授的动功。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d70aec52e94bd35884c4d035a2f14b082865d3af2ee2a71ca223bae8cdcbb818/spk_1750318129.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　没什么实战能力，只能够用来活络经血。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/afc1c74001bab77c9aedf53491eb1ca8b3887ac756d2f893b82aa58ba81283cd/spk_1750318133.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　在【平心静气】的帮助下，他的内心很快便恢复了平静。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/251c6fc8ca56550d3bf850f585771c292df575fdce6e9cae317ccd52d312d6a8/spk_1750318135.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就当李昂刚刚打完一套，就发现左若童正负手站在一旁静静的看着他。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/234fd3d63c1ca872cb6e7ecf586b93763bb72f467f4051d7ad0bf85346b597fc/spk_1750318138.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“师父。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/6415a494c411b8e3d5f947f06d513be1ae51a5b2d21364a58ba7de9e30723a20/spk_1750318142.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂连忙站直身子打了声招呼。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7c2cdacc5fa24b99b831d82b1929cd92610f69e7a5c521253f288c7a9e0aad06/spk_1750318143.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“去换一身干净的衣服。”见他注意到自己，左若童开口说道，“我先带你去祭拜祖师。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b2a6ba5b7e2e0e09892b31345643bf6b516aadefbf35c29e4b4331fd3f59b99b/spk_1750318146.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“是。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/df595e82b7c3393e2ddd37f339ab88323ac498b6ed857dfe6dc3c7696e363fcf/spk_1750318152.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　按照三一门的规矩，在传法之前都需要祭拜祖师，这些事李昂前两日就和陆瑾打听清楚了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/42ad151e3a120164ac5a717415c18521ec03b0cf5a38f33fa48354ec41a9fc70/spk_1750318153.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　擦拭干净汗渍之后，他便换了身宽大的白色道袍，跟在左若童身后一路去到了祖师祠堂。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/4165b58c29b6e41f25fdb98a629c05bb3bbff8d24f6a223a54e1ba4791b082f9/spk_1750318158.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　接着在左若童的注视中，李昂十分恭敬的上了三炷香。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/46b255bcacd02cc213f47b6dae3d28a96a2d16fbec93eae8acc330891f144554/spk_1750318164.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　半个月的生活让他已经逐渐接受了自己三一门人的身份，尽管他的路子和其他三一门人不同。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/6468536c22684cfc93cc2b3b8951e4020b1a440ef2f00f8531286cd742b3ebf0/spk_1750318167.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而在祭拜完祖师后，左若童便带着李昂来到了大殿前的广场。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/81f0dd7932de58a7598aaac5f12faefaad4d4cbdae21807878fa32bcdac5c570/spk_1750318172.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　此时广场两边已经站满了三一门人。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f73b787f8ef21ddeaf416fd826fd6d415d04adc9e49a6571b7ad02b032d36917/spk_1750318176.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂老老实实的来到广场中央跪了下去，等待着自己师父的训诫。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ca2ba94d4b12a5e743a695046f1062eed4822a6aa7936fa791268cbe61324529/spk_1750318178.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　左若童坐在大殿前，语气平静的念起了三一门的门规：'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0a3b1e8e801e98824576732f51ae332cb73afbac2ac5ac7746580684ee98a4a8/spk_1750318182.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“当以至诚.”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/09bf81be704b0b96c8397413341eb0eff9b25717d9455bc2f969813c77348758/spk_1750318186.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“当守炁定神”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f6bc0702a4fe40d23078d991f1bdc2e8b5aa8dcadb371417d66059eee73199c4/spk_1750318187.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“当随事行法”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/91a07ecf9f89249b7a7cab816b25d79862129fe7d828f2edad80805bbaa92d2f/spk_1750318189.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　三一门的门规并不长，左若童看着跪倒在下方的李昂，说出了最后一句话：“这就是我三一门的律法，你要牢牢记下。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/56fb0dfa0016e814fceac2a13f167ad44eef1bcf1c31a7df199e88233426208e/spk_1750318190.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“李昂，上前来吧。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ca160f076ec29fd45ee78f795618c588e591e47e351838a02900ab5886ca7701/spk_1750318197.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　闻言，李昂站起身走上台阶，来到左若童身前跪了下去，等待着最后的传法。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/54bf157b240bd682f0e2a33f0dbdb5178a7e9886f84892b5574818de10882f4e/spk_1750318198.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　看着近在咫尺的弟子，左若童轻出一口气，随即便开始轻声述说起逆生三重的心法。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/68630546b8f469e3350f1b233fb5c38a19571c344474ff461278ccba37e072f7/spk_1750318204.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　直到最后一个字落下，李昂眼前的职业面板终于跳出了提示消息。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f9006c449ee0735d95594f3bddb55fda054b9e6c0608da64f59bddb54cc2f725/spk_1750318209.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【已就职职业，炼炁士（三一）】。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/83d2f81a1d6cfa4c3118445687d2353c4e8a9b2914a91edcbfbd091d7cac1090/spk_1750318213.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【职业：炼炁士（三一）】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/fdd7937cb21554dbd602c436c782ac6327e1328a9f7a252dff9e21a968fb1689/spk_1750318215.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【等级：1/20（0/100）】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/36f9dd35894765fe2e81117f917b813aa4ae95582880d2d59f1010964fb38cf4/spk_1750318217.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【属性加成：身体强度0.2每级、精神强度0.2每级、能量2每级】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/ef0afdb03d106607aadca32c05bef07c7962c5ccda0ab18d4a56752721f9e5c3/spk_1750318219.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【职业技能：逆生三重（入门1/100）】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/11293ecafaf707b8f90f7d721a395940dccd43ab08ab3c9fab70f60d58827e34/spk_1750318224.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【职业专长：炼精化炁、逆返先天】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/add8eec180bdc9e6b03abd2869caf300284c1d2ba121b545a6b61501dd9b0ab4/spk_1750318227.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　【转职路线：仙人】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8f1263922b47d48d06130c449681ba33262937ef971a79458511065dacadf03c/spk_1750318229.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“成成了！”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/314508b26672266e4263ab6e8d84e2e9b5212cfe34234e1262d1b261970f595e/spk_1750318231.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　感受着自己体内骤然增长了一大截的能量，李昂全身上下都不由一松。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7f9aef54bdc1e59173fa19ea95524b1f3540a4a79920b4c8c2b5fba9586022ee/spk_1750318232.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　来到一人世界半个月，先前那个世界中所带来的死亡阴影时时刻刻都笼罩在他的心头之上，而如今他终于算是勉强拥有了自保之力。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/861ec1ee8f628167ae50523f2de0c5c0ffef90c8c66f4c05b7d3d419325288e5/spk_1750318237.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　体会着内心关于逆生三重的明悟，李昂下意识的便开始运转了起来。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/070f524e39dd59aeaceef4555038526624aba5babf47dbc8893adf5d3365a3c0/spk_1750318245.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“逆生三重破关无比凶险，我先带你.”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/980e6e9ab7edf25cd6cea2e0503887ff28aa14260e72f3044ecd36cc72f04094/spk_1750318250.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　左若童正想亲自指导李昂如何修习逆生三重，声音却渐渐低了下去。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/3921f03d184f563e46bdea42c45f663c9e8761fd563d4a8fc134de2977c66e39/spk_1750318252.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　此刻这位大盈仙人一向平静的脸庞上难得露出了些许错愕。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/32f8292bb81f7bccb6eca830de5711e57269d6462ead827f3033e599aff2b33c/spk_1750318256.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而广场上的三一门人原本还在好奇为什么门长说到一半就不说了，可当看到浑身泛白的李昂时，纷纷瞪大了自己的眼睛。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8a2eb1b27bc82399ac246c61e11ffac42dc6ee2c477338daa01a5666e75f15e7/spk_1750318259.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他们就好像看到鬼了一般，不敢置信的喃喃自语道：“逆.逆生三重？！”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f6c64d1f866b60041144a77145cc5888d08a9905a0a1cd2ef82a7e9975f1ca6c/spk_1750318266.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　毫无疑问，这就是逆生三重修成第一重的表现。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/cc358546ce595ea20a61632bd4f5317618aeaeb82911565c33786c8eaea80ed5/spk_1750318270.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　但问题是'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d3c17bee97f9d6ee42e7432153135faa60d66a2cc9b627725565c712a4133708/spk_1750318273.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　眼下跪在门长身前的那位弟子，才刚刚得到逆生三重的心法啊！'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/6e82e46b437241ded14c918aeffd6169b0aad081544498b5194b8da507375f91/spk_1750318274.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　难道真有人天才至此，能够在刚得到心法的情况下，就修成第一重？！'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/a15c1170173c20609eeebdaa1578d7d5f28dd4f57800ced78f901745e1e456b0/spk_1750318278.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　陆瑾此时站在人群中，看着台阶上的李昂，脑中突然闪过了前几天自己当做是玩笑的话语。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/55ecd799dbc7b962beea8cf1cc711812c1cd3cc086adb9f8d21d75d6aad046b5/spk_1750318281.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　‘有没有可能我是万中无一的修道奇才。’'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c6917fb8646bf1571b11401e9e5b9ff788d93e61666703b963136e5cf80327f1/spk_1750318286.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　‘蛐蛐逆生三重’'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2c2459cdf6e1d9bfb03c28dc0a712f4522d73479d57f9623ce01adfcb822a76c/spk_1750318289.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　不是哥们，你来真的啊？！'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/149b33fc6b66ac78165be5f782f054b2c6517298d37554c3efab40864efb3aad/spk_1750318291.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　如此想着，这位日后的陆家家主不由张大了自己嘴巴，有些呆滞的环顾了一下四周。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0240bab375d3fd0267677d5aad35c99a20d63f0da32857add451d2a14616e8d8/spk_1750318293.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　然后他就释然了，果然不是只有他一个人觉得李昂不对劲。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0422c6ff80911ecf1b4eb7d4e33e25fcc0c3929638013e026f638af35088ca00/spk_1750318298.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　因为陆瑾的视线中，不论是似冲师叔，还是号称维玄子的澄真师兄，现在的表现都没比他好多少。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/dd7e1d358f0e2bd5f1e07a5e1d463c1bde111302b02fa29ff3b7ea6c32f74b84/spk_1750318301.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　也就只有身为门长的左若童已经平复了自己的情绪。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/badb146e516f6d2e9e9ef3497ab34ef386adf7a7fbdf143cbd2955a06fb8d341/spk_1750318308.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他注视着身前的李昂，轻轻勾起自己的嘴角，语带笑意的说道：“这么看我倒是没有做错选择。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/eabbb9efe2eb611b9117ed6949a31d305185a94ebc803bfd6e96ddba7a0369ad/spk_1750318311.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　以他的目力，自然能够看出身前的弟子是刚刚修成逆生三重，运转间还无比生涩，并不是早早就学会了藏拙等到现在一鸣惊人。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8584b20ea8a00b525b9d772beda840dbfaad6ab186e5e7a19c76ac96765ddcf4/spk_1750318317.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“先停下吧，以你现在的实力维持不了多久逆生状态。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/85f01881b2e62c42e85c06f22e89a8f439d51df308344d7abde4ad166919b638/spk_1750318324.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　左若童的声音将李昂拉回了现实，他退出逆生状态，只觉得体内一阵发虚。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f2a5a7b899c5cbbe83b7b4ca43ce36c594ffb7fc24a8e56d8103526c00429627/spk_1750318327.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　如今他体内原本充盈的炁或者说能量已经在不知不觉间消耗了许多。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/9e02838bc42b9ffc1a859a9eb205f5c80493e76db7cae8956a66fe95f5782697/spk_1750318332.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　这还是李昂第一次出现这种情况，当然这都是值得的。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/44321f661a33aa9783ae7d8c8e0e0224433849f271f45407d7655a873b4765e9/spk_1750318336.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　因为逆生三重实在是太劲了！'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c620d51664b39043fcc60d0155233a1a6b5c0a8774f8ae6c8f0782f4b2a8009f/spk_1750318339.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　用一句话概括那就是.'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d5b8725f732024621b0faec13da9588e3350b4285e48a14e2c7399ab9cd1a88c/spk_1750318341.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他要打十个！'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/1e045cc3df73fa9d0aada77a558a99ce34cc0db759a9e1e25a036f6da7e0c736/spk_1750318342.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　就在李昂内心的想法越来越放肆的时候，左若童却突然站起身走到他身前，将手搭在了他的肩膀之上。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/40064552b3e0febf17a2a55567c38e61e5b375aa13de5cb3a810225d98528390/spk_1750318344.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“不要沉迷在力量之中。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/e7c6c98afcd3b067789626473efbf53a9bd3f30d8b741063dbebc6643610ccd9/spk_1750318350.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“三一门作为玄门，修的是道，逆生三重也只是得道的手段而已。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/dc0f9cbbe978ff83a6d0fe081815ba01cd8628c3673873ba77eb6644d68a8b33/spk_1750318351.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　左若童是能够理解李昂的心情的，毕竟绝大部分三一门人在初次修成逆生三重之后都会有自傲的情绪。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/dffc030fecd5d3bab289a23c8b2d1acd560622cd29a9f5f4881e68226a35f0a8/spk_1750318355.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他也不例外。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/97ce05210fb22a8043d5887571d4c64d6ad8dc7199b992ecacd63dbc97e4aae7/spk_1750318361.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　但只要能够及时改正，这些都不是问题。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/437afed71fbd656f80978a919a24b6b47e1d94c3d78d1d6871616328985fdc85/spk_1750318362.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而作为师长，左若童能做的就是引导门人弟子不要误入歧途。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/bb5aa0b7d98943e964b93f514d90b5bb6803a41cedac31c817f7873025dbc89b/spk_1750318365.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　闻言，李昂就好似被泼了一盆冷水一般，顿时冷静了下来。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/4673a083067e801bef73da1041b790c08c7e38278dc26b9176d17cc65ba13350/spk_1750318368.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　他低下头，语气恭敬的说道：“师父的教诲，我记住了。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/7af9b30a5f36ed1f67bf31115aa07dcb6fc41a34cd9baa24fc9a8a22fe7360a2/spk_1750318372.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“只不过下一次，你破关就不要如此莽撞了。”左若童看着眼前的弟子，面容平静，“有关逆生的问题，只要我没有闭关，你可以随时来问我。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/9e5699b9da37647d310361f50410f58991d7493de2c6afd1a6be8c89597a8753/spk_1750318376.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　三一门中每一位门人的逆生三重都是左若童亲自教导的，换而言之除了似冲外，人人都是他的亲传弟子。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5fecdd7ad0a9f323973bc6749ad016970e3ffb2a7785b288ae3c355efc235403/spk_1750318383.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂自然也不例外。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/f9337374b4f136f7edae266f07f376b9aab2fcd6170baa77d5ff984d6017ee1a/spk_1750318389.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“我晓得。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/a1d0479427feefc57520f7302116ff2189c5dadc778bd2985b960b4edf6cdd81/spk_1750318391.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　传法仪轨结束，左若童收回了自己搭在李昂肩膀上的手掌，语气平和的说道：“今日想必你也累了，先回去休息吧，不要忘了做晚课。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/e94ac6ee967d30325c1a37bcfd0b752d09a143eceb083e71d32c5e4120848185/spk_1750318392.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　话毕，他便负着手离去了。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/e2ab9834522b71424afe1648db681b18909d841410bfe332f562cb121ccefe9a/spk_1750318400.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　而左若童刚走，广场上就好像炸开了锅一般变得吵闹起来。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d09bffe6d9128a329bc837754816414e0a5fc4a9682689b890d97990ed6515c5/spk_1750318402.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '第11章 【炼炁士（三一】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/e2ce5549a5472da070287357e9888707bb8552b53b7f471c4b184c8d6049e75a/spk_1750318405.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂刚刚站起身，就被窜过来的陆瑾搂住了脖子。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b3eb406f1947b9f642fa8689fe416373daddbfbcff19856b96956f8e55c83279/spk_1750318408.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　白发青年挤眉弄眼的说道：“师弟，前两日原来你不是在开玩笑啊。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/94be7707b7ec12a692cbda6d23b08354d4fab4a6a12942225dfd7aa67be1643c/spk_1750318411.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂刚想回话，一道声音便在两人身前响起。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/cd7b66debf5a00f5e5cc08334592870a639e372eaaf364a45b0761a01d09e455/spk_1750318415.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“陆瑾，你这样子成何体统，还不赶紧放开李昂。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8b60005e9d829e6f4b0bdf830fc36d0bebd812df571db73d7528ad57dfe3a12b/spk_1750318417.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　是似冲，同时跟在他身后的还有澄真。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/bb51f49ae775bb06f5fb9b8876eaea735563a9916fe81f95c9a43af6300d9032/spk_1750318421.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　面对自己师叔的训斥，陆瑾讪笑着松开了手：“似冲师叔.”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/4363f279a7c4c59d95c43271f39cdd7ffa8a6c162d4e73aaf778327a3f16c2a7/spk_1750318423.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“师叔，师兄。”看见来人，李昂恭敬的打了声招呼。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/caa1eaf25294149f9ad61b285585afa1b7a81c11f17ff15f4b03b20e275aab47/spk_1750318427.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　并没有搭理陆瑾，似冲看着身前还没入门多久的弟子，脸上露出了一抹笑容：“李昂，你可得好好修行，不要浪费了自己的天赋。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b59a8cb9526660f88695c268f06e5a098eb2d1780aaa2bdf012e061908948dcc/spk_1750318430.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　要是早知道李昂的天赋这么好，那当初左若童召集他们的时候，他肯定会想尽一切办法说服师兄留下对方。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2920442fdac33a5be0c9a9a5520e12c840928ce8223e444eb23be2f661a0ea72/spk_1750318437.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '第11章 【炼炁士（三一】'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5544a1eb402e797ec421579e52e14fd28844c3d0724837f76f69b7d468c6f26c/spk_1750318469.wav
+INFO:     11.157.10.185:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂刚刚站起身，就被窜过来的陆瑾搂住了脖子。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/bc66269df6600cd40c19c67d21c7e5046efa4160cb00f41dc42284e64a5fe3ed/spk_1750318471.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　白发青年挤眉弄眼的说道：“师弟，前两日原来你不是在开玩笑啊。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5427babc5ac87ec3d7207820b72009ac63931c3e7d06f8882938f55150850b4b/spk_1750318474.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　李昂刚想回话，一道声音便在两人身前响起。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c435cbe8da161e3ef2ae8772eec6e41b3cf5f5900f753f657c9f74b18b9605d4/spk_1750318477.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“陆瑾，你这样子成何体统，还不赶紧放开李昂。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/36a445ae5970fa143f81b7d310cfb5dee5bb8748509a408028103fba25da4a23/spk_1750318481.wav
+INFO:     11.157.10.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　是似冲，同时跟在他身后的还有澄真。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/bc58d78fc99bb7063b1c85514a9096460f1a23ef09cb77bc162073a18396e219/spk_1750318484.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　面对自己师叔的训斥，陆瑾讪笑着松开了手：“似冲师叔.”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c52ce4cefab90610795acc32975b5761ae90bf40604efd785e8dd48265909c1b/spk_1750318487.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“师叔，师兄。”看见来人，李昂恭敬的打了声招呼。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/19ef19103f627089dfdb1dbf44b8a4e27b779c84a83447271dc35a6647591eae/spk_1750318491.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　并没有搭理陆瑾，似冲看着身前还没入门多久的弟子，脸上露出了一抹笑容：“李昂，你可得好好修行，不要浪费了自己的天赋。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/5b396551e4c306684e099b898ee05e228cbe0dfed906224d6aa813388527da0c/spk_1750318494.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　要是早知道李昂的天赋这么好，那当初左若童召集他们的时候，他肯定会想尽一切办法说服师兄留下对方。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b83c2967c08c345ba9878ea8f2d50277894dc2e52c0608ec0e244785a9ff51e9/spk_1750318502.wav
+INFO:     11.157.4.187:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　好在最终师兄慧眼如炬，并没有因为年龄的问题将这年轻人拒之门外。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/00f24aff723f30e2f64cf633ca4414e047f139480a7317d05f5714f08f83d692/spk_1750318508.wav
+INFO:     11.157.3.39:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　听到似冲的关照，李昂微微点头应了一声：“师叔，我知道。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/c24ca1c50155bc81558dcbc52389687a708e50aad54ea507197815f5af6cac9e/spk_1750318513.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“你有数就好。”见他态度这么好，似冲心下更加满意了几分，“日常生活中若是有问题，你可以来找我，或者找你澄真师兄也可以。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/8ae76c8117b1853c26466dd96496fd009aa8dc4177f88e292a9242cf129382a9/spk_1750318516.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　说到这，老者身后的黑发女子上前一步，脸上挂着恬静的笑容，语气柔和的唤了一声：“师弟。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/b2de546842d53f90339726c8bb82f6ec1eea91d115084ef479edad3f748c8c6a/spk_1750318524.wav
+INFO:     11.157.2.169:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“那之后就麻烦师叔师兄了。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/2a5d61b1ea7d7ea626a21874f82c284d42204d2ed860a7c58349cc01565df30b/spk_1750318530.wav
+INFO:     11.157.3.41:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　“不麻烦，不麻烦。”'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/3d910063354e02d5cd8c535997b8c5a2e2b211e33465f360a05db875a23fdde8/spk_1750318532.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　似冲满是沟壑的老脸此刻就笑的宛如菊一般。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/afe7cb881aa935039bbe5f0e71a5e7fb7c8f2e0e8808b80a79b17c4c610b0eb4/spk_1750318534.wav
+INFO:     11.157.4.190:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　在他看来，三一门稳啦！'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/0ef60287aef8b5a0ab7c31700a075f09a28571590bf6fca22c66b54b6b84b2ea/spk_1750318537.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK
+📝 收到请求：要转换为语音的文本是: '　　上有自己的师兄大盈仙人左若童，下有陆瑾澄真这些中流砥柱。'，模型是: 'chixiaotu6'
+🗑️ 成功删除临时音频文件: /tmp/gradio/d47df8038ef4d354bfce0ce6c26ea13f31c89704eba7cb5a0eac5872ea9356f3/spk_1750318539.wav
+INFO:     11.157.2.168:0 - "POST /v1/audio/speech HTTP/1.1" 200 OK

@@ -1,0 +1,4463 @@
+>> GPT weights restored from: checkpoints/gpt.pth
+[2025-06-19 06:59:12,097] [INFO] [real_accelerator.py:239:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-06-19 06:59:14,637] [INFO] [logging.py:107:log_dist] [Rank -1] DeepSpeed info: version=0.16.8, git-hash=unknown, git-branch=unknown
+[2025-06-19 06:59:14,638] [WARNING] [config_utils.py:70:_process_deprecated_field] Config parameter mp_size is deprecated use tensor_parallel.tp_size instead
+[2025-06-19 06:59:14,639] [INFO] [logging.py:107:log_dist] [Rank -1] quantize_bits = 8 mlp_extra_grouping = False, quantize_groups = 1
+2025-06-19 06:59:21,874 WETEXT INFO found existing fst: /workspace/index-tts-api/indextts/utils/tagger_cache/zh_tn_tagger.fst
+2025-06-19 06:59:21,874 WETEXT INFO                     /workspace/index-tts-api/indextts/utils/tagger_cache/zh_tn_verbalizer.fst
+2025-06-19 06:59:21,874 WETEXT INFO skip building fst for zh_normalizer ...
+2025-06-19 06:59:22,322 WETEXT INFO found existing fst: /root/miniforge3/envs/index-tts/lib/python3.10/site-packages/tn/en_tn_tagger.fst
+2025-06-19 06:59:22,322 WETEXT INFO                     /root/miniforge3/envs/index-tts/lib/python3.10/site-packages/tn/en_tn_verbalizer.fst
+2025-06-19 06:59:22,323 WETEXT INFO skip building fst for en_normalizer ...
+>> Preload custom CUDA kernel for BigVGAN <module 'anti_alias_activation_cuda' from '/workspace/index-tts-api/indextts/BigVGAN/alias_free_activation/cuda/build/anti_alias_activation_cuda.so'>
+Removing weight norm...
+>> bigvgan weights restored from: checkpoints/bigvgan_generator.pth
+>> TextNormalizer loaded
+>> bpe model loaded from: checkpoints/bpe.model
+* Running on local URL:  http://127.0.0.1:7860
+* To create a public link, set `share=True` in `launch()`.
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 7.10 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.85 seconds
+>> Total inference time: 8.26 seconds
+>> Generated audio length: 0.68 seconds
+>> RTF: 12.1042
+>> wav file saved to: outputs/spk_1750316371.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.33 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.55 seconds
+>> Generated audio length: 1.83 seconds
+>> RTF: 0.8429
+>> wav file saved to: outputs/spk_1750316388.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.10 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.36 seconds
+>> Total inference time: 5.54 seconds
+>> Generated audio length: 7.85 seconds
+>> RTF: 0.7059
+>> wav file saved to: outputs/spk_1750316390.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.70 seconds
+>> gpt_forward_time: 0.12 seconds
+>> bigvgan_time: 0.53 seconds
+>> Total inference time: 7.37 seconds
+>> Generated audio length: 10.15 seconds
+>> RTF: 0.7255
+>> wav file saved to: outputs/spk_1750316396.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.61 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.83 seconds
+>> Generated audio length: 2.43 seconds
+>> RTF: 0.7515
+>> wav file saved to: outputs/spk_1750316404.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.54 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.36 seconds
+>> Total inference time: 4.98 seconds
+>> Generated audio length: 7.00 seconds
+>> RTF: 0.7121
+>> wav file saved to: outputs/spk_1750316407.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.50 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.72 seconds
+>> Generated audio length: 2.26 seconds
+>> RTF: 0.7606
+>> wav file saved to: outputs/spk_1750316412.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.94 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 4.17 seconds
+>> Generated audio length: 6.14 seconds
+>> RTF: 0.6791
+>> wav file saved to: outputs/spk_1750316415.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.67 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.36 seconds
+>> Total inference time: 5.12 seconds
+>> Generated audio length: 7.08 seconds
+>> RTF: 0.7227
+>> wav file saved to: outputs/spk_1750316420.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.98 seconds
+>> gpt_forward_time: 0.11 seconds
+>> bigvgan_time: 0.53 seconds
+>> Total inference time: 7.64 seconds
+>> Generated audio length: 10.67 seconds
+>> RTF: 0.7159
+>> wav file saved to: outputs/spk_1750316426.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.22 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 3.44 seconds
+>> Generated audio length: 5.08 seconds
+>> RTF: 0.6784
+>> wav file saved to: outputs/spk_1750316434.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.79 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 4.02 seconds
+>> Generated audio length: 5.80 seconds
+>> RTF: 0.6926
+>> wav file saved to: outputs/spk_1750316438.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.00 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.22 seconds
+>> Generated audio length: 2.94 seconds
+>> RTF: 0.7539
+>> wav file saved to: outputs/spk_1750316442.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.96 seconds
+>> gpt_forward_time: 0.09 seconds
+>> bigvgan_time: 0.35 seconds
+>> Total inference time: 7.43 seconds
+>> Generated audio length: 10.11 seconds
+>> RTF: 0.7349
+>> wav file saved to: outputs/spk_1750316445.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.21 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.35 seconds
+>> Total inference time: 6.67 seconds
+>> Generated audio length: 9.60 seconds
+>> RTF: 0.6946
+>> wav file saved to: outputs/spk_1750316453.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.69 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.86 seconds
+>> Generated audio length: 5.67 seconds
+>> RTF: 0.6805
+>> wav file saved to: outputs/spk_1750316461.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 7.03 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.39 seconds
+>> Total inference time: 7.52 seconds
+>> Generated audio length: 10.88 seconds
+>> RTF: 0.6914
+>> wav file saved to: outputs/spk_1750316465.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.77 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.99 seconds
+>> Generated audio length: 2.73 seconds
+>> RTF: 0.7290
+>> wav file saved to: outputs/spk_1750316474.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 8.02 seconds
+>> gpt_forward_time: 0.12 seconds
+>> bigvgan_time: 0.53 seconds
+>> Total inference time: 8.69 seconds
+>> Generated audio length: 12.03 seconds
+>> RTF: 0.7219
+>> wav file saved to: outputs/spk_1750316477.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.26 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 3.49 seconds
+>> Generated audio length: 4.91 seconds
+>> RTF: 0.7109
+>> wav file saved to: outputs/spk_1750316486.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.01 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.36 seconds
+>> Total inference time: 6.46 seconds
+>> Generated audio length: 9.22 seconds
+>> RTF: 0.7006
+>> wav file saved to: outputs/spk_1750316490.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.43 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.35 seconds
+>> Total inference time: 5.88 seconds
+>> Generated audio length: 8.28 seconds
+>> RTF: 0.7098
+>> wav file saved to: outputs/spk_1750316498.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.82 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 3.04 seconds
+>> Generated audio length: 4.35 seconds
+>> RTF: 0.6993
+>> wav file saved to: outputs/spk_1750316505.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.93 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.08 seconds
+>> Generated audio length: 4.57 seconds
+>> RTF: 0.6750
+>> wav file saved to: outputs/spk_1750316508.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.35 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.35 seconds
+>> Total inference time: 6.80 seconds
+>> Generated audio length: 9.60 seconds
+>> RTF: 0.7083
+>> wav file saved to: outputs/spk_1750316511.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.29 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 4.53 seconds
+>> Generated audio length: 6.57 seconds
+>> RTF: 0.6888
+>> wav file saved to: outputs/spk_1750316519.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.97 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.35 seconds
+>> Total inference time: 5.42 seconds
+>> Generated audio length: 6.87 seconds
+>> RTF: 0.7890
+>> wav file saved to: outputs/spk_1750316525.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.08 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.35 seconds
+>> Total inference time: 6.53 seconds
+>> Generated audio length: 9.30 seconds
+>> RTF: 0.7022
+>> wav file saved to: outputs/spk_1750316531.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.44 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.66 seconds
+>> Generated audio length: 2.13 seconds
+>> RTF: 0.7762
+>> wav file saved to: outputs/spk_1750316538.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.76 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.35 seconds
+>> Total inference time: 6.21 seconds
+>> Generated audio length: 8.83 seconds
+>> RTF: 0.7031
+>> wav file saved to: outputs/spk_1750316540.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.97 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.20 seconds
+>> Generated audio length: 2.94 seconds
+>> RTF: 0.7462
+>> wav file saved to: outputs/spk_1750316547.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.60 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.82 seconds
+>> Generated audio length: 2.39 seconds
+>> RTF: 0.7633
+>> wav file saved to: outputs/spk_1750316550.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.87 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.21 seconds
+>> Total inference time: 5.25 seconds
+>> Generated audio length: 7.59 seconds
+>> RTF: 0.6908
+>> wav file saved to: outputs/spk_1750316552.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.41 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 3.63 seconds
+>> Generated audio length: 5.33 seconds
+>> RTF: 0.6813
+>> wav file saved to: outputs/spk_1750316558.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.41 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 4.65 seconds
+>> Generated audio length: 6.74 seconds
+>> RTF: 0.6898
+>> wav file saved to: outputs/spk_1750316562.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.07 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 4.31 seconds
+>> Generated audio length: 6.14 seconds
+>> RTF: 0.7008
+>> wav file saved to: outputs/spk_1750316568.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.35 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.57 seconds
+>> Generated audio length: 2.01 seconds
+>> RTF: 0.7841
+>> wav file saved to: outputs/spk_1750316572.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.75 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.98 seconds
+>> Generated audio length: 4.18 seconds
+>> RTF: 0.7125
+>> wav file saved to: outputs/spk_1750316574.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.84 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 3.06 seconds
+>> Generated audio length: 4.27 seconds
+>> RTF: 0.7181
+>> wav file saved to: outputs/spk_1750316578.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.28 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 3.51 seconds
+>> Generated audio length: 4.86 seconds
+>> RTF: 0.7221
+>> wav file saved to: outputs/spk_1750316581.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.07 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 3.29 seconds
+>> Generated audio length: 4.78 seconds
+>> RTF: 0.6885
+>> wav file saved to: outputs/spk_1750316585.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.98 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.13 seconds
+>> Generated audio length: 4.52 seconds
+>> RTF: 0.6920
+>> wav file saved to: outputs/spk_1750316589.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.41 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.64 seconds
+>> Generated audio length: 2.05 seconds
+>> RTF: 0.8003
+>> wav file saved to: outputs/spk_1750316592.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.17 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.39 seconds
+>> Generated audio length: 1.66 seconds
+>> RTF: 0.8341
+>> wav file saved to: outputs/spk_1750316594.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.26 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.35 seconds
+>> Total inference time: 5.71 seconds
+>> Generated audio length: 8.06 seconds
+>> RTF: 0.7077
+>> wav file saved to: outputs/spk_1750316596.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.14 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.36 seconds
+>> Generated audio length: 1.71 seconds
+>> RTF: 0.7969
+>> wav file saved to: outputs/spk_1750316603.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.34 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.57 seconds
+>> Generated audio length: 1.92 seconds
+>> RTF: 0.8153
+>> wav file saved to: outputs/spk_1750316621.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.66 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.89 seconds
+>> Generated audio length: 4.01 seconds
+>> RTF: 0.7199
+>> wav file saved to: outputs/spk_1750316623.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.84 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.99 seconds
+>> Generated audio length: 4.31 seconds
+>> RTF: 0.6939
+>> wav file saved to: outputs/spk_1750316627.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.20 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.36 seconds
+>> Generated audio length: 4.78 seconds
+>> RTF: 0.7021
+>> wav file saved to: outputs/spk_1750316630.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.17 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.33 seconds
+>> Generated audio length: 4.86 seconds
+>> RTF: 0.6843
+>> wav file saved to: outputs/spk_1750316634.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.97 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.12 seconds
+>> Generated audio length: 4.52 seconds
+>> RTF: 0.6903
+>> wav file saved to: outputs/spk_1750316638.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.81 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.93 seconds
+>> Generated audio length: 2.73 seconds
+>> RTF: 0.7050
+>> wav file saved to: outputs/spk_1750316641.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.34 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.56 seconds
+>> Generated audio length: 1.83 seconds
+>> RTF: 0.8484
+>> wav file saved to: outputs/spk_1750316644.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.42 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.35 seconds
+>> Total inference time: 5.87 seconds
+>> Generated audio length: 8.19 seconds
+>> RTF: 0.7163
+>> wav file saved to: outputs/spk_1750316646.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.03 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.26 seconds
+>> Generated audio length: 1.49 seconds
+>> RTF: 0.8425
+>> wav file saved to: outputs/spk_1750316653.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.38 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.19 seconds
+>> Total inference time: 2.61 seconds
+>> Generated audio length: 3.58 seconds
+>> RTF: 0.7284
+>> wav file saved to: outputs/spk_1750316654.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.00 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.23 seconds
+>> Generated audio length: 1.41 seconds
+>> RTF: 0.8708
+>> wav file saved to: outputs/spk_1750316657.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.21 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.36 seconds
+>> Total inference time: 4.66 seconds
+>> Generated audio length: 6.31 seconds
+>> RTF: 0.7372
+>> wav file saved to: outputs/spk_1750316659.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.80 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 3.02 seconds
+>> Generated audio length: 4.39 seconds
+>> RTF: 0.6878
+>> wav file saved to: outputs/spk_1750316664.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.97 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.20 seconds
+>> Generated audio length: 2.86 seconds
+>> RTF: 0.7687
+>> wav file saved to: outputs/spk_1750316668.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.49 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.63 seconds
+>> Generated audio length: 3.80 seconds
+>> RTF: 0.6934
+>> wav file saved to: outputs/spk_1750316671.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.07 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 4.31 seconds
+>> Generated audio length: 6.19 seconds
+>> RTF: 0.6962
+>> wav file saved to: outputs/spk_1750316674.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.44 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 4.67 seconds
+>> Generated audio length: 6.83 seconds
+>> RTF: 0.6845
+>> wav file saved to: outputs/spk_1750316679.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.63 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.85 seconds
+>> Generated audio length: 4.10 seconds
+>> RTF: 0.6964
+>> wav file saved to: outputs/spk_1750316684.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.92 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.14 seconds
+>> Generated audio length: 1.28 seconds
+>> RTF: 0.8911
+>> wav file saved to: outputs/spk_1750316688.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.80 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.02 seconds
+>> Generated audio length: 1.02 seconds
+>> RTF: 0.9951
+>> wav file saved to: outputs/spk_1750316689.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.87 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.98 seconds
+>> Generated audio length: 2.69 seconds
+>> RTF: 0.7370
+>> wav file saved to: outputs/spk_1750316691.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.54 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.71 seconds
+>> Generated audio length: 5.46 seconds
+>> RTF: 0.6793
+>> wav file saved to: outputs/spk_1750316693.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.58 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.72 seconds
+>> Generated audio length: 3.88 seconds
+>> RTF: 0.7000
+>> wav file saved to: outputs/spk_1750316697.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.54 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.77 seconds
+>> Generated audio length: 2.22 seconds
+>> RTF: 0.7962
+>> wav file saved to: outputs/spk_1750316701.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.83 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.97 seconds
+>> Generated audio length: 4.31 seconds
+>> RTF: 0.6903
+>> wav file saved to: outputs/spk_1750316703.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.28 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.50 seconds
+>> Generated audio length: 3.46 seconds
+>> RTF: 0.7248
+>> wav file saved to: outputs/spk_1750316706.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 8.96 seconds
+>> gpt_forward_time: 0.13 seconds
+>> bigvgan_time: 0.38 seconds
+>> Total inference time: 9.59 seconds
+>> Generated audio length: 13.87 seconds
+>> RTF: 0.6916
+>> wav file saved to: outputs/spk_1750316709.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.50 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 2.73 seconds
+>> Generated audio length: 3.97 seconds
+>> RTF: 0.6872
+>> wav file saved to: outputs/spk_1750316720.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.34 seconds
+>> gpt_forward_time: 0.11 seconds
+>> bigvgan_time: 0.38 seconds
+>> Total inference time: 6.94 seconds
+>> Generated audio length: 9.56 seconds
+>> RTF: 0.7264
+>> wav file saved to: outputs/spk_1750316724.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.37 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.59 seconds
+>> Generated audio length: 1.96 seconds
+>> RTF: 0.8078
+>> wav file saved to: outputs/spk_1750316732.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.98 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.20 seconds
+>> Generated audio length: 1.24 seconds
+>> RTF: 0.9663
+>> wav file saved to: outputs/spk_1750316734.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.83 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.05 seconds
+>> Generated audio length: 1.15 seconds
+>> RTF: 0.9074
+>> wav file saved to: outputs/spk_1750316735.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.37 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.47 seconds
+>> Generated audio length: 1.96 seconds
+>> RTF: 0.7506
+>> wav file saved to: outputs/spk_1750316755.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.02 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.24 seconds
+>> Generated audio length: 1.54 seconds
+>> RTF: 0.8075
+>> wav file saved to: outputs/spk_1750316757.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.69 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 0.91 seconds
+>> Generated audio length: 0.94 seconds
+>> RTF: 0.9672
+>> wav file saved to: outputs/spk_1750316758.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.87 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.97 seconds
+>> Generated audio length: 1.28 seconds
+>> RTF: 0.7546
+>> wav file saved to: outputs/spk_1750316759.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.07 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.30 seconds
+>> Generated audio length: 3.16 seconds
+>> RTF: 0.7270
+>> wav file saved to: outputs/spk_1750316829.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.18 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.40 seconds
+>> Generated audio length: 3.41 seconds
+>> RTF: 0.7030
+>> wav file saved to: outputs/spk_1750316831.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.20 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.30 seconds
+>> Generated audio length: 1.79 seconds
+>> RTF: 0.7251
+>> wav file saved to: outputs/spk_1750316834.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.42 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 3.64 seconds
+>> Generated audio length: 5.29 seconds
+>> RTF: 0.6882
+>> wav file saved to: outputs/spk_1750316836.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.62 seconds
+>> gpt_forward_time: 0.09 seconds
+>> bigvgan_time: 0.36 seconds
+>> Total inference time: 5.08 seconds
+>> Generated audio length: 6.87 seconds
+>> RTF: 0.7399
+>> wav file saved to: outputs/spk_1750316840.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.08 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.23 seconds
+>> Generated audio length: 4.86 seconds
+>> RTF: 0.6647
+>> wav file saved to: outputs/spk_1750316845.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.18 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.33 seconds
+>> Generated audio length: 4.91 seconds
+>> RTF: 0.6788
+>> wav file saved to: outputs/spk_1750316849.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.69 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.91 seconds
+>> Generated audio length: 2.56 seconds
+>> RTF: 0.7460
+>> wav file saved to: outputs/spk_1750316853.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.91 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 5.15 seconds
+>> Generated audio length: 7.55 seconds
+>> RTF: 0.6816
+>> wav file saved to: outputs/spk_1750316855.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 7.56 seconds
+>> gpt_forward_time: 0.09 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 7.91 seconds
+>> Generated audio length: 11.69 seconds
+>> RTF: 0.6763
+>> wav file saved to: outputs/spk_1750316861.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.62 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.73 seconds
+>> Generated audio length: 2.39 seconds
+>> RTF: 0.7245
+>> wav file saved to: outputs/spk_1750316870.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.69 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.92 seconds
+>> Generated audio length: 4.22 seconds
+>> RTF: 0.6906
+>> wav file saved to: outputs/spk_1750316873.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.30 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.44 seconds
+>> Generated audio length: 3.58 seconds
+>> RTF: 0.6813
+>> wav file saved to: outputs/spk_1750316876.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.00 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.15 seconds
+>> Generated audio length: 4.57 seconds
+>> RTF: 0.6894
+>> wav file saved to: outputs/spk_1750316879.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.66 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 6.98 seconds
+>> Generated audio length: 10.20 seconds
+>> RTF: 0.6844
+>> wav file saved to: outputs/spk_1750316882.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.34 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 3.57 seconds
+>> Generated audio length: 4.99 seconds
+>> RTF: 0.7149
+>> wav file saved to: outputs/spk_1750316890.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.38 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.60 seconds
+>> Generated audio length: 3.71 seconds
+>> RTF: 0.7010
+>> wav file saved to: outputs/spk_1750316894.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.34 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 3.57 seconds
+>> Generated audio length: 5.16 seconds
+>> RTF: 0.6910
+>> wav file saved to: outputs/spk_1750316897.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.34 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.50 seconds
+>> Generated audio length: 5.16 seconds
+>> RTF: 0.6787
+>> wav file saved to: outputs/spk_1750316901.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.25 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.38 seconds
+>> Generated audio length: 3.46 seconds
+>> RTF: 0.6888
+>> wav file saved to: outputs/spk_1750316905.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.85 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 4.08 seconds
+>> Generated audio length: 5.93 seconds
+>> RTF: 0.6873
+>> wav file saved to: outputs/spk_1750316908.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.21 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.35 seconds
+>> Total inference time: 6.65 seconds
+>> Generated audio length: 9.60 seconds
+>> RTF: 0.6927
+>> wav file saved to: outputs/spk_1750316913.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.43 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 3.66 seconds
+>> Generated audio length: 5.21 seconds
+>> RTF: 0.7027
+>> wav file saved to: outputs/spk_1750316920.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.81 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.04 seconds
+>> Generated audio length: 2.65 seconds
+>> RTF: 0.7704
+>> wav file saved to: outputs/spk_1750316924.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.71 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.82 seconds
+>> Generated audio length: 2.56 seconds
+>> RTF: 0.7123
+>> wav file saved to: outputs/spk_1750316927.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.30 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 4.54 seconds
+>> Generated audio length: 6.66 seconds
+>> RTF: 0.6815
+>> wav file saved to: outputs/spk_1750316929.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.82 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.97 seconds
+>> Generated audio length: 4.35 seconds
+>> RTF: 0.6814
+>> wav file saved to: outputs/spk_1750316934.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.67 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.79 seconds
+>> Generated audio length: 2.52 seconds
+>> RTF: 0.7098
+>> wav file saved to: outputs/spk_1750316938.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.39 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.54 seconds
+>> Generated audio length: 5.16 seconds
+>> RTF: 0.6864
+>> wav file saved to: outputs/spk_1750316941.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.55 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.78 seconds
+>> Generated audio length: 2.30 seconds
+>> RTF: 0.7719
+>> wav file saved to: outputs/spk_1750316945.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 8.91 seconds
+>> gpt_forward_time: 0.15 seconds
+>> bigvgan_time: 0.27 seconds
+>> Total inference time: 9.49 seconds
+>> Generated audio length: 13.74 seconds
+>> RTF: 0.6906
+>> wav file saved to: outputs/spk_1750316947.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.88 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.20 seconds
+>> Total inference time: 6.22 seconds
+>> Generated audio length: 9.05 seconds
+>> RTF: 0.6874
+>> wav file saved to: outputs/spk_1750316958.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.42 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.70 seconds
+>> Generated audio length: 8.32 seconds
+>> RTF: 0.6851
+>> wav file saved to: outputs/spk_1750316964.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.61 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.83 seconds
+>> Generated audio length: 2.35 seconds
+>> RTF: 0.7794
+>> wav file saved to: outputs/spk_1750316971.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.52 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.36 seconds
+>> Total inference time: 5.98 seconds
+>> Generated audio length: 8.45 seconds
+>> RTF: 0.7075
+>> wav file saved to: outputs/spk_1750316973.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.63 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 3.87 seconds
+>> Generated audio length: 5.63 seconds
+>> RTF: 0.6864
+>> wav file saved to: outputs/spk_1750316980.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.06 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.28 seconds
+>> Generated audio length: 1.45 seconds
+>> RTF: 0.8809
+>> wav file saved to: outputs/spk_1750316985.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.22 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.32 seconds
+>> Generated audio length: 1.79 seconds
+>> RTF: 0.7387
+>> wav file saved to: outputs/spk_1750316987.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.77 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 0.98 seconds
+>> Generated audio length: 1.11 seconds
+>> RTF: 0.8877
+>> wav file saved to: outputs/spk_1750316988.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.33 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.55 seconds
+>> Generated audio length: 3.63 seconds
+>> RTF: 0.7031
+>> wav file saved to: outputs/spk_1750316990.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.19 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.41 seconds
+>> Generated audio length: 3.37 seconds
+>> RTF: 0.7153
+>> wav file saved to: outputs/spk_1750316993.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.78 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.88 seconds
+>> Generated audio length: 1.02 seconds
+>> RTF: 0.8559
+>> wav file saved to: outputs/spk_1750316996.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.11 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.33 seconds
+>> Generated audio length: 1.58 seconds
+>> RTF: 0.8409
+>> wav file saved to: outputs/spk_1750316997.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.68 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.78 seconds
+>> Generated audio length: 2.13 seconds
+>> RTF: 0.8364
+>> wav file saved to: outputs/spk_1750316999.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.63 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.75 seconds
+>> Generated audio length: 2.47 seconds
+>> RTF: 0.7057
+>> wav file saved to: outputs/spk_1750317001.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.14 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.24 seconds
+>> Generated audio length: 1.71 seconds
+>> RTF: 0.7273
+>> wav file saved to: outputs/spk_1750317003.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.18 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.41 seconds
+>> Generated audio length: 3.29 seconds
+>> RTF: 0.7324
+>> wav file saved to: outputs/spk_1750317005.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.53 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.70 seconds
+>> Generated audio length: 5.46 seconds
+>> RTF: 0.6767
+>> wav file saved to: outputs/spk_1750317008.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.86 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.13 seconds
+>> Generated audio length: 7.34 seconds
+>> RTF: 0.6990
+>> wav file saved to: outputs/spk_1750317013.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.20 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 3.43 seconds
+>> Generated audio length: 4.95 seconds
+>> RTF: 0.6932
+>> wav file saved to: outputs/spk_1750317019.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.47 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 3.70 seconds
+>> Generated audio length: 5.38 seconds
+>> RTF: 0.6890
+>> wav file saved to: outputs/spk_1750317023.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.56 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.68 seconds
+>> Generated audio length: 2.22 seconds
+>> RTF: 0.7558
+>> wav file saved to: outputs/spk_1750317027.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.29 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.46 seconds
+>> Generated audio length: 5.12 seconds
+>> RTF: 0.6749
+>> wav file saved to: outputs/spk_1750317029.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.56 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.79 seconds
+>> Generated audio length: 2.26 seconds
+>> RTF: 0.7934
+>> wav file saved to: outputs/spk_1750317033.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.93 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.10 seconds
+>> Generated audio length: 6.02 seconds
+>> RTF: 0.6815
+>> wav file saved to: outputs/spk_1750317035.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.81 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.92 seconds
+>> Generated audio length: 2.52 seconds
+>> RTF: 0.7640
+>> wav file saved to: outputs/spk_1750317039.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.06 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.19 seconds
+>> Generated audio length: 3.16 seconds
+>> RTF: 0.6928
+>> wav file saved to: outputs/spk_1750317042.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.96 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.11 seconds
+>> Generated audio length: 4.52 seconds
+>> RTF: 0.6883
+>> wav file saved to: outputs/spk_1750317044.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.73 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.84 seconds
+>> Generated audio length: 2.52 seconds
+>> RTF: 0.7326
+>> wav file saved to: outputs/spk_1750317048.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.06 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.29 seconds
+>> Generated audio length: 3.03 seconds
+>> RTF: 0.7561
+>> wav file saved to: outputs/spk_1750317050.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.77 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 1.89 seconds
+>> Generated audio length: 2.56 seconds
+>> RTF: 0.7369
+>> wav file saved to: outputs/spk_1750317052.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.70 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 3.93 seconds
+>> Generated audio length: 5.59 seconds
+>> RTF: 0.7039
+>> wav file saved to: outputs/spk_1750317054.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.68 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 4.95 seconds
+>> Generated audio length: 7.04 seconds
+>> RTF: 0.7024
+>> wav file saved to: outputs/spk_1750317058.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.66 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.89 seconds
+>> Generated audio length: 4.14 seconds
+>> RTF: 0.6986
+>> wav file saved to: outputs/spk_1750317064.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.40 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.56 seconds
+>> Generated audio length: 5.33 seconds
+>> RTF: 0.6684
+>> wav file saved to: outputs/spk_1750317068.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.36 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.46 seconds
+>> Generated audio length: 1.92 seconds
+>> RTF: 0.7612
+>> wav file saved to: outputs/spk_1750317072.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.40 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.51 seconds
+>> Generated audio length: 1.96 seconds
+>> RTF: 0.7702
+>> wav file saved to: outputs/spk_1750317074.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.59 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.76 seconds
+>> Generated audio length: 5.46 seconds
+>> RTF: 0.6886
+>> wav file saved to: outputs/spk_1750317076.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.54 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.65 seconds
+>> Generated audio length: 2.30 seconds
+>> RTF: 0.7180
+>> wav file saved to: outputs/spk_1750317081.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.38 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.49 seconds
+>> Generated audio length: 2.09 seconds
+>> RTF: 0.7106
+>> wav file saved to: outputs/spk_1750317083.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.05 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 3.29 seconds
+>> Generated audio length: 4.74 seconds
+>> RTF: 0.6942
+>> wav file saved to: outputs/spk_1750317085.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.08 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.21 seconds
+>> Generated audio length: 3.07 seconds
+>> RTF: 0.7180
+>> wav file saved to: outputs/spk_1750317088.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.89 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.01 seconds
+>> Generated audio length: 2.77 seconds
+>> RTF: 0.7254
+>> wav file saved to: outputs/spk_1750317091.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.74 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 6.04 seconds
+>> Generated audio length: 8.96 seconds
+>> RTF: 0.6743
+>> wav file saved to: outputs/spk_1750317094.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.56 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.84 seconds
+>> Generated audio length: 8.53 seconds
+>> RTF: 0.6849
+>> wav file saved to: outputs/spk_1750317101.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.22 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.37 seconds
+>> Generated audio length: 4.95 seconds
+>> RTF: 0.6818
+>> wav file saved to: outputs/spk_1750317107.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.25 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.35 seconds
+>> Generated audio length: 1.79 seconds
+>> RTF: 0.7537
+>> wav file saved to: outputs/spk_1750317111.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.06 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.16 seconds
+>> Generated audio length: 1.54 seconds
+>> RTF: 0.7546
+>> wav file saved to: outputs/spk_1750317113.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.78 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.00 seconds
+>> Generated audio length: 1.07 seconds
+>> RTF: 0.9346
+>> wav file saved to: outputs/spk_1750317115.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.29 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.52 seconds
+>> Generated audio length: 3.33 seconds
+>> RTF: 0.7582
+>> wav file saved to: outputs/spk_1750317116.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.28 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.50 seconds
+>> Generated audio length: 3.50 seconds
+>> RTF: 0.7153
+>> wav file saved to: outputs/spk_1750317120.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.88 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.98 seconds
+>> Generated audio length: 1.11 seconds
+>> RTF: 0.8799
+>> wav file saved to: outputs/spk_1750317123.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.19 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.29 seconds
+>> Generated audio length: 1.66 seconds
+>> RTF: 0.7768
+>> wav file saved to: outputs/spk_1750317124.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.76 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.88 seconds
+>> Generated audio length: 2.65 seconds
+>> RTF: 0.7106
+>> wav file saved to: outputs/spk_1750317126.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.50 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.64 seconds
+>> Generated audio length: 3.80 seconds
+>> RTF: 0.6946
+>> wav file saved to: outputs/spk_1750317128.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.16 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.38 seconds
+>> Generated audio length: 1.62 seconds
+>> RTF: 0.8542
+>> wav file saved to: outputs/spk_1750317132.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.48 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.59 seconds
+>> Generated audio length: 2.09 seconds
+>> RTF: 0.7629
+>> wav file saved to: outputs/spk_1750317133.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.37 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.51 seconds
+>> Generated audio length: 3.63 seconds
+>> RTF: 0.6920
+>> wav file saved to: outputs/spk_1750317136.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.56 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.73 seconds
+>> Generated audio length: 5.46 seconds
+>> RTF: 0.6823
+>> wav file saved to: outputs/spk_1750317139.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.99 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 4.23 seconds
+>> Generated audio length: 6.10 seconds
+>> RTF: 0.6927
+>> wav file saved to: outputs/spk_1750317143.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.80 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.95 seconds
+>> Generated audio length: 4.14 seconds
+>> RTF: 0.7130
+>> wav file saved to: outputs/spk_1750317148.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.39 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.55 seconds
+>> Generated audio length: 5.21 seconds
+>> RTF: 0.6828
+>> wav file saved to: outputs/spk_1750317151.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 7.46 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.36 seconds
+>> Total inference time: 7.91 seconds
+>> Generated audio length: 11.39 seconds
+>> RTF: 0.6947
+>> wav file saved to: outputs/spk_1750317155.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.86 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.01 seconds
+>> Generated audio length: 4.39 seconds
+>> RTF: 0.6843
+>> wav file saved to: outputs/spk_1750317165.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.69 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 4.96 seconds
+>> Generated audio length: 7.34 seconds
+>> RTF: 0.6761
+>> wav file saved to: outputs/spk_1750317168.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.98 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.11 seconds
+>> Generated audio length: 3.07 seconds
+>> RTF: 0.6853
+>> wav file saved to: outputs/spk_1750317174.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.52 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 4.78 seconds
+>> Generated audio length: 6.87 seconds
+>> RTF: 0.6962
+>> wav file saved to: outputs/spk_1750317177.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.52 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.21 seconds
+>> Total inference time: 5.86 seconds
+>> Generated audio length: 8.45 seconds
+>> RTF: 0.6937
+>> wav file saved to: outputs/spk_1750317183.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.24 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.39 seconds
+>> Generated audio length: 4.91 seconds
+>> RTF: 0.6919
+>> wav file saved to: outputs/spk_1750317189.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.49 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.65 seconds
+>> Generated audio length: 5.21 seconds
+>> RTF: 0.7009
+>> wav file saved to: outputs/spk_1750317193.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.69 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.80 seconds
+>> Generated audio length: 2.56 seconds
+>> RTF: 0.7033
+>> wav file saved to: outputs/spk_1750317197.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.48 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.70 seconds
+>> Generated audio length: 2.18 seconds
+>> RTF: 0.7797
+>> wav file saved to: outputs/spk_1750317200.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.64 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.81 seconds
+>> Generated audio length: 5.67 seconds
+>> RTF: 0.6712
+>> wav file saved to: outputs/spk_1750317202.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.01 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.19 seconds
+>> Generated audio length: 6.06 seconds
+>> RTF: 0.6919
+>> wav file saved to: outputs/spk_1750317206.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.05 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.17 seconds
+>> Generated audio length: 3.16 seconds
+>> RTF: 0.6887
+>> wav file saved to: outputs/spk_1750317211.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.09 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.21 seconds
+>> Total inference time: 5.45 seconds
+>> Generated audio length: 7.81 seconds
+>> RTF: 0.6984
+>> wav file saved to: outputs/spk_1750317214.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.83 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.09 seconds
+>> Generated audio length: 7.55 seconds
+>> RTF: 0.6746
+>> wav file saved to: outputs/spk_1750317220.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.72 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.87 seconds
+>> Generated audio length: 4.14 seconds
+>> RTF: 0.6928
+>> wav file saved to: outputs/spk_1750317227.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.19 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 3.41 seconds
+>> Generated audio length: 5.03 seconds
+>> RTF: 0.6776
+>> wav file saved to: outputs/spk_1750317230.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.44 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.58 seconds
+>> Generated audio length: 3.80 seconds
+>> RTF: 0.6800
+>> wav file saved to: outputs/spk_1750317234.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.17 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 4.40 seconds
+>> Generated audio length: 6.27 seconds
+>> RTF: 0.7017
+>> wav file saved to: outputs/spk_1750317237.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.33 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.56 seconds
+>> Generated audio length: 1.88 seconds
+>> RTF: 0.8307
+>> wav file saved to: outputs/spk_1750317242.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.62 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.85 seconds
+>> Generated audio length: 2.43 seconds
+>> RTF: 0.7613
+>> wav file saved to: outputs/spk_1750317244.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.30 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.21 seconds
+>> Total inference time: 5.63 seconds
+>> Generated audio length: 8.06 seconds
+>> RTF: 0.6987
+>> wav file saved to: outputs/spk_1750317246.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.71 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.20 seconds
+>> Total inference time: 5.03 seconds
+>> Generated audio length: 7.13 seconds
+>> RTF: 0.7066
+>> wav file saved to: outputs/spk_1750317253.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.80 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.94 seconds
+>> Generated audio length: 4.31 seconds
+>> RTF: 0.6833
+>> wav file saved to: outputs/spk_1750317259.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.66 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.77 seconds
+>> Generated audio length: 2.56 seconds
+>> RTF: 0.6931
+>> wav file saved to: outputs/spk_1750317262.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.30 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.44 seconds
+>> Generated audio length: 3.54 seconds
+>> RTF: 0.6889
+>> wav file saved to: outputs/spk_1750317264.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.55 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.72 seconds
+>> Generated audio length: 5.46 seconds
+>> RTF: 0.6809
+>> wav file saved to: outputs/spk_1750317267.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.08 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.18 seconds
+>> Generated audio length: 1.58 seconds
+>> RTF: 0.7464
+>> wav file saved to: outputs/spk_1750317272.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.60 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.78 seconds
+>> Generated audio length: 5.50 seconds
+>> RTF: 0.6860
+>> wav file saved to: outputs/spk_1750317273.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.82 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.94 seconds
+>> Generated audio length: 2.82 seconds
+>> RTF: 0.6901
+>> wav file saved to: outputs/spk_1750317278.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.10 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.19 seconds
+>> Generated audio length: 1.62 seconds
+>> RTF: 0.7367
+>> wav file saved to: outputs/spk_1750317280.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.79 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.98 seconds
+>> Generated audio length: 5.93 seconds
+>> RTF: 0.6710
+>> wav file saved to: outputs/spk_1750317282.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.93 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.08 seconds
+>> Generated audio length: 4.52 seconds
+>> RTF: 0.6804
+>> wav file saved to: outputs/spk_1750317286.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.10 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.20 seconds
+>> Generated audio length: 1.54 seconds
+>> RTF: 0.7792
+>> wav file saved to: outputs/spk_1750317290.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.83 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 1.05 seconds
+>> Generated audio length: 1.19 seconds
+>> RTF: 0.8766
+>> wav file saved to: outputs/spk_1750317292.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.42 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.53 seconds
+>> Generated audio length: 2.18 seconds
+>> RTF: 0.7036
+>> wav file saved to: outputs/spk_1750317293.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.54 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 4.81 seconds
+>> Generated audio length: 7.04 seconds
+>> RTF: 0.6828
+>> wav file saved to: outputs/spk_1750317295.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.96 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 1.19 seconds
+>> Generated audio length: 1.37 seconds
+>> RTF: 0.8686
+>> wav file saved to: outputs/spk_1750317301.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.91 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.03 seconds
+>> Generated audio length: 2.86 seconds
+>> RTF: 0.7116
+>> wav file saved to: outputs/spk_1750317303.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.02 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.21 seconds
+>> Generated audio length: 6.02 seconds
+>> RTF: 0.6990
+>> wav file saved to: outputs/spk_1750317305.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.80 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.92 seconds
+>> Generated audio length: 2.82 seconds
+>> RTF: 0.6835
+>> wav file saved to: outputs/spk_1750317310.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.84 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 5.08 seconds
+>> Generated audio length: 7.38 seconds
+>> RTF: 0.6882
+>> wav file saved to: outputs/spk_1750317313.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.92 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.10 seconds
+>> Generated audio length: 5.93 seconds
+>> RTF: 0.6914
+>> wav file saved to: outputs/spk_1750317319.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.69 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.80 seconds
+>> Generated audio length: 2.47 seconds
+>> RTF: 0.7275
+>> wav file saved to: outputs/spk_1750317323.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.60 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.71 seconds
+>> Generated audio length: 2.39 seconds
+>> RTF: 0.7155
+>> wav file saved to: outputs/spk_1750317326.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.41 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.52 seconds
+>> Generated audio length: 2.13 seconds
+>> RTF: 0.7142
+>> wav file saved to: outputs/spk_1750317328.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.81 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.99 seconds
+>> Generated audio length: 5.89 seconds
+>> RTF: 0.6772
+>> wav file saved to: outputs/spk_1750317330.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.06 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.34 seconds
+>> Generated audio length: 7.59 seconds
+>> RTF: 0.7035
+>> wav file saved to: outputs/spk_1750317335.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.87 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.04 seconds
+>> Generated audio length: 5.89 seconds
+>> RTF: 0.6864
+>> wav file saved to: outputs/spk_1750317342.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.13 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.23 seconds
+>> Generated audio length: 1.41 seconds
+>> RTF: 0.8746
+>> wav file saved to: outputs/spk_1750317346.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.13 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.23 seconds
+>> Generated audio length: 1.58 seconds
+>> RTF: 0.7782
+>> wav file saved to: outputs/spk_1750317348.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.27 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.43 seconds
+>> Generated audio length: 5.12 seconds
+>> RTF: 0.6703
+>> wav file saved to: outputs/spk_1750317350.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.40 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.55 seconds
+>> Generated audio length: 3.75 seconds
+>> RTF: 0.6779
+>> wav file saved to: outputs/spk_1750317353.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.80 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.95 seconds
+>> Generated audio length: 4.22 seconds
+>> RTF: 0.6980
+>> wav file saved to: outputs/spk_1750317357.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.40 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.56 seconds
+>> Generated audio length: 5.21 seconds
+>> RTF: 0.6840
+>> wav file saved to: outputs/spk_1750317360.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.73 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.89 seconds
+>> Generated audio length: 5.12 seconds
+>> RTF: 0.7595
+>> wav file saved to: outputs/spk_1750317364.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.97 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.25 seconds
+>> Generated audio length: 7.64 seconds
+>> RTF: 0.6874
+>> wav file saved to: outputs/spk_1750317369.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.87 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.04 seconds
+>> Generated audio length: 5.89 seconds
+>> RTF: 0.6868
+>> wav file saved to: outputs/spk_1750317375.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.81 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.90 seconds
+>> Generated audio length: 1.07 seconds
+>> RTF: 0.8466
+>> wav file saved to: outputs/spk_1750317380.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.06 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.17 seconds
+>> Generated audio length: 1.45 seconds
+>> RTF: 0.8037
+>> wav file saved to: outputs/spk_1750317415.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.88 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.97 seconds
+>> Generated audio length: 1.24 seconds
+>> RTF: 0.7858
+>> wav file saved to: outputs/spk_1750317417.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.57 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.74 seconds
+>> Generated audio length: 5.50 seconds
+>> RTF: 0.6800
+>> wav file saved to: outputs/spk_1750317418.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.07 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 3.30 seconds
+>> Generated audio length: 4.48 seconds
+>> RTF: 0.7373
+>> wav file saved to: outputs/spk_1750317423.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.60 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.75 seconds
+>> Generated audio length: 3.88 seconds
+>> RTF: 0.7075
+>> wav file saved to: outputs/spk_1750317427.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.77 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.94 seconds
+>> Generated audio length: 5.76 seconds
+>> RTF: 0.6837
+>> wav file saved to: outputs/spk_1750317430.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.80 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.95 seconds
+>> Generated audio length: 4.27 seconds
+>> RTF: 0.6915
+>> wav file saved to: outputs/spk_1750317435.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.75 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.02 seconds
+>> Generated audio length: 7.30 seconds
+>> RTF: 0.6883
+>> wav file saved to: outputs/spk_1750317438.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.58 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.75 seconds
+>> Generated audio length: 5.50 seconds
+>> RTF: 0.6807
+>> wav file saved to: outputs/spk_1750317444.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.73 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 0.94 seconds
+>> Generated audio length: 0.98 seconds
+>> RTF: 0.9624
+>> wav file saved to: outputs/spk_1750317449.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.23 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 4.47 seconds
+>> Generated audio length: 6.49 seconds
+>> RTF: 0.6887
+>> wav file saved to: outputs/spk_1750317450.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.85 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 4.08 seconds
+>> Generated audio length: 5.80 seconds
+>> RTF: 0.7031
+>> wav file saved to: outputs/spk_1750317455.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.25 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.36 seconds
+>> Generated audio length: 1.88 seconds
+>> RTF: 0.7225
+>> wav file saved to: outputs/spk_1750317460.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.48 seconds
+>> gpt_forward_time: 0.07 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 4.74 seconds
+>> Generated audio length: 6.95 seconds
+>> RTF: 0.6809
+>> wav file saved to: outputs/spk_1750317462.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.82 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.97 seconds
+>> Generated audio length: 4.22 seconds
+>> RTF: 0.7035
+>> wav file saved to: outputs/spk_1750317468.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.83 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.98 seconds
+>> Generated audio length: 4.22 seconds
+>> RTF: 0.7056
+>> wav file saved to: outputs/spk_1750317471.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 7.76 seconds
+>> gpt_forward_time: 0.09 seconds
+>> bigvgan_time: 0.07 seconds
+>> Total inference time: 8.11 seconds
+>> Generated audio length: 11.48 seconds
+>> RTF: 0.7065
+>> wav file saved to: outputs/spk_1750317475.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.04 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.14 seconds
+>> Generated audio length: 1.49 seconds
+>> RTF: 0.7633
+>> wav file saved to: outputs/spk_1750317484.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.19 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.29 seconds
+>> Generated audio length: 1.75 seconds
+>> RTF: 0.7379
+>> wav file saved to: outputs/spk_1750317486.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.45 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.59 seconds
+>> Generated audio length: 3.63 seconds
+>> RTF: 0.7131
+>> wav file saved to: outputs/spk_1750317488.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.80 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 6.10 seconds
+>> Generated audio length: 8.96 seconds
+>> RTF: 0.6805
+>> wav file saved to: outputs/spk_1750317491.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.93 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.15 seconds
+>> Generated audio length: 2.90 seconds
+>> RTF: 0.7408
+>> wav file saved to: outputs/spk_1750317499.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.49 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.63 seconds
+>> Generated audio length: 3.84 seconds
+>> RTF: 0.6848
+>> wav file saved to: outputs/spk_1750317501.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.69 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.83 seconds
+>> Generated audio length: 4.10 seconds
+>> RTF: 0.6918
+>> wav file saved to: outputs/spk_1750317505.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.94 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.21 seconds
+>> Generated audio length: 7.55 seconds
+>> RTF: 0.6904
+>> wav file saved to: outputs/spk_1750317508.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.29 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.48 seconds
+>> Generated audio length: 6.27 seconds
+>> RTF: 0.7145
+>> wav file saved to: outputs/spk_1750317514.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.85 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 4.08 seconds
+>> Generated audio length: 5.85 seconds
+>> RTF: 0.6976
+>> wav file saved to: outputs/spk_1750317519.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.21 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.41 seconds
+>> Generated audio length: 6.49 seconds
+>> RTF: 0.6793
+>> wav file saved to: outputs/spk_1750317524.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.31 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.47 seconds
+>> Generated audio length: 5.12 seconds
+>> RTF: 0.6778
+>> wav file saved to: outputs/spk_1750317529.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.02 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 3.25 seconds
+>> Generated audio length: 4.69 seconds
+>> RTF: 0.6929
+>> wav file saved to: outputs/spk_1750317533.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.84 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.94 seconds
+>> Generated audio length: 1.15 seconds
+>> RTF: 0.8144
+>> wav file saved to: outputs/spk_1750317537.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.98 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.10 seconds
+>> Generated audio length: 2.90 seconds
+>> RTF: 0.7244
+>> wav file saved to: outputs/spk_1750317538.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.90 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.02 seconds
+>> Generated audio length: 2.94 seconds
+>> RTF: 0.6863
+>> wav file saved to: outputs/spk_1750317541.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.21 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.34 seconds
+>> Generated audio length: 3.37 seconds
+>> RTF: 0.6945
+>> wav file saved to: outputs/spk_1750317544.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.73 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.21 seconds
+>> Total inference time: 5.10 seconds
+>> Generated audio length: 7.38 seconds
+>> RTF: 0.6911
+>> wav file saved to: outputs/spk_1750317546.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.01 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.11 seconds
+>> Generated audio length: 1.45 seconds
+>> RTF: 0.7618
+>> wav file saved to: outputs/spk_1750317553.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.81 seconds
+>> gpt_forward_time: 0.07 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.08 seconds
+>> Generated audio length: 7.30 seconds
+>> RTF: 0.6961
+>> wav file saved to: outputs/spk_1750317554.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.87 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.02 seconds
+>> Generated audio length: 4.52 seconds
+>> RTF: 0.6687
+>> wav file saved to: outputs/spk_1750317560.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.53 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.67 seconds
+>> Generated audio length: 3.80 seconds
+>> RTF: 0.7029
+>> wav file saved to: outputs/spk_1750317564.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.63 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 4.90 seconds
+>> Generated audio length: 7.08 seconds
+>> RTF: 0.6913
+>> wav file saved to: outputs/spk_1750317567.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.07 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.30 seconds
+>> Generated audio length: 3.24 seconds
+>> RTF: 0.7081
+>> wav file saved to: outputs/spk_1750317573.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.80 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 5.04 seconds
+>> Generated audio length: 7.17 seconds
+>> RTF: 0.7028
+>> wav file saved to: outputs/spk_1750317576.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.05 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.32 seconds
+>> Generated audio length: 7.42 seconds
+>> RTF: 0.7161
+>> wav file saved to: outputs/spk_1750317582.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.36 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.49 seconds
+>> Generated audio length: 3.58 seconds
+>> RTF: 0.6956
+>> wav file saved to: outputs/spk_1750317588.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.20 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.30 seconds
+>> Generated audio length: 1.75 seconds
+>> RTF: 0.7454
+>> wav file saved to: outputs/spk_1750317591.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.20 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.30 seconds
+>> Generated audio length: 1.75 seconds
+>> RTF: 0.7458
+>> wav file saved to: outputs/spk_1750317593.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.16 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.29 seconds
+>> Generated audio length: 3.24 seconds
+>> RTF: 0.7057
+>> wav file saved to: outputs/spk_1750317594.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.57 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.74 seconds
+>> Generated audio length: 5.46 seconds
+>> RTF: 0.6848
+>> wav file saved to: outputs/spk_1750317597.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.58 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.75 seconds
+>> Generated audio length: 5.46 seconds
+>> RTF: 0.6866
+>> wav file saved to: outputs/spk_1750317602.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.75 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.90 seconds
+>> Generated audio length: 4.22 seconds
+>> RTF: 0.6862
+>> wav file saved to: outputs/spk_1750317606.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.74 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.86 seconds
+>> Generated audio length: 2.56 seconds
+>> RTF: 0.7252
+>> wav file saved to: outputs/spk_1750317610.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.45 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.59 seconds
+>> Generated audio length: 3.75 seconds
+>> RTF: 0.6907
+>> wav file saved to: outputs/spk_1750317612.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.10 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.32 seconds
+>> Generated audio length: 3.11 seconds
+>> RTF: 0.7452
+>> wav file saved to: outputs/spk_1750317615.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.93 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 6.23 seconds
+>> Generated audio length: 9.13 seconds
+>> RTF: 0.6828
+>> wav file saved to: outputs/spk_1750317618.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.61 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.73 seconds
+>> Generated audio length: 2.35 seconds
+>> RTF: 0.7364
+>> wav file saved to: outputs/spk_1750317625.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.84 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.96 seconds
+>> Generated audio length: 2.69 seconds
+>> RTF: 0.7285
+>> wav file saved to: outputs/spk_1750317627.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.76 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.03 seconds
+>> Generated audio length: 7.25 seconds
+>> RTF: 0.6930
+>> wav file saved to: outputs/spk_1750317630.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.74 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.89 seconds
+>> Generated audio length: 4.18 seconds
+>> RTF: 0.6913
+>> wav file saved to: outputs/spk_1750317636.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.08 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 4.32 seconds
+>> Generated audio length: 6.36 seconds
+>> RTF: 0.6797
+>> wav file saved to: outputs/spk_1750317639.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.76 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.03 seconds
+>> Generated audio length: 7.21 seconds
+>> RTF: 0.6974
+>> wav file saved to: outputs/spk_1750317644.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.17 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.27 seconds
+>> Generated audio length: 1.71 seconds
+>> RTF: 0.7432
+>> wav file saved to: outputs/spk_1750317650.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.67 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.21 seconds
+>> Total inference time: 5.08 seconds
+>> Generated audio length: 7.00 seconds
+>> RTF: 0.7260
+>> wav file saved to: outputs/spk_1750317652.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.71 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.80 seconds
+>> Generated audio length: 0.98 seconds
+>> RTF: 0.8181
+>> wav file saved to: outputs/spk_1750317658.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.53 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.66 seconds
+>> Generated audio length: 3.75 seconds
+>> RTF: 0.7095
+>> wav file saved to: outputs/spk_1750317659.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.25 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.39 seconds
+>> Generated audio length: 3.46 seconds
+>> RTF: 0.6908
+>> wav file saved to: outputs/spk_1750317662.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.33 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.50 seconds
+>> Generated audio length: 5.12 seconds
+>> RTF: 0.6827
+>> wav file saved to: outputs/spk_1750317665.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.22 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.35 seconds
+>> Generated audio length: 3.37 seconds
+>> RTF: 0.6967
+>> wav file saved to: outputs/spk_1750317669.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.43 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+/workspace/index-tts-api/indextts/utils/front.py:391: RuntimeWarning: The tokens length of sentence exceeds limit: 80, Tokens in sentence: ['▁', '说', '▁', '实', '▁', '话', '▁', '李', '▁', '昂', '▁', '也', '▁', '没', '▁', '有', '▁', '想', '▁', '到', '▁', '这', '▁', '位', '▁', '一', '▁', '直', '▁', '在', '▁', '下', '▁', '院', '▁', '盯', '▁', '着', '▁', '自', '▁', '己', '▁', '的', '▁', '师', '▁', '兄', '▁', '居', '▁', '然', '▁', '就', '▁', '是', '▁', '原', '▁', '著', '▁', '后', '▁', '续', '▁', '剧', '▁', '情', '▁', '中', '▁', '的', '▁', '那', '▁', '位', '▁', '陆', '▁', '家', '▁'].Maybe unexpected behavior
+  warnings.warn(
+>> Total inference time: 3.60 seconds
+>> Generated audio length: 5.29 seconds
+>> RTF: 0.6797
+>> wav file saved to: outputs/spk_1750317672.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.03 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.16 seconds
+>> Generated audio length: 3.03 seconds
+>> RTF: 0.7136
+>> wav file saved to: outputs/spk_1750317676.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.12 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.28 seconds
+>> Generated audio length: 4.74 seconds
+>> RTF: 0.6918
+>> wav file saved to: outputs/spk_1750317678.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.20 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.36 seconds
+>> Generated audio length: 4.91 seconds
+>> RTF: 0.6839
+>> wav file saved to: outputs/spk_1750317682.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.40 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.21 seconds
+>> Total inference time: 5.77 seconds
+>> Generated audio length: 8.28 seconds
+>> RTF: 0.6967
+>> wav file saved to: outputs/spk_1750317686.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.90 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.02 seconds
+>> Generated audio length: 2.94 seconds
+>> RTF: 0.6868
+>> wav file saved to: outputs/spk_1750317693.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.78 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.89 seconds
+>> Generated audio length: 2.65 seconds
+>> RTF: 0.7162
+>> wav file saved to: outputs/spk_1750317695.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.56 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.67 seconds
+>> Generated audio length: 2.30 seconds
+>> RTF: 0.7237
+>> wav file saved to: outputs/spk_1750317698.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.95 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.22 seconds
+>> Generated audio length: 7.51 seconds
+>> RTF: 0.6952
+>> wav file saved to: outputs/spk_1750317700.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.58 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 0.80 seconds
+>> Generated audio length: 0.77 seconds
+>> RTF: 1.0433
+>> wav file saved to: outputs/spk_1750317706.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.71 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.82 seconds
+>> Generated audio length: 2.52 seconds
+>> RTF: 0.7225
+>> wav file saved to: outputs/spk_1750317707.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.82 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.21 seconds
+>> Total inference time: 5.16 seconds
+>> Generated audio length: 7.30 seconds
+>> RTF: 0.7072
+>> wav file saved to: outputs/spk_1750317710.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.18 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.37 seconds
+>> Generated audio length: 6.53 seconds
+>> RTF: 0.6702
+>> wav file saved to: outputs/spk_1750317716.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.97 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.10 seconds
+>> Generated audio length: 2.99 seconds
+>> RTF: 0.7032
+>> wav file saved to: outputs/spk_1750317721.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.42 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.53 seconds
+>> Generated audio length: 2.09 seconds
+>> RTF: 0.7302
+>> wav file saved to: outputs/spk_1750317724.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.59 seconds
+>> gpt_forward_time: 0.09 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 6.95 seconds
+>> Generated audio length: 9.94 seconds
+>> RTF: 0.6990
+>> wav file saved to: outputs/spk_1750317726.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.33 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.49 seconds
+>> Generated audio length: 5.08 seconds
+>> RTF: 0.6878
+>> wav file saved to: outputs/spk_1750317734.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.84 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.02 seconds
+>> Generated audio length: 5.89 seconds
+>> RTF: 0.6829
+>> wav file saved to: outputs/spk_1750317738.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.89 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.04 seconds
+>> Generated audio length: 4.35 seconds
+>> RTF: 0.6994
+>> wav file saved to: outputs/spk_1750317742.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.79 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.91 seconds
+>> Generated audio length: 2.73 seconds
+>> RTF: 0.6993
+>> wav file saved to: outputs/spk_1750317746.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.14 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.27 seconds
+>> Generated audio length: 2.94 seconds
+>> RTF: 0.7699
+>> wav file saved to: outputs/spk_1750317766.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.42 seconds
+>> gpt_forward_time: 0.07 seconds
+>> bigvgan_time: 0.21 seconds
+>> Total inference time: 4.79 seconds
+>> Generated audio length: 6.87 seconds
+>> RTF: 0.6970
+>> wav file saved to: outputs/spk_1750317769.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.02 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.21 seconds
+>> Generated audio length: 6.27 seconds
+>> RTF: 0.6708
+>> wav file saved to: outputs/spk_1750317775.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.91 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.03 seconds
+>> Generated audio length: 2.86 seconds
+>> RTF: 0.7113
+>> wav file saved to: outputs/spk_1750317780.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.42 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.53 seconds
+>> Generated audio length: 2.13 seconds
+>> RTF: 0.7173
+>> wav file saved to: outputs/spk_1750317782.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.56 seconds
+>> gpt_forward_time: 0.09 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 6.88 seconds
+>> Generated audio length: 9.86 seconds
+>> RTF: 0.6986
+>> wav file saved to: outputs/spk_1750317784.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.30 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.46 seconds
+>> Generated audio length: 5.03 seconds
+>> RTF: 0.6881
+>> wav file saved to: outputs/spk_1750317792.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.84 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.02 seconds
+>> Generated audio length: 5.89 seconds
+>> RTF: 0.6828
+>> wav file saved to: outputs/spk_1750317796.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.18 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.33 seconds
+>> Generated audio length: 4.69 seconds
+>> RTF: 0.7105
+>> wav file saved to: outputs/spk_1750317801.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.19 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.32 seconds
+>> Generated audio length: 3.16 seconds
+>> RTF: 0.7347
+>> wav file saved to: outputs/spk_1750317805.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.76 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.90 seconds
+>> Generated audio length: 4.22 seconds
+>> RTF: 0.6874
+>> wav file saved to: outputs/spk_1750317808.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.75 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.87 seconds
+>> Generated audio length: 2.60 seconds
+>> RTF: 0.7173
+>> wav file saved to: outputs/spk_1750317811.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.06 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.19 seconds
+>> Generated audio length: 3.11 seconds
+>> RTF: 0.7036
+>> wav file saved to: outputs/spk_1750317814.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.93 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.06 seconds
+>> Generated audio length: 2.94 seconds
+>> RTF: 0.6994
+>> wav file saved to: outputs/spk_1750317816.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.89 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.16 seconds
+>> Generated audio length: 7.47 seconds
+>> RTF: 0.6913
+>> wav file saved to: outputs/spk_1750317819.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.68 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.79 seconds
+>> Generated audio length: 2.52 seconds
+>> RTF: 0.7125
+>> wav file saved to: outputs/spk_1750317825.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.90 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.05 seconds
+>> Generated audio length: 4.48 seconds
+>> RTF: 0.6816
+>> wav file saved to: outputs/spk_1750317827.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.09 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.28 seconds
+>> Generated audio length: 6.40 seconds
+>> RTF: 0.6695
+>> wav file saved to: outputs/spk_1750317831.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.14 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.27 seconds
+>> Generated audio length: 3.20 seconds
+>> RTF: 0.7093
+>> wav file saved to: outputs/spk_1750317836.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.62 seconds
+>> gpt_forward_time: 0.07 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 4.89 seconds
+>> Generated audio length: 7.08 seconds
+>> RTF: 0.6902
+>> wav file saved to: outputs/spk_1750317839.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.47 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.62 seconds
+>> Generated audio length: 3.80 seconds
+>> RTF: 0.6890
+>> wav file saved to: outputs/spk_1750317845.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.69 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.81 seconds
+>> Generated audio length: 2.52 seconds
+>> RTF: 0.7184
+>> wav file saved to: outputs/spk_1750317848.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.86 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.14 seconds
+>> Generated audio length: 7.34 seconds
+>> RTF: 0.7003
+>> wav file saved to: outputs/spk_1750317850.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.82 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.00 seconds
+>> Generated audio length: 5.89 seconds
+>> RTF: 0.6787
+>> wav file saved to: outputs/spk_1750317856.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.87 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.99 seconds
+>> Generated audio length: 2.86 seconds
+>> RTF: 0.6963
+>> wav file saved to: outputs/spk_1750317861.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.95 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.08 seconds
+>> Generated audio length: 2.99 seconds
+>> RTF: 0.6951
+>> wav file saved to: outputs/spk_1750317863.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.86 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.95 seconds
+>> Generated audio length: 1.15 seconds
+>> RTF: 0.8233
+>> wav file saved to: outputs/spk_1750317866.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.80 seconds
+>> gpt_forward_time: 0.09 seconds
+>> bigvgan_time: 0.21 seconds
+>> Total inference time: 5.12 seconds
+>> Generated audio length: 7.17 seconds
+>> RTF: 0.7143
+>> wav file saved to: outputs/spk_1750317867.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.88 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 4.05 seconds
+>> Generated audio length: 6.06 seconds
+>> RTF: 0.6687
+>> wav file saved to: outputs/spk_1750317873.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.35 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.45 seconds
+>> Generated audio length: 1.96 seconds
+>> RTF: 0.7390
+>> wav file saved to: outputs/spk_1750317878.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.45 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 3.69 seconds
+>> Generated audio length: 5.42 seconds
+>> RTF: 0.6805
+>> wav file saved to: outputs/spk_1750317880.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.05 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 3.28 seconds
+>> Generated audio length: 4.65 seconds
+>> RTF: 0.7051
+>> wav file saved to: outputs/spk_1750317884.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.58 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.87 seconds
+>> Generated audio length: 8.49 seconds
+>> RTF: 0.6916
+>> wav file saved to: outputs/spk_1750317888.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.93 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.02 seconds
+>> Generated audio length: 1.32 seconds
+>> RTF: 0.7748
+>> wav file saved to: outputs/spk_1750317895.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.39 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.53 seconds
+>> Generated audio length: 3.75 seconds
+>> RTF: 0.6737
+>> wav file saved to: outputs/spk_1750317896.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.47 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 2.71 seconds
+>> Generated audio length: 3.67 seconds
+>> RTF: 0.7381
+>> wav file saved to: outputs/spk_1750317899.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.59 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.70 seconds
+>> Generated audio length: 2.26 seconds
+>> RTF: 0.7526
+>> wav file saved to: outputs/spk_1750317903.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.28 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.42 seconds
+>> Generated audio length: 3.46 seconds
+>> RTF: 0.6996
+>> wav file saved to: outputs/spk_1750317905.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.61 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.79 seconds
+>> Generated audio length: 5.55 seconds
+>> RTF: 0.6828
+>> wav file saved to: outputs/spk_1750317908.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.54 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.68 seconds
+>> Generated audio length: 3.88 seconds
+>> RTF: 0.6909
+>> wav file saved to: outputs/spk_1750317912.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.50 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.66 seconds
+>> Generated audio length: 5.38 seconds
+>> RTF: 0.6809
+>> wav file saved to: outputs/spk_1750317916.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.07 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.19 seconds
+>> Generated audio length: 3.16 seconds
+>> RTF: 0.6946
+>> wav file saved to: outputs/spk_1750317920.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.02 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.21 seconds
+>> Generated audio length: 6.06 seconds
+>> RTF: 0.6942
+>> wav file saved to: outputs/spk_1750317922.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.78 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.93 seconds
+>> Generated audio length: 4.27 seconds
+>> RTF: 0.6861
+>> wav file saved to: outputs/spk_1750317928.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.75 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.07 seconds
+>> Total inference time: 5.02 seconds
+>> Generated audio length: 7.08 seconds
+>> RTF: 0.7086
+>> wav file saved to: outputs/spk_1750317931.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.02 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 1.12 seconds
+>> Generated audio length: 1.45 seconds
+>> RTF: 0.7728
+>> wav file saved to: outputs/spk_1750317937.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.45 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.59 seconds
+>> Generated audio length: 3.71 seconds
+>> RTF: 0.6967
+>> wav file saved to: outputs/spk_1750317939.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 7.58 seconds
+>> gpt_forward_time: 0.09 seconds
+>> bigvgan_time: 0.07 seconds
+>> Total inference time: 7.93 seconds
+>> Generated audio length: 11.48 seconds
+>> RTF: 0.6909
+>> wav file saved to: outputs/spk_1750317942.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.62 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.79 seconds
+>> Generated audio length: 5.59 seconds
+>> RTF: 0.6778
+>> wav file saved to: outputs/spk_1750317951.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.09 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.22 seconds
+>> Generated audio length: 3.16 seconds
+>> RTF: 0.7033
+>> wav file saved to: outputs/spk_1750317955.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.27 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.41 seconds
+>> Generated audio length: 3.37 seconds
+>> RTF: 0.7138
+>> wav file saved to: outputs/spk_1750317958.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.54 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.66 seconds
+>> Generated audio length: 2.26 seconds
+>> RTF: 0.7321
+>> wav file saved to: outputs/spk_1750317961.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.43 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.54 seconds
+>> Generated audio length: 2.13 seconds
+>> RTF: 0.7211
+>> wav file saved to: outputs/spk_1750317963.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.10 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.38 seconds
+>> Generated audio length: 7.59 seconds
+>> RTF: 0.7088
+>> wav file saved to: outputs/spk_1750317965.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.84 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.96 seconds
+>> Generated audio length: 2.73 seconds
+>> RTF: 0.7188
+>> wav file saved to: outputs/spk_1750317971.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.72 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.87 seconds
+>> Generated audio length: 4.14 seconds
+>> RTF: 0.6938
+>> wav file saved to: outputs/spk_1750317973.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.30 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.44 seconds
+>> Generated audio length: 3.54 seconds
+>> RTF: 0.6881
+>> wav file saved to: outputs/spk_1750317977.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.78 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.93 seconds
+>> Generated audio length: 4.35 seconds
+>> RTF: 0.6742
+>> wav file saved to: outputs/spk_1750317980.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.66 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.81 seconds
+>> Generated audio length: 4.10 seconds
+>> RTF: 0.6863
+>> wav file saved to: outputs/spk_1750317984.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.76 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.90 seconds
+>> Generated audio length: 4.27 seconds
+>> RTF: 0.6808
+>> wav file saved to: outputs/spk_1750317988.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.22 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.39 seconds
+>> Generated audio length: 4.91 seconds
+>> RTF: 0.6900
+>> wav file saved to: outputs/spk_1750317991.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.95 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 6.25 seconds
+>> Generated audio length: 9.00 seconds
+>> RTF: 0.6947
+>> wav file saved to: outputs/spk_1750317995.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.16 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.31 seconds
+>> Generated audio length: 4.74 seconds
+>> RTF: 0.6991
+>> wav file saved to: outputs/spk_1750318002.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.85 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.03 seconds
+>> Generated audio length: 5.97 seconds
+>> RTF: 0.6745
+>> wav file saved to: outputs/spk_1750318006.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.27 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.46 seconds
+>> Generated audio length: 6.57 seconds
+>> RTF: 0.6795
+>> wav file saved to: outputs/spk_1750318011.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.72 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 4.99 seconds
+>> Generated audio length: 7.17 seconds
+>> RTF: 0.6962
+>> wav file saved to: outputs/spk_1750318016.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.90 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.06 seconds
+>> Generated audio length: 4.48 seconds
+>> RTF: 0.6822
+>> wav file saved to: outputs/spk_1750318021.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.82 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.94 seconds
+>> Generated audio length: 2.65 seconds
+>> RTF: 0.7339
+>> wav file saved to: outputs/spk_1750318025.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.75 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 1.86 seconds
+>> Generated audio length: 2.65 seconds
+>> RTF: 0.7048
+>> wav file saved to: outputs/spk_1750318027.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.26 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 4.52 seconds
+>> Generated audio length: 6.44 seconds
+>> RTF: 0.7012
+>> wav file saved to: outputs/spk_1750318029.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.69 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.80 seconds
+>> Generated audio length: 2.56 seconds
+>> RTF: 0.7048
+>> wav file saved to: outputs/spk_1750318035.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.71 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.83 seconds
+>> Generated audio length: 2.56 seconds
+>> RTF: 0.7143
+>> wav file saved to: outputs/spk_1750318037.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.35 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.64 seconds
+>> Generated audio length: 8.23 seconds
+>> RTF: 0.6848
+>> wav file saved to: outputs/spk_1750318039.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.71 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.83 seconds
+>> Generated audio length: 2.52 seconds
+>> RTF: 0.7267
+>> wav file saved to: outputs/spk_1750318046.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.02 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.14 seconds
+>> Generated audio length: 2.90 seconds
+>> RTF: 0.7388
+>> wav file saved to: outputs/spk_1750318048.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.43 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.53 seconds
+>> Generated audio length: 2.18 seconds
+>> RTF: 0.7053
+>> wav file saved to: outputs/spk_1750318051.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.98 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.08 seconds
+>> Generated audio length: 1.41 seconds
+>> RTF: 0.7706
+>> wav file saved to: outputs/spk_1750318053.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.14 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.29 seconds
+>> Generated audio length: 4.78 seconds
+>> RTF: 0.6891
+>> wav file saved to: outputs/spk_1750318054.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.08 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.18 seconds
+>> Generated audio length: 1.62 seconds
+>> RTF: 0.7292
+>> wav file saved to: outputs/spk_1750318058.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.06 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.19 seconds
+>> Generated audio length: 3.20 seconds
+>> RTF: 0.6835
+>> wav file saved to: outputs/spk_1750318060.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.78 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.93 seconds
+>> Generated audio length: 4.31 seconds
+>> RTF: 0.6795
+>> wav file saved to: outputs/spk_1750318063.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.72 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.84 seconds
+>> Generated audio length: 2.65 seconds
+>> RTF: 0.6964
+>> wav file saved to: outputs/spk_1750318066.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.50 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.64 seconds
+>> Generated audio length: 3.93 seconds
+>> RTF: 0.6730
+>> wav file saved to: outputs/spk_1750318069.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.14 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.30 seconds
+>> Generated audio length: 4.91 seconds
+>> RTF: 0.6724
+>> wav file saved to: outputs/spk_1750318072.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.52 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 0.74 seconds
+>> Generated audio length: 0.68 seconds
+>> RTF: 1.0818
+>> wav file saved to: outputs/spk_1750318076.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.37 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.48 seconds
+>> Generated audio length: 2.01 seconds
+>> RTF: 0.7374
+>> wav file saved to: outputs/spk_1750318117.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.87 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.96 seconds
+>> Generated audio length: 1.19 seconds
+>> RTF: 0.8050
+>> wav file saved to: outputs/spk_1750318119.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.29 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.45 seconds
+>> Generated audio length: 5.16 seconds
+>> RTF: 0.6684
+>> wav file saved to: outputs/spk_1750318120.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.40 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.50 seconds
+>> Generated audio length: 2.01 seconds
+>> RTF: 0.7491
+>> wav file saved to: outputs/spk_1750318124.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.02 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.15 seconds
+>> Generated audio length: 3.07 seconds
+>> RTF: 0.7005
+>> wav file saved to: outputs/spk_1750318126.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.01 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.16 seconds
+>> Generated audio length: 4.69 seconds
+>> RTF: 0.6738
+>> wav file saved to: outputs/spk_1750318129.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.87 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.99 seconds
+>> Generated audio length: 2.90 seconds
+>> RTF: 0.6857
+>> wav file saved to: outputs/spk_1750318133.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.54 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.04 seconds
+>> Total inference time: 2.69 seconds
+>> Generated audio length: 3.97 seconds
+>> RTF: 0.6779
+>> wav file saved to: outputs/spk_1750318135.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.38 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 3.62 seconds
+>> Generated audio length: 5.25 seconds
+>> RTF: 0.6889
+>> wav file saved to: outputs/spk_1750318138.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.50 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 0.71 seconds
+>> Generated audio length: 0.60 seconds
+>> RTF: 1.1915
+>> wav file saved to: outputs/spk_1750318142.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.80 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.91 seconds
+>> Generated audio length: 2.73 seconds
+>> RTF: 0.7011
+>> wav file saved to: outputs/spk_1750318143.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.76 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 4.99 seconds
+>> Generated audio length: 7.30 seconds
+>> RTF: 0.6842
+>> wav file saved to: outputs/spk_1750318146.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.73 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.82 seconds
+>> Generated audio length: 0.94 seconds
+>> RTF: 0.8720
+>> wav file saved to: outputs/spk_1750318152.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.23 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.42 seconds
+>> Generated audio length: 6.57 seconds
+>> RTF: 0.6729
+>> wav file saved to: outputs/spk_1750318153.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.50 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.69 seconds
+>> Generated audio length: 6.95 seconds
+>> RTF: 0.6746
+>> wav file saved to: outputs/spk_1750318158.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.46 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.60 seconds
+>> Generated audio length: 3.80 seconds
+>> RTF: 0.6848
+>> wav file saved to: outputs/spk_1750318164.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.10 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.29 seconds
+>> Generated audio length: 6.36 seconds
+>> RTF: 0.6749
+>> wav file saved to: outputs/spk_1750318167.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.10 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.25 seconds
+>> Generated audio length: 4.74 seconds
+>> RTF: 0.6869
+>> wav file saved to: outputs/spk_1750318172.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.88 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.01 seconds
+>> Generated audio length: 2.82 seconds
+>> RTF: 0.7128
+>> wav file saved to: outputs/spk_1750318176.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.00 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.15 seconds
+>> Generated audio length: 4.61 seconds
+>> RTF: 0.6835
+>> wav file saved to: outputs/spk_1750318178.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.88 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.17 seconds
+>> Total inference time: 3.10 seconds
+>> Generated audio length: 4.44 seconds
+>> RTF: 0.6984
+>> wav file saved to: outputs/spk_1750318182.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.87 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.96 seconds
+>> Generated audio length: 1.15 seconds
+>> RTF: 0.8367
+>> wav file saved to: outputs/spk_1750318186.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.82 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.92 seconds
+>> Generated audio length: 1.15 seconds
+>> RTF: 0.7975
+>> wav file saved to: outputs/spk_1750318187.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.79 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.89 seconds
+>> Generated audio length: 1.07 seconds
+>> RTF: 0.8343
+>> wav file saved to: outputs/spk_1750318189.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.55 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.84 seconds
+>> Generated audio length: 8.53 seconds
+>> RTF: 0.6850
+>> wav file saved to: outputs/spk_1750318190.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.97 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.07 seconds
+>> Generated audio length: 1.37 seconds
+>> RTF: 0.7813
+>> wav file saved to: outputs/spk_1750318197.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.14 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.32 seconds
+>> Generated audio length: 6.27 seconds
+>> RTF: 0.6888
+>> wav file saved to: outputs/spk_1750318198.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.22 seconds
+>> gpt_forward_time: 0.05 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.41 seconds
+>> Generated audio length: 6.44 seconds
+>> RTF: 0.6847
+>> wav file saved to: outputs/spk_1750318204.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.20 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.36 seconds
+>> Generated audio length: 4.82 seconds
+>> RTF: 0.6966
+>> wav file saved to: outputs/spk_1750318209.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.44 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.56 seconds
+>> Generated audio length: 2.13 seconds
+>> RTF: 0.7291
+>> wav file saved to: outputs/spk_1750318213.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.41 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.52 seconds
+>> Generated audio length: 2.05 seconds
+>> RTF: 0.7409
+>> wav file saved to: outputs/spk_1750318215.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.89 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.01 seconds
+>> Generated audio length: 2.82 seconds
+>> RTF: 0.7136
+>> wav file saved to: outputs/spk_1750318217.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.84 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.02 seconds
+>> Generated audio length: 5.85 seconds
+>> RTF: 0.6871
+>> wav file saved to: outputs/spk_1750318219.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.42 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.56 seconds
+>> Generated audio length: 3.71 seconds
+>> RTF: 0.6896
+>> wav file saved to: outputs/spk_1750318224.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.75 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.87 seconds
+>> Generated audio length: 2.69 seconds
+>> RTF: 0.6966
+>> wav file saved to: outputs/spk_1750318227.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.16 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.27 seconds
+>> Generated audio length: 1.75 seconds
+>> RTF: 0.7239
+>> wav file saved to: outputs/spk_1750318229.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.65 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.18 seconds
+>> Total inference time: 0.87 seconds
+>> Generated audio length: 0.85 seconds
+>> RTF: 1.0206
+>> wav file saved to: outputs/spk_1750318231.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.64 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.81 seconds
+>> Generated audio length: 5.72 seconds
+>> RTF: 0.6668
+>> wav file saved to: outputs/spk_1750318232.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.55 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.20 seconds
+>> Total inference time: 6.90 seconds
+>> Generated audio length: 10.15 seconds
+>> RTF: 0.6796
+>> wav file saved to: outputs/spk_1750318237.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.35 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.51 seconds
+>> Generated audio length: 5.16 seconds
+>> RTF: 0.6802
+>> wav file saved to: outputs/spk_1750318245.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.82 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.93 seconds
+>> Generated audio length: 2.73 seconds
+>> RTF: 0.7084
+>> wav file saved to: outputs/spk_1750318250.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.21 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.37 seconds
+>> Generated audio length: 4.99 seconds
+>> RTF: 0.6746
+>> wav file saved to: outputs/spk_1750318252.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.96 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.11 seconds
+>> Generated audio length: 4.65 seconds
+>> RTF: 0.6697
+>> wav file saved to: outputs/spk_1750318256.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.51 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.80 seconds
+>> Generated audio length: 8.32 seconds
+>> RTF: 0.6966
+>> wav file saved to: outputs/spk_1750318259.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.12 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.27 seconds
+>> Generated audio length: 4.78 seconds
+>> RTF: 0.6846
+>> wav file saved to: outputs/spk_1750318266.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.26 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.39 seconds
+>> Generated audio length: 3.46 seconds
+>> RTF: 0.6927
+>> wav file saved to: outputs/spk_1750318270.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.74 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.83 seconds
+>> Generated audio length: 0.94 seconds
+>> RTF: 0.8813
+>> wav file saved to: outputs/spk_1750318273.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.06 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.21 seconds
+>> Generated audio length: 4.74 seconds
+>> RTF: 0.6788
+>> wav file saved to: outputs/spk_1750318274.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.02 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.18 seconds
+>> Generated audio length: 4.74 seconds
+>> RTF: 0.6713
+>> wav file saved to: outputs/spk_1750318278.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.90 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.08 seconds
+>> Generated audio length: 6.06 seconds
+>> RTF: 0.6741
+>> wav file saved to: outputs/spk_1750318281.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.13 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.26 seconds
+>> Generated audio length: 3.29 seconds
+>> RTF: 0.6886
+>> wav file saved to: outputs/spk_1750318286.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.96 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.06 seconds
+>> Generated audio length: 1.45 seconds
+>> RTF: 0.7299
+>> wav file saved to: outputs/spk_1750318289.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.81 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.92 seconds
+>> Generated audio length: 2.56 seconds
+>> RTF: 0.7504
+>> wav file saved to: outputs/spk_1750318291.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.87 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.05 seconds
+>> Generated audio length: 5.97 seconds
+>> RTF: 0.6788
+>> wav file saved to: outputs/spk_1750318293.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.52 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.66 seconds
+>> Generated audio length: 3.93 seconds
+>> RTF: 0.6774
+>> wav file saved to: outputs/spk_1750318298.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.41 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.69 seconds
+>> Generated audio length: 8.02 seconds
+>> RTF: 0.7091
+>> wav file saved to: outputs/spk_1750318301.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.49 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.63 seconds
+>> Generated audio length: 3.80 seconds
+>> RTF: 0.6923
+>> wav file saved to: outputs/spk_1750318308.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.46 seconds
+>> gpt_forward_time: 0.09 seconds
+>> bigvgan_time: 0.21 seconds
+>> Total inference time: 4.87 seconds
+>> Generated audio length: 6.49 seconds
+>> RTF: 0.7503
+>> wav file saved to: outputs/spk_1750318311.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.05 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 6.35 seconds
+>> Generated audio length: 9.30 seconds
+>> RTF: 0.6827
+>> wav file saved to: outputs/spk_1750318317.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.67 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.81 seconds
+>> Generated audio length: 4.05 seconds
+>> RTF: 0.6941
+>> wav file saved to: outputs/spk_1750318324.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.87 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 4.04 seconds
+>> Generated audio length: 5.85 seconds
+>> RTF: 0.6917
+>> wav file saved to: outputs/spk_1750318327.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.14 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.30 seconds
+>> Generated audio length: 4.82 seconds
+>> RTF: 0.6847
+>> wav file saved to: outputs/spk_1750318332.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.47 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.61 seconds
+>> Generated audio length: 3.63 seconds
+>> RTF: 0.7203
+>> wav file saved to: outputs/spk_1750318336.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.55 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.66 seconds
+>> Generated audio length: 2.30 seconds
+>> RTF: 0.7216
+>> wav file saved to: outputs/spk_1750318339.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.25 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.35 seconds
+>> Generated audio length: 1.79 seconds
+>> RTF: 0.7538
+>> wav file saved to: outputs/spk_1750318341.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.11 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.21 seconds
+>> Generated audio length: 1.58 seconds
+>> RTF: 0.7646
+>> wav file saved to: outputs/spk_1750318342.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.93 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.20 seconds
+>> Generated audio length: 7.47 seconds
+>> RTF: 0.6963
+>> wav file saved to: outputs/spk_1750318344.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.10 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.20 seconds
+>> Generated audio length: 1.58 seconds
+>> RTF: 0.7618
+>> wav file saved to: outputs/spk_1750318350.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.92 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.07 seconds
+>> Generated audio length: 4.57 seconds
+>> RTF: 0.6731
+>> wav file saved to: outputs/spk_1750318351.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 4.85 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.12 seconds
+>> Generated audio length: 7.38 seconds
+>> RTF: 0.6935
+>> wav file saved to: outputs/spk_1750318355.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.73 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.82 seconds
+>> Generated audio length: 1.02 seconds
+>> RTF: 0.7972
+>> wav file saved to: outputs/spk_1750318361.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.79 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.92 seconds
+>> Generated audio length: 2.77 seconds
+>> RTF: 0.6909
+>> wav file saved to: outputs/spk_1750318362.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.85 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.00 seconds
+>> Generated audio length: 4.44 seconds
+>> RTF: 0.6750
+>> wav file saved to: outputs/spk_1750318365.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.78 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.93 seconds
+>> Generated audio length: 4.35 seconds
+>> RTF: 0.6726
+>> wav file saved to: outputs/spk_1750318368.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.02 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.18 seconds
+>> Generated audio length: 4.65 seconds
+>> RTF: 0.6828
+>> wav file saved to: outputs/spk_1750318372.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.46 seconds
+>> gpt_forward_time: 0.12 seconds
+>> bigvgan_time: 0.27 seconds
+>> Total inference time: 7.02 seconds
+>> Generated audio length: 9.60 seconds
+>> RTF: 0.7309
+>> wav file saved to: outputs/spk_1750318376.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 5.37 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 5.65 seconds
+>> Generated audio length: 8.06 seconds
+>> RTF: 0.7008
+>> wav file saved to: outputs/spk_1750318383.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.12 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.22 seconds
+>> Generated audio length: 1.58 seconds
+>> RTF: 0.7734
+>> wav file saved to: outputs/spk_1750318389.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 0.72 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 0.81 seconds
+>> Generated audio length: 0.98 seconds
+>> RTF: 0.8268
+>> wav file saved to: outputs/spk_1750318391.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 6.46 seconds
+>> gpt_forward_time: 0.08 seconds
+>> bigvgan_time: 0.06 seconds
+>> Total inference time: 6.78 seconds
+>> Generated audio length: 9.90 seconds
+>> RTF: 0.6848
+>> wav file saved to: outputs/spk_1750318392.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.27 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 1.38 seconds
+>> Generated audio length: 1.96 seconds
+>> RTF: 0.7019
+>> wav file saved to: outputs/spk_1750318400.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.98 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.13 seconds
+>> Generated audio length: 4.31 seconds
+>> RTF: 0.7254
+>> wav file saved to: outputs/spk_1750318402.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 1.93 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.05 seconds
+>> Generated audio length: 2.86 seconds
+>> RTF: 0.7165
+>> wav file saved to: outputs/spk_1750318405.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.16 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.29 seconds
+>> Generated audio length: 3.29 seconds
+>> RTF: 0.6960
+>> wav file saved to: outputs/spk_1750318408.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 3.01 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 3.16 seconds
+>> Generated audio length: 4.69 seconds
+>> RTF: 0.6735
+>> wav file saved to: outputs/spk_1750318411.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.22 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.35 seconds
+>> Generated audio length: 3.41 seconds
+>> RTF: 0.6890
+>> wav file saved to: outputs/spk_1750318415.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.68 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.82 seconds
+>> Generated audio length: 4.01 seconds
+>> RTF: 0.7029
+>> wav file saved to: outputs/spk_1750318417.wav
+>> start inference...
+>> Reference audio length: 6.81 seconds
+>> gpt_gen_time: 2.05 seconds
+>> gpt_forward_time: 0.04 seconds
+>> bigvgan_time: 0.03 seconds
+>> Total inference time: 2.17 seconds
