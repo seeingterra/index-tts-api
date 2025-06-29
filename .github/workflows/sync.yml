@@ -9,7 +9,7 @@ on:
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
-       steps:
+    steps:
       # 这个 Action 需要先 checkout 你自己的仓库
       - uses: actions/checkout@v4
         with:
