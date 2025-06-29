@@ -2,22 +2,20 @@
 name: Sync Fork
 
 on:
-  push: # push 时触发, 主要是为了测试配置有没有问题
+  push:
   schedule:
-     - cron: '0 7 * * *' # 每天 UTC 时间 7:00 运行
+     - cron: '0 7 * * *'
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
     permissions:
-      contents: write    # 允许推送代码，修改仓库文件，也包括操作标签和Release
-      packages: write    # 允许推送 Docker 镜像到 GitHub 容器注册表
-      actions: read      # 允许查看工作流执行状态和日志
-      issues: write      # 允许创建、编辑和关闭问题
-      pull-requests: write # 允许创建和合并拉取请求
+      contents: write
+      pull-requests: write
     steps:
       - uses: TG908/fork-sync@v1.6.3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }} # 将 github_token 改为 token
-          owner: index-tts # fork 的上游仓库 user
-          head: main # fork 的上游仓库 branch
-          base: main # 本地仓库 branch
+          token: ${{ secrets.GITHUB_TOKEN }}
+          owner: index-tts    # 正确：上游仓库的所有者是 index-tts
+          repo: index-tts     # 新增：明确指定上游仓库的名称是 index-tts
+          head: main          # 上游仓库的分支
+          base: main          # 你自己仓库的分支
