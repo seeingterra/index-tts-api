@@ -63,7 +63,7 @@ WEBUI_PID=""
 # --- 步骤 1: 启动并等待 WebUI ---
 if ! $WEBUI_ALREADY_RUNNING; then
     echo "启动 WebUI..."
-    stdbuf -oL -eL /workspace/index-tts-api/start_webui.sh 2>&1 | tee logs/webui.log &
+    stdbuf -oL -eL ./start_webui.sh 2>&1 | tee logs/webui.log &
     WEBUI_PID=$!
 
     echo "监控 WebUI 启动状态，等待其完成后再启动 API..."
@@ -90,7 +90,7 @@ fi
 API_PID=""
 if ! $API_ALREADY_RUNNING; then
     echo "启动 API..."
-    stdbuf -oL -eL /workspace/index-tts-api/start_api.sh 2>&1 | tee logs/api.log &
+    stdbuf -oL -eL ./start_api.sh 2>&1 | tee logs/api.log &
     API_PID=$!
 else
     echo "API 已在运行，跳过启动。"
