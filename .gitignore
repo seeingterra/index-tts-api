@@ -16,3 +16,4 @@ checkpoints/config.yaml
 *.py[cod]
 *.egg-info/
 .venv
+fastapi_app/logs/*
