@@ -26,14 +26,29 @@ MAX_CACHE_SIZE = int(os.getenv("MAX_CACHE_SIZE", "100")) # 最大缓存条目数
 # 键是请求的哈希，值是音频内容的bytes
 in_memory_cache = OrderedDict()
 
-MODEL_PROMPT_MAP = {
-    "chixiaotu": "model_wav/chixiaotu.wav",
-    "chixiaotu2" : "model_wav/chixiaotushanghaijiguanqiang.wav",
-    "chixiaotu3" : "model_wav/chixiaotu3.wav",   #上海话+普通话合集
-    "chixiaotu5" : "model_wav/cxt5.wav",   #上海话+普通话合集abs
-    "chixiaotu6" : "model_wav/cxt6.wav",   #上海话+普通话合集
-    "chixiaotu4" : "model_wav/cxt4.wav"   #上海话+普通话合集
-}
+MODEL_PROMPT_MAP = {}
+def load_model_prompt_map():
+    """
+    动态加载 model_wav 目录下的所有 .wav 和 .m4a 文件，并生成 MODEL_PROMPT_MAP。
+    键是文件名（不含扩展名），值是文件的相对路径。
+    """
+    model_wav_dir = "model_wav"
+    supported_extensions = (".wav", ".m4a")  # 支持的文件扩展名
+    if not os.path.isdir(model_wav_dir):
+        print(f"⚠️ 警告：'{model_wav_dir}' 目录不存在，无法加载任何模型参考语音。")
+        return {}
+
+    prompt_map = {}
+    for filename in os.listdir(model_wav_dir):
+        if filename.lower().endswith(supported_extensions):
+            model_name = os.path.splitext(filename)[0]
+            prompt_map[model_name] = os.path.join(model_wav_dir, filename)
+            print(f"  - 发现模型: '{model_name}' -> '{prompt_map[model_name]}'")
+    
+    if not prompt_map:
+        print(f"⚠️ 警告：在 '{model_wav_dir}' 目录中没有找到任何支持的音频文件 ({', '.join(supported_extensions)})。")
+        
+    return prompt_map
 
 DEFAULT_PROMPT_AUDIO_PATH = "model_wav/default_prompt.wav"
 
@@ -47,8 +62,13 @@ def call_gradio_with_retry(client, *args, **kwargs):
 
 @app.on_event("startup")
 def initialize():
-    global gradio_client
-    print("🚀 尝试连接 Gradio 后端服务...")
+    global gradio_client, MODEL_PROMPT_MAP
+    print("🚀 正在初始化服务...")
+    
+    # 动态加载模型参考语音
+    print("🔍 开始加载模型参考语音...")
+    MODEL_PROMPT_MAP = load_model_prompt_map()
+    print("✅ 模型参考语音加载完成。")
     for attempt in range(5):
         try:
             gradio_client = Client(GRADIO_URL)
