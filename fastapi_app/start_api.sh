@@ -5,6 +5,8 @@ rm -rf /workspace/index-tts-api/outputs/*
 cd /tmp/ && find . -empty -type d -delete 
 
 rm -rf /tmp/gradio/* 
+
+cd /workspace/index-tts-api/fastapi_app/
 source $(conda info --base)/etc/profile.d/conda.sh
 conda activate index-tts
 python main.py
