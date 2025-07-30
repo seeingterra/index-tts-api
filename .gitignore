@@ -17,3 +17,4 @@ checkpoints/config.yaml
 *.egg-info/
 .venv
 fastapi_app/logs/*
+fastapi_app/model_wav/*
