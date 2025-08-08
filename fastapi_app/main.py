@@ -248,7 +248,6 @@ async def update_activity_timestamp(request: Request, call_next):
     """中间件，在每个请求处理后更新活动时间戳。"""
     global last_activity_time
     last_activity_time = time.time()
-    print(f"\n\n 🚨 当前 last_activity_time 的值为： {last_activity_time} \n\n")
     response = await call_next(request)
     return response
 
