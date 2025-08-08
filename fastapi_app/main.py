@@ -67,7 +67,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 # --- 新增：用于记录被拒绝的 WebSocket 连接的中间件 ---
-ALLOWED_ORIGINS = {"http://localhost:19100"}
+ALLOWED_ORIGINS = {"http://localhost:19100", "http://hdcotd--8010.ap-shanghai.cloudstudio.work"}
 
 @app.middleware("http")
 async def log_denied_websocket_connections(request: Request, call_next):
@@ -83,7 +83,7 @@ async def log_denied_websocket_connections(request: Request, call_next):
 # 配置 CORS 中间件
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:19100"],  # 允许来自指定源的请求
+    allow_origins=["http://localhost:19100", "http://hdcotd--8010.ap-shanghai.cloudstudio.work"],  # 允许来自指定源的请求
     allow_credentials=True, # 允许携带 cookie
     allow_methods=["*"],  # 允许所有 HTTP 方法
     allow_headers=["*"],  # 允许所有 HTTP 请求头
