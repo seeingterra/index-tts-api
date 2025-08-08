@@ -253,7 +253,7 @@ async def monitor_inactivity():
             # 重置计时器，防止在下一个周期立即重复发送
             last_activity_time = time.time()
         else:
-             print(f"🚨 服务已记录空闲时间 {idle_time:.2f} 秒 (当前连接数: {len(websocket_manager.active_connections)}) ======")
+             print(f"🚨 服务已记录空闲时间 {idle_time:.2f} 秒 (当前连接数: {len(websocket_manager.active_connections)}) ======", flush=True)
 
 # --- 新增部分：自动发送请求 ---
 
