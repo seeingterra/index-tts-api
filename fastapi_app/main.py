@@ -66,6 +66,20 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
+# --- 新增：用于记录被拒绝的 WebSocket 连接的中间件 ---
+ALLOWED_ORIGINS = {"http://localhost:19100"}
+
+@app.middleware("http")
+async def log_denied_websocket_connections(request: Request, call_next):
+    if request.scope["type"] == "websocket":
+        origin = request.headers.get("origin")
+        if origin not in ALLOWED_ORIGINS:
+            print(f"[CORS] ❌ 拒绝了来自未经授权的源 <{origin}> 的 WebSocket 连接请求。", flush=True)
+    
+    response = await call_next(request)
+    return response
+# --- 中间件结束 ---
+
 # 配置 CORS 中间件
 app.add_middleware(
     CORSMiddleware,
@@ -272,10 +286,19 @@ async def send_startup_request():
     request_url = f"http://{host}:{port}/v1/audio/speech"
     headers = {"Content-Type": "application/json"}
     
-    # 构造请求体
+    # 动态构造请求体
+    # 检查 MODEL_PROMPT_MAP 是否有已加载的模型
+    if MODEL_PROMPT_MAP:
+        # 使用列表中的第一个模型
+        first_model_name = next(iter(MODEL_PROMPT_MAP))
+    else:
+        # 如果没有找到任何模型，则使用一个默认的备用名称
+        first_model_name = "default_model"
+        print("⚠️ 警告：未在 model_wav 目录中找到任何模型，将使用默认模型名进行启动测试。")
+
     payload = {
-        "model": "chixiaotu6", 
-        "input": "您好。"
+        "model": first_model_name, 
+        "input": "您好，欢迎使用。"
     }
     
     try:
