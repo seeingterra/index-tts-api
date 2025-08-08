@@ -2,6 +2,7 @@ import os
 import time
 import hashlib
 from collections import OrderedDict
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, Response, HTTPException
 from fastapi.responses import JSONResponse
 from gradio_client import Client, handle_file
@@ -12,9 +13,60 @@ import uvicorn
 import asyncio
 import httpx # 导入 httpx 用于发送 HTTP 请求
 
+# 1. 导入新的 WebSocket 管理器
+from websocket_manager import router as websocket_router, manager as websocket_manager
+
 load_dotenv()
 
-app = FastAPI()
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup
+    global gradio_client, MODEL_PROMPT_MAP
+    print("🚀 正在初始化服务...")
+    
+    # 动态加载模型参考语音
+    print("🔍 开始加载模型参考语音...")
+    MODEL_PROMPT_MAP = load_model_prompt_map()
+    print("✅ 模型参考语音加载完成。")
+
+    # 打印 API 和 WebSocket 地址
+    host = os.getenv("UVICORN_HOST", "127.0.0.1")
+    port = int(os.getenv("UVICORN_PORT", "8010"))
+    print(f"\n🎉 服务已启动！")
+    print(f"🔗 API 文档 (Swagger UI): http://{host}:{port}/docs")
+    print(f"🔌 WebSocket 连接地址: ws://{host}:{port}/ws\n")
+
+    for attempt in range(5):
+        try:
+            gradio_client = Client(GRADIO_URL)
+            print(f"✅ Gradio 客户端连接成功！尝试次数: {attempt + 1}")
+            # 连接成功后，作为后台任务启动自动请求
+            asyncio.create_task(send_startup_request())
+            break
+        except Exception as e:
+            print(f"❌ Gradio 客户端连接失败 (尝试 {attempt + 1}/5): {e}")
+            await asyncio.sleep(2)
+    if not gradio_client:
+        print("🚨 警告：Gradio 客户端初始化失败，服务可能无法正常工作。" )
+    
+    # 启动后台监控任务
+    monitor_task = asyncio.create_task(monitor_inactivity())
+    
+    yield
+    
+    # Shutdown
+    print("🔌 正在关闭服务...")
+    monitor_task.cancel()
+    try:
+        await monitor_task
+    except asyncio.CancelledError:
+        print("✅ 后台监控任务已成功取消。")
+
+
+app = FastAPI(lifespan=lifespan)
+
+# 2. 将 WebSocket 路由集成到主应用中
+app.include_router(websocket_router)
 
 GRADIO_URL = os.getenv("GRADIO_URL", "http://127.0.0.1:7860/")
 
@@ -60,26 +112,6 @@ class SpeechRequest(BaseModel):
 def call_gradio_with_retry(client, *args, **kwargs):
     return client.predict(*args, **kwargs)
 
-@app.on_event("startup")
-def initialize():
-    global gradio_client, MODEL_PROMPT_MAP
-    print("🚀 正在初始化服务...")
-    
-    # 动态加载模型参考语音
-    print("🔍 开始加载模型参考语音...")
-    MODEL_PROMPT_MAP = load_model_prompt_map()
-    print("✅ 模型参考语音加载完成。")
-    for attempt in range(5):
-        try:
-            gradio_client = Client(GRADIO_URL)
-            print(f"✅ Gradio 客户端连接成功！尝试次数: {attempt + 1}")
-            break
-        except Exception as e:
-            print(f"❌ Gradio 客户端连接失败 (尝试 {attempt + 1}/5): {e}")
-            time.sleep(2)
-    if not gradio_client:
-        print("🚨 警告：Gradio 客户端初始化失败，服务可能无法正常工作。")
-
 @app.post('/v1/audio/speech')
 async def create_speech(speech_request: SpeechRequest):
     try:
@@ -105,12 +137,12 @@ async def create_speech(speech_request: SpeechRequest):
             prompt_file_path = DEFAULT_PROMPT_AUDIO_PATH
             # 注意：这里需要检查文件是否存在，如果不存在，即使是默认路径也应报错
             if not os.path.exists(os.path.join(os.getcwd(), prompt_file_path)):
-                raise HTTPException(status_code=400, detail=f"不支持的模型 '{speech_request.model}' 且默认参考语音文件 '{DEFAULT_PROMPT_AUDIO_PATH}' 未找到。请确保 'model_wav' 目录存在且包含该文件。")
+                raise HTTPException(status_code=400, detail=f"不支持的模型 '{speech_request.model}' 且默认参考语音文件 '{DEFAULT_PROMPT_AUDIO_PATH}' 未找到。请确保 'model_wav' 目录存在且包含该文件。" )
         
         full_prompt_path = os.path.join(os.getcwd(), prompt_file_path)
         if not os.path.exists(full_prompt_path):
             # 这个检查在上面已经做了一部分，这里可以更具体地提示
-            raise HTTPException(status_code=500, detail=f"模型 '{speech_request.model}' 的参考语音文件 '{full_prompt_path}' 未找到。")
+            raise HTTPException(status_code=500, detail=f"模型 '{speech_request.model}' 的参考语音文件 '{full_prompt_path}' 未找到。" )
         
         file_data = handle_file(full_prompt_path)
         
@@ -161,7 +193,7 @@ async def create_speech(speech_request: SpeechRequest):
             return Response(content=audio_content, media_type="audio/wav")
         else:
             print(f"🚨 错误：Gradio 返回结果路径无效或文件不存在。Result: {result}")
-            raise HTTPException(status_code=500, detail="Gradio 返回结果路径无效或文件不存在。")
+            raise HTTPException(status_code=500, detail="Gradio 返回结果路径无效或文件不存在。" )
     except HTTPException:
         raise # 重新抛出已处理的HTTPException
     except Exception as e:
@@ -169,7 +201,7 @@ async def create_speech(speech_request: SpeechRequest):
         raise HTTPException(status_code=500, detail=f"处理请求失败: {str(e)}")
 
 @app.get('/health')
-async def health_check():
+def health_check():
     cache_info = {
         "cache_type": "in_memory",
         "current_entries": len(in_memory_cache),
@@ -180,6 +212,38 @@ async def health_check():
         return {"status": "ok", "gradio_connected": True, "cache_info": cache_info, "message": "服务运行正常，Gradio 客户端已连接。"}
     else:
         return {"status": "degraded", "gradio_connected": False, "cache_info": cache_info, "message": "Gradio 客户端未连接，部分功能可能受限。"}
+
+# --- 新增：服务活动监控 ---
+INACTIVITY_TIMEOUT = 60  # 30分钟的秒数
+# 4. 移除不再需要的 NOTIFICATION_URL
+# NOTIFICATION_URL = "http://127.0.0.1:8082/notify"
+last_activity_time = time.time()
+
+@app.middleware("http")
+async def update_activity_timestamp(request: Request, call_next):
+    """中间件，在每个请求处理后更新活动时间戳。"""
+    global last_activity_time
+    last_activity_time = time.time()
+    print(f"\n\n 🚨 当前 last_activity_time 的值为： {last_activity_time} \n\n")
+    response = await call_next(request)
+    return response
+
+async def monitor_inactivity():
+    """后台任务，监控并处理服务长时间无活动的情况。"""
+    global last_activity_time
+    while True:
+        await asyncio.sleep(60)  # 每60秒检查一次
+        idle_time = time.time() - last_activity_time
+        
+        if idle_time > INACTIVITY_TIMEOUT:
+            print(f"🚨 服务已空闲超过 {INACTIVITY_TIMEOUT} 秒，触发通知...")
+            # 3. 直接调用 websocket_manager 的广播方法
+            await websocket_manager.broadcast("stop edge")
+            print(f"✅ 已通过 WebSocket 管理器发送通知。" )
+            # 重置计时器，防止在下一个周期立即重复发送
+            last_activity_time = time.time()
+        else:
+             print(f"🚨 服务已记录空闲时间 {idle_time:.2f} 秒 (当前连接数: {len(websocket_manager.active_connections)}) ======")
 
 # --- 新增部分：自动发送请求 ---
 
@@ -228,16 +292,7 @@ async def send_startup_request():
     print("--- 自动请求任务完成 ---")
 
 if __name__ == "__main__":
-    loop = asyncio.get_event_loop()
-    
     config = uvicorn.Config(app, host="0.0.0.0", port=8010, log_level="info")
     server = uvicorn.Server(config)
-    
-    async def main():
-        server_task = asyncio.create_task(server.serve())
-        request_task = asyncio.create_task(send_startup_request())
-        
-        await asyncio.gather(server_task, request_task)
-
-    loop.run_until_complete(main())
+    asyncio.run(server.serve())
     
