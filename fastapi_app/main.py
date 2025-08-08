@@ -12,6 +12,7 @@ from pydantic import BaseModel
 import uvicorn
 import asyncio
 import httpx # 导入 httpx 用于发送 HTTP 请求
+from fastapi.middleware.cors import CORSMiddleware
 
 # 1. 导入新的 WebSocket 管理器
 from websocket_manager import router as websocket_router, manager as websocket_manager
@@ -64,6 +65,15 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(lifespan=lifespan)
+
+# 配置 CORS 中间件
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:19100"],  # 允许来自指定源的请求
+    allow_credentials=True, # 允许携带 cookie
+    allow_methods=["*"],  # 允许所有 HTTP 方法
+    allow_headers=["*"],  # 允许所有 HTTP 请求头
+)
 
 # 2. 将 WebSocket 路由集成到主应用中
 app.include_router(websocket_router)
