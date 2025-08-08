@@ -214,7 +214,7 @@ def health_check():
         return {"status": "degraded", "gradio_connected": False, "cache_info": cache_info, "message": "Gradio 客户端未连接，部分功能可能受限。"}
 
 # --- 新增：服务活动监控 ---
-INACTIVITY_TIMEOUT = 60  # 30分钟的秒数
+INACTIVITY_TIMEOUT = 1800  # 30分钟的秒数
 # 4. 移除不再需要的 NOTIFICATION_URL
 # NOTIFICATION_URL = "http://127.0.0.1:8082/notify"
 last_activity_time = time.time()
