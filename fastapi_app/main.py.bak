@@ -9,7 +9,6 @@ from gradio_client import Client, handle_file
 from dotenv import load_dotenv
 from tenacity import retry, stop_after_attempt, wait_fixed
 from pydantic import BaseModel
-from typing import Literal
 import uvicorn
 import asyncio
 import httpx # 导入 httpx 用于发送 HTTP 请求
@@ -132,28 +131,6 @@ DEFAULT_PROMPT_AUDIO_PATH = "model_wav/default_prompt.wav"
 class SpeechRequest(BaseModel):
     model: str
     input: str
-    emo_control_method: Literal['Same as the voice reference', 'Use emotion reference audio', 'Use emotion vector', 'Use text description to control emotion'] = "Same as the voice reference"
-    emo_weight: float = 0.8
-    vec1: float = 0
-    vec2: float = 0
-    vec3: float = 0
-    vec4: float = 0
-    vec5: float = 0
-    vec6: float = 0
-    vec7: float = 0
-    vec8: float = 0
-    emo_text: str = ""
-    emo_random: bool = False
-    max_text_tokens_per_sentence: int = 120
-    do_sample: bool = True
-    top_p: float = 0.8
-    top_k: int = 30
-    temperature: float = 0.8
-    length_penalty: float = 0.0
-    num_beams: int = 3
-    repetition_penalty: float = 10.0
-    max_mel_tokens: int = 1500
-
 
 @retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
 def call_gradio_with_retry(client, *args, **kwargs):
@@ -196,33 +173,14 @@ async def create_speech(speech_request: SpeechRequest):
         print(f"📝 收到请求：要转换为语音的文本是: '{speech_request.input}'，模型是: '{speech_request.model}'")
         print(f"🔄 内存缓存未命中，开始生成新音频...")
 
-        # 使用与 api.md 兼容的参数调用 Gradio
         result = call_gradio_with_retry(
             gradio_client,
-            emo_control_method=speech_request.emo_control_method,
             prompt=file_data,
             text=speech_request.input,
-            emo_ref_path=handle_file(full_prompt_path),  # 假设当方法为“与参考相同”时，可重用参考音频
-            emo_weight=speech_request.emo_weight,
-            vec1=speech_request.vec1,
-            vec2=speech_request.vec2,
-            vec3=speech_request.vec3,
-            vec4=speech_request.vec4,
-            vec5=speech_request.vec5,
-            vec6=speech_request.vec6,
-            vec7=speech_request.vec7,
-            vec8=speech_request.vec8,
-            emo_text=speech_request.emo_text,
-            emo_random=speech_request.emo_random,
-            max_text_tokens_per_sentence=speech_request.max_text_tokens_per_sentence,
-            param_16=speech_request.do_sample,
-            param_17=speech_request.top_p,
-            param_18=speech_request.top_k,
-            param_19=speech_request.temperature,
-            param_20=speech_request.length_penalty,
-            param_21=speech_request.num_beams,
-            param_22=speech_request.repetition_penalty,
-            param_23=speech_request.max_mel_tokens,
+            infer_mode="普通推理", # 保持与原代码一致
+            max_text_tokens_per_sentence=80,
+            sentences_bucket_max_size=6,
+            param_5=True, param_6=0.9, param_7=70, param_8=1.5, param_9=0, param_10=5, param_11=8, param_12=600,
             api_name="/gen_single"
         )
         
