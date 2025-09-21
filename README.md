@@ -4,16 +4,15 @@
 
 <div align="center">
 <a href="README.md" style="font-size: 24px">English</a>
-Discord: https://discord.gg/uT32E7KDmy
-## 👉🏻 IndexTTS2 👈🏻
+## IndexTTS2
 
 <center><h3>IndexTTS2: A Breakthrough in Emotionally Expressive and Duration-Controlled Auto-Regressive Zero-Shot Text-to-Speech</h3></center>
 
 2. Clone the repository and fetch large files (Windows PowerShell):
 
 ```powershell
-git clone https://github.com/index-tts/index-tts.git
-cd index-tts
+git clone https://github.com/seeingterra/index-tts-english-api-extended.git
+cd index-tts-english-api-extended
 git lfs pull
 ```
   <a href='https://arxiv.org/abs/2506.21619'>
@@ -76,8 +75,8 @@ python webui.py -h
 
 ### Contact
 
-QQ Group：553460296(No.1) 663272642(No.4)  \
-Discord：https://discord.gg/uT32E7KDmy  \
+For community support see the repository issues or discussion pages.
+
 ### ⚙️ Environment Setup (Windows 11 - recommended)
 
 1. Ensure that you have both [git](https://git-scm.com/downloads) and
@@ -89,10 +88,10 @@ The Git-LFS plugin must also be enabled for your user account:
 git lfs install
 ```
 
-2. Clone the repository and fetch large files:
+2. Clone this repository and fetch large files:
 
 ```powershell
-git clone https://github.com/index-tts/index-tts.git && cd index-tts
+git clone https://github.com/seeingterra/index-tts-english-api-extended.git && cd index-tts-english-api-extended
 git lfs pull
 ```
 
@@ -271,8 +270,8 @@ For the most up-to-date install commands tailored to your OS, CUDA and Python ve
 
 #### 🌐 Web Demo
 
-```bash
-uv run webui.py
+```powershell
+python webui.py
 ```
 
 Open your browser and visit `http://127.0.0.1:7860` to see the demo.
@@ -281,8 +280,8 @@ You can also adjust the settings to enable features such as FP16 inference (lowe
 VRAM usage), DeepSpeed acceleration, compiled CUDA kernels for speed, etc. All
 available options can be seen via the following command:
 
-```bash
-uv run webui.py -h
+```powershell
+python webui.py -h
 ```
 
 Have fun!
@@ -312,7 +311,7 @@ python -m pip install -e .
 python indextts\infer_v2.py
 ```
 
-Note: this repository historically included helper commands for the 'uv' environment manager; the recommended, cross-platform workflow is to use a Python virtual environment (`venv`) and pip as shown above.
+Note: older guides referenced the 'uv' environment manager. This repository uses the included Python entrypoints instead (for example `python webui.py` for the Web UI and the `fastapi_app` package for the API). Use a Python virtual environment (`venv`) and pip as shown above.
 
 Here are several examples of how to use IndexTTS2 in your own scripts:
 
@@ -405,7 +404,7 @@ tts.infer(voice, text, 'gen.wav')
 ```
 
 For more detailed information, see [README_INDEXTTS_1_5](archive/README_INDEXTTS_1_5.md),
-or visit the IndexTTS1 repository at <a href="https://github.com/index-tts/index-tts/tree/v1.5.0">index-tts:v1.5.0</a>.
+or visit the legacy IndexTTS v1.5 repository at <a href="https://github.com/index-tts/index-tts/tree/v1.5.0">index-tts v1.5</a>.
 
 
 ## Our Releases and Demos
