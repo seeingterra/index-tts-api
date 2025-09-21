@@ -229,6 +229,38 @@ you can use our included utility to check your system:
 uv run tools/gpu_check.py
 ```
 
+### Windows: PyTorch import errors (WinError 126)
+
+If you see errors like:
+
+```
+IMPORT-ERROR torch: [WinError 126] The specified module could not be found. Error loading "...\\torch_python.dll" or one of its dependencies.
+```
+
+This commonly means one of two things: the Microsoft Visual C++ runtime is missing, or the installed PyTorch wheel expects CUDA libraries that are not present on your system. Recommended fixes:
+
+1. Install the Microsoft Visual C++ Redistributable (2015-2022) x64:
+
+  - https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist
+
+2. If you don't have CUDA or want a CPU-only installation, install the CPU wheels for PyTorch and torchaudio instead of letting pip choose a GPU/CUDA wheel. Example (PowerShell, Python 3.11):
+
+```powershell
+python -m pip install --upgrade pip
+python -m pip install --index-url https://download.pytorch.org/whl/cpu "torch==2.8.*+cpu" "torchaudio==2.8.*+cpu" -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+3. If you have a specific CUDA version, use the corresponding PyTorch CUDA wheel. Example for CUDA 12.1 (adjust the +cu121 tag to match the desired CUDA version):
+
+```powershell
+python -m pip install --index-url https://download.pytorch.org/whl/cu121 "torch==2.8.*+cu121" "torchaudio==2.8.*+cu121" -f https://download.pytorch.org/whl/torch_stable.html
+```
+
+4. If you change the PyTorch wheel or the interpreter, recreate the `.venv` (delete and re-run `scripts\setup_venv_py311.ps1` or recreate manually) so all binary wheels match the interpreter ABI.
+
+For the most up-to-date install commands tailored to your OS, CUDA and Python version, consult the official instructions at https://pytorch.org/get-started/locally/.
+
+
 
 ### 🔥 IndexTTS2 Quickstart
 
