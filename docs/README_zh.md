@@ -108,83 +108,59 @@ IndexTTS2架构总览：
 
 ## 使用说明
 
-### ⚙️ 环境配置
+### ⚙️ 环境配置（推荐：Windows 11 + PowerShell）
 
 1. 请确保已安装 [git](https://git-scm.com/downloads) 和 [git-lfs](https://git-lfs.com/)。
 
-在仓库中启用Git-LFS：
+启用 Git-LFS：
 
-```bash
+```powershell
 git lfs install
 ```
 
-2. 下载代码：
+2. 克隆仓库并下载大文件：
 
-```bash
+```powershell
 git clone https://github.com/index-tts/index-tts.git && cd index-tts
-git lfs pull  # 下载大文件
+git lfs pull
 ```
 
-3. 安装 [uv 包管理器](https://docs.astral.sh/uv/getting-started/installation/)。
-   *必须*使用uv保证依赖环境可靠。
+3. 创建并激活 Python 虚拟环境（PowerShell）：
 
-> [!TIP]
-> **快速安装方法：**
-> 
-> uv安装方式多样，详见官网。也可快速安装：
-> 
-> ```bash
-> pip install -U uv
-> ```
-
-> [!WARNING]
-> 本文档仅支持uv安装。其他工具如conda/pip无法保证依赖正确，可能导致*偶发bug、报错、GPU加速失效*等问题。
-> 
-> uv比pip快[115倍](https://github.com/astral-sh/uv/blob/main/BENCHMARKS.md)，强烈推荐。
-
-4. 安装依赖：
-
-使用uv安装依赖时，会创建虚拟环境，将所有依赖安装到`.venv`目录：
-
-```bash
-uv sync --all-extras
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
 ```
 
-如中国大陆地区用户下载缓慢，可选用国内镜像：
+4. 安装依赖（开发模式，便于调试）：
 
-```bash
-uv sync --all-extras --default-index "https://mirrors.aliyun.com/pypi/simple"
-
-uv sync --all-extras --default-index "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+```powershell
+python -m pip install -e .
+# 可选功能：
+python -m pip install -e .[webui]
+python -m pip install -e .[deepspeed]
 ```
 
-> [!TIP]
-> **可选功能：**
-> 
-> - `--all-extras`：安装全部可选功能。可去除自定义。
-> - `--extra webui`：安装WebUI支持（推荐）。
-> - `--extra deepspeed`：安装DeepSpeed加速。
+若需使用国内镜像加速下载，可使用 `-i` 指定镜像源：
 
-> [!IMPORTANT]
-> **Windows注意：** DeepSpeed在部分Windows环境较难安装，可去除`--all-extras`。
-> 
-> **Linux/Windows注意：** 如遇CUDA相关报错，请确保已安装NVIDIA [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) 12.8及以上。
-
-5. 下载模型：
-
-HuggingFace下载：
-
-```bash
-uv tool install "huggingface_hub[cli]"
-
-hf download IndexTeam/IndexTTS-2 --local-dir=checkpoints
+```powershell
+python -m pip install -e . -i https://mirrors.aliyun.com/pypi/simple/
 ```
 
-ModelScope下载：
+5. 下载模型（HuggingFace 或 ModelScope）：
 
-```bash
-uv tool install "modelscope"
+HuggingFace：
 
+```powershell
+python -m pip install huggingface_hub
+hf download IndexTeam/IndexTTS-2 --local-dir checkpoints
+```
+
+ModelScope：
+
+```powershell
+python -m pip install modelscope
 modelscope download --model IndexTeam/IndexTTS-2 --local_dir checkpoints
 ```
 

@@ -25,9 +25,9 @@ classifiers = [
 requires-python = ">=3.10"
 dependencies = [
   # IMPORTANT: Always run `uv lock` or `uv lock --upgrade` to resolve dependencies
-  # and update the lockfile after editing anything below.
-  # WARNING: Ensure that you don't have a local `uv.toml` which overrides PyPI
-  # while generating the lockfile: https://github.com/astral-sh/uv/issues/15741
+  # and update the lockfile after editing anything below. When using a
+  # standard Python venv on Windows, update dependencies with pip (or tools
+  # such as pip-tools) instead of the `uv` package manager.
   "accelerate==1.8.1",
   "cn2an==0.5.22",
   "cython==3.0.7",
@@ -82,32 +82,8 @@ indextts = "indextts.cli:main"
 
 [build-system]
 # How to build the project as a CLI tool or PyPI package.
-# NOTE: Use `uv tool install -e .` to install the package as a CLI tool.
+# NOTE: Use `python -m pip install -e .` to install the package in a
+# virtual environment as a CLI tool.
 requires = ["hatchling >= 1.27.0"]
 build-backend = "hatchling.build"
 
-[tool.uv]
-# Disable build isolation when building DeepSpeed from source.
-no-build-isolation-package = ["deepspeed"]
-
-[tool.uv.sources]
-# Install PyTorch with CUDA support on Linux/Windows (CUDA doesn't exist for Mac).
-# NOTE: We must explicitly request them as `dependencies` above. These improved
-# versions will not be selected if they're only third-party dependencies.
-torch = [
-  { index = "pytorch-cuda", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
-]
-torchaudio = [
-  { index = "pytorch-cuda", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
-]
-torchvision = [
-  { index = "pytorch-cuda", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
-]
-
-[[tool.uv.index]]
-name = "pytorch-cuda"
-# Use PyTorch built for NVIDIA Toolkit version 12.8.
-# Available versions: https://pytorch.org/get-started/locally/
-url = "https://download.pytorch.org/whl/cu128"
-# Only use this index when explicitly requested by `tool.uv.sources`.
-explicit = true

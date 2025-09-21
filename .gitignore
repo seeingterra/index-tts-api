@@ -16,6 +16,7 @@ checkpoints-1.5/*
 .venv*/
 venv*/
 conda_env*/
+uv.lock
 
 # Python Bytecode.
 *.py[cod]

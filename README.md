@@ -78,103 +78,67 @@ Finally, experimental results on multiple datasets show that IndexTTS2 outperfor
 
 QQ Group：553460296(No.1) 663272642(No.4)  \
 Discord：https://discord.gg/uT32E7KDmy  \
-Email：indexspeech@bilibili.com  \
-You are welcome to join our community! 🌏  \
-欢迎大家来交流讨论！
+### ⚙️ Environment Setup (Windows 11 - recommended)
 
+1. Ensure that you have both [git](https://git-scm.com/downloads) and
+  [git-lfs](https://git-lfs.com/) on your system.
 
-## 📣 Updates
+The Git-LFS plugin must also be enabled for your user account:
 
-- `2025/09/08` 🔥🔥🔥  We release **IndexTTS-2** to the world!
-    - The first autoregressive TTS model with precise synthesis duration control, supporting both controllable and uncontrollable modes. <i>This functionality is not yet enabled in this release.</i>
-    - The model achieves highly expressive emotional speech synthesis, with emotion-controllable capabilities enabled through multiple input modalities.
-- `2025/05/14` 🔥🔥 We release **IndexTTS-1.5**, significantly improving the model's stability and its performance in the English language.
-- `2025/03/25` 🔥 We release **IndexTTS-1.0** with model weights and inference code.
-- `2025/02/12` 🔥 We submitted our paper to arXiv, and released our demos and test sets.
-
-
-## 🖥️ Neural Network Architecture
-
-Architectural overview of IndexTTS2, our state-of-the art speech model:
-
-<picture>
-  <img src="assets/IndexTTS2.png"  width="800"/>
-</picture>
-
-
-The key contributions of **IndexTTS2** are summarized as follows:
-
- - We propose a duration adaptation scheme for autoregressive TTS models. IndexTTS2 is the first autoregressive zero-shot TTS model to combine precise duration control with natural duration generation, and the method is scalable for any autoregressive large-scale TTS model.  
- - The emotional and speaker-related features are decoupled from the prompts, and a feature fusion strategy is designed to maintain semantic fluency and pronunciation clarity during emotionally rich expressions. Furthermore, a tool was developed for emotion control, utilizing natural language descriptions for the benefit of users.  
- - To address the lack of highly expressive speech data, we propose an effective training strategy, significantly enhancing the emotional expressiveness of zeroshot TTS to State-of-the-Art (SOTA) level.  
- - We will publicly release the code and pre-trained weights to facilitate future research and practical applications.  
-
-
-## Model Download
-
-| **HuggingFace**                                          | **ModelScope** |
-|----------------------------------------------------------|----------------------------------------------------------|
-| [😁 IndexTTS-2](https://huggingface.co/IndexTeam/IndexTTS-2) | [IndexTTS-2](https://modelscope.cn/models/IndexTeam/IndexTTS-2) |
-| [IndexTTS-1.5](https://huggingface.co/IndexTeam/IndexTTS-1.5) | [IndexTTS-1.5](https://modelscope.cn/models/IndexTeam/IndexTTS-1.5) |
-| [IndexTTS](https://huggingface.co/IndexTeam/Index-TTS) | [IndexTTS](https://modelscope.cn/models/IndexTeam/Index-TTS) |
-
-
-## Usage Instructions
-
-### ⚙️ Environment Setup
-
-1. Ensure that you have both [git](https://git-scm.com/downloads)
-   and [git-lfs](https://git-lfs.com/) on your system.
-
-The Git-LFS plugin must also be enabled on your current user account:
-
-```bash
+```powershell
 git lfs install
 ```
 
-2. Download this repository:
+2. Clone the repository and fetch large files:
 
-```bash
+```powershell
 git clone https://github.com/index-tts/index-tts.git && cd index-tts
-git lfs pull  # download large repository files
+git lfs pull
 ```
 
-3. Install the [uv package manager](https://docs.astral.sh/uv/getting-started/installation/).
-   It is *required* for a reliable, modern installation environment.
+3. Create and activate a Python virtual environment (PowerShell):
 
-> [!TIP]
-> **Quick & Easy Installation Method:**
-> 
-> There are many convenient ways to install the `uv` command on your computer.
-> Please check the link above to see all options. Alternatively, if you want
-> a very quick and easy method, you can install it as follows:
-> 
-> ```bash
-> pip install -U uv
-> ```
-
-> [!WARNING]
-> We **only** support the `uv` installation method. Other tools, such as `conda`
-> or `pip`, don't provide any guarantees that they will install the correct
-> dependency versions. You will almost certainly have *random bugs, error messages,*
-> ***missing GPU acceleration**, and various other problems* if you don't use `uv`.
-> Please *do not report any issues* if you use non-standard installations, since
-> almost all such issues are invalid.
-> 
-> Furthermore, `uv` is [up to 115x faster](https://github.com/astral-sh/uv/blob/main/BENCHMARKS.md)
-> than `pip`, which is another *great* reason to embrace the new industry-standard
-> for Python project management.
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+```
 
 4. Install required dependencies:
 
-We use `uv` to manage the project's dependency environment. The following command
-will install the correct versions of all dependencies into your `.venv` directory:
+Install the project in editable mode so the `indextts` package is importable
+and easy to develop against. For optional features (webui, deepspeed), install
+the relevant extras explicitly.
 
-```bash
-uv sync --all-extras
+```powershell
+python -m pip install -e .
+# Optional extras:
+python -m pip install -e .[webui]
+python -m pip install -e .[deepspeed]
 ```
 
-If the download is slow, please try a *local mirror*, for example any of these
+If you prefer using a mirror for faster downloads, pass the `-i` option to pip,
+for example:
+
+```powershell
+python -m pip install -e . -i https://mirrors.aliyun.com/pypi/simple/
+```
+
+5. Download the required models (HuggingFace or ModelScope):
+
+HuggingFace (requires `huggingface_hub`):
+
+```powershell
+python -m pip install huggingface_hub
+hf download IndexTeam/IndexTTS-2 --local-dir checkpoints
+```
+
+ModelScope:
+
+```powershell
+python -m pip install modelscope
+modelscope download --model IndexTeam/IndexTTS-2 --local_dir checkpoints
+```
 local mirrors in China (choose one mirror from the list below):
 
 ```bash
