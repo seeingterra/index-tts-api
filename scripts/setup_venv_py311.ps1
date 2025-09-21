@@ -3,7 +3,8 @@ param(
     [string]$Requirements = "requirements.txt",
     [string]$LockFile = "requirements-lock.txt",
     [string]$PythonCmd = "",
-    [switch]$InstallCpuTorch
+    [switch]$InstallCpuTorch,
+    [switch]$AutoDetectCuda
 )
 
 function Find-Python311 {
@@ -110,6 +111,70 @@ if (-not (Test-VCRuntime)) {
 }
 
 Write-Host "Installing from $Requirements (this may take a while)..."
+
+# Helper: detect CUDA (nvcc or nvidia-smi) and return wheel tag like +cu121 or +cu120
+function Get-CudaWheelTag {
+    # Try nvcc --version first
+    try {
+        $nvcc = & nvcc --version 2>&1
+        if ($nvcc -match "release\s+([0-9]+)\.([0-9]+)") {
+            $major = $matches[1]
+            $minor = $matches[2]
+            # Map to common torch tags (best-effort): e.g. 12.1 -> cu121
+            return "+cu$($major)$($minor)"
+        }
+    } catch { }
+
+    # Try nvidia-smi and parse CUDA Version
+    try {
+        $nvs = & nvidia-smi --query-gpu=driver_version --format=csv,noheader 2>&1
+        # nvidia-smi sometimes prints 'CUDA Version: 12.1' in older drivers; try a broader capture
+        $out = & nvidia-smi 2>&1
+        if ($out -match "CUDA Version:\s*([0-9]+)\.([0-9]+)") {
+            $major = $matches[1]
+            $minor = $matches[2]
+            return "+cu$($major)$($minor)"
+        }
+    } catch { }
+
+    return $null
+}
+
+# If auto-detect requested, try to detect CUDA and pick GPU wheels; fallback to CPU path if not found
+if ($AutoDetectCuda) {
+    Write-Host "AutoDetectCuda flag set: attempting to detect installed CUDA version..."
+    $cudatag = Get-CudaWheelTag
+    if ($cudatag) {
+        Write-Host "Detected CUDA wheel tag: $cudatag. Attempting to install matching PyTorch wheels..."
+        # Filter requirements to exclude torch/torchaudio
+        $tmpReq = Join-Path $env:TEMP "indextts_reqs_no_torch.txt"
+        Get-Content $Requirements | Where-Object { 
+            ($_ -notmatch '^(\s*#)') -and ($_ -notmatch '^(torch|torchaudio)') 
+        } | Out-File -FilePath $tmpReq -Encoding UTF8
+
+        python -m pip install -r $tmpReq
+        if ($LASTEXITCODE -ne 0) {
+            Write-Error "pip install (filtered) failed. See output above."
+            Remove-Item $tmpReq -ErrorAction SilentlyContinue
+            exit $LASTEXITCODE
+        }
+
+        # Try GPU wheel install; use official torch index for matching tags (best-effort)
+        $indexBase = 'https://download.pytorch.org/whl'
+        try {
+            python -m pip install --index-url "$indexBase/$($cudatag.TrimStart('+'))" "torch==2.8.*$cudatag" "torchaudio==2.8.*$cudatag" -f https://download.pytorch.org/whl/torch_stable.html
+        } catch {
+            Write-Warning "GPU wheel install failed for tag $cudatag — falling back to CPU wheels."
+            python -m pip install --index-url https://download.pytorch.org/whl/cpu "torch==2.8.*+cpu" "torchaudio==2.8.*+cpu" -f https://download.pytorch.org/whl/torch_stable.html
+        }
+
+        Remove-Item $tmpReq -ErrorAction SilentlyContinue
+        return
+    } else {
+        Write-Warning "Unable to detect CUDA via nvcc or nvidia-smi. Falling back to CPU-only torch installation path."
+        $InstallCpuTorch = $true
+    }
+}
 
 # If user requested CPU-only torch wheels, install requirements except torch/torchaudio, then install CPU torch wheels explicitly
 if ($InstallCpuTorch) {
