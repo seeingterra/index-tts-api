@@ -1,5 +1,3 @@
-
-
 <div align="center">
 <img src='assets/index_icon.png' width="250"/>
 </div>
@@ -183,6 +181,31 @@ uv tool install "modelscope"
 
 modelscope download --model IndexTeam/IndexTTS-2 --local_dir checkpoints
 ```
+
+### Windows PowerShell helper scripts
+
+This repository includes small PowerShell helper scripts under `fastapi_app/` that create a `.venv`, install the project's `requirements.txt`, and start the API or Web UI on Windows PowerShell.
+
+- `fastapi_app\start_api.ps1` — create/activate `.venv`, install requirements, and start the FastAPI server (uvicorn).
+- `fastapi_app\start_webui.ps1` — create/activate `.venv`, install requirements, and run the `webui.py` demo.
+- `fastapi_app\start_all.ps1` — run both scripts as background jobs.
+
+Additionally, there is a helper for creating a Python 3.11 environment that installs the full set of pinned dependencies (including `numba`):
+
+- `scripts\setup_venv_py311.ps1` — finds a Python 3.11 interpreter (or accepts `-PythonCmd`), creates `.venv`, installs `requirements.txt`, writes `requirements-lock.txt`, and runs a brief smoke test.
+
+Usage (PowerShell):
+
+```powershell
+# Create a Python 3.11 venv and install everything (if Python 3.11 is available via 'py -3.11')
+.\scripts\setup_venv_py311.ps1
+
+# Or pass an explicit python path:
+.\scripts\setup_venv_py311.ps1 -PythonCmd 'C:\\Program Files\\Python311\\python.exe'
+```
+
+These helpers are convenience wrappers for Windows users; you can also manage the virtual environment manually as described above.
+
 
 > [!NOTE]
 > In addition to the above models, some small models will also be automatically

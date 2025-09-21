@@ -25,3 +25,15 @@ Notes:
 	does not exist and will attempt to install packages listed in `requirements.txt`.
 - For a reproducible environment, consider using `requirements-lock.txt` after
 	creating the venv.
+
+Additional helper for full environment (Python 3.11)
+
+If you want a venv that matches the original pinned environment (including `numba`), use the repository-level helper:
+
+```powershell
+.\scripts\setup_venv_py311.ps1
+# or pass a specific interpreter path:
+.\scripts\setup_venv_py311.ps1 -PythonCmd 'C:\\Program Files\\Python311\\python.exe'
+```
+
+This script finds or uses the provided Python 3.11 interpreter, creates `.venv`, installs `requirements.txt`, writes `requirements-lock.txt`, and runs a quick smoke test.
