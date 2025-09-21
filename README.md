@@ -139,10 +139,11 @@ modelscope download --model IndexTeam/IndexTTS-2 --local_dir checkpoints
 ```
 local mirrors in China (choose one mirror from the list below):
 
-```bash
-uv sync --all-extras --default-index "https://mirrors.aliyun.com/pypi/simple"
+```powershell
+# Use pip with a mirror; example installing the project in editable mode with a mirror:
+python -m pip install -e . --index-url https://mirrors.aliyun.com/pypi/simple/
 
-uv sync --all-extras --default-index "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+python -m pip install -e . --index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
 ```
 
 > [!TIP]
@@ -168,16 +169,16 @@ uv sync --all-extras --default-index "https://mirrors.tuna.tsinghua.edu.cn/pypi/
 
 Download via `huggingface-cli`:
 
-```bash
-uv tool install "huggingface_hub[cli]"
+```powershell
+python -m pip install huggingface_hub[cli]
 
 hf download IndexTeam/IndexTTS-2 --local-dir=checkpoints
 ```
 
 Or download via `modelscope`:
 
-```bash
-uv tool install "modelscope"
+```powershell
+python -m pip install modelscope
 
 modelscope download --model IndexTeam/IndexTTS-2 --local_dir checkpoints
 ```
@@ -223,10 +224,11 @@ These helpers are convenience wrappers for Windows users; you can also manage th
 #### 🖥️ Checking PyTorch GPU Acceleration
 
 If you need to diagnose your environment to see which GPUs are detected,
-you can use our included utility to check your system:
+you can use our included utility to check your system. Run it from the repo root after activating your venv:
 
-```bash
-uv run tools/gpu_check.py
+```powershell
+.\.venv\Scripts\Activate.ps1
+python tools/gpu_check.py
 ```
 
 ### Windows: PyTorch import errors (WinError 126)
@@ -294,16 +296,20 @@ Have fun!
 
 #### 📝 Using IndexTTS2 in Python
 
-To run scripts, you *must* use the `uv run <file.py>` command to ensure that
-the code runs inside your current "uv" environment. It *may* sometimes also be
-necessary to add the current directory to your `PYTHONPATH`, to help it find
-the IndexTTS modules.
+To run scripts, create and activate a Python virtual environment so the project's package is importable and scripts run with the venv interpreter.
 
-Example of running a script via `uv`:
+Example (PowerShell) – create and activate a venv, install the project, then run the script:
 
-```bash
-PYTHONPATH="$PYTHONPATH:." uv run indextts/infer_v2.py
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -e .
+
+# Run the script (editable install makes the package importable):
+python indextts\infer_v2.py
 ```
+
+Note: this repository historically included helper commands for the 'uv' environment manager; the recommended, cross-platform workflow is to use a Python virtual environment (`venv`) and pip as shown above.
 
 Here are several examples of how to use IndexTTS2 in your own scripts:
 
