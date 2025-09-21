@@ -5,29 +5,26 @@
 <div align="center">
 <a href="docs/README_zh.md" style="font-size: 24px">简体中文</a> | 
 <a href="README.md" style="font-size: 24px">English</a>
-</div>
-
+Discord: https://discord.gg/uT32E7KDmy
 ## 👉🏻 IndexTTS2 👈🏻
 
 <center><h3>IndexTTS2: A Breakthrough in Emotionally Expressive and Duration-Controlled Auto-Regressive Zero-Shot Text-to-Speech</h3></center>
 
-[![IndexTTS2](assets/IndexTTS2_banner.png)](assets/IndexTTS2_banner.png)
+2. Clone the repository and fetch large files (Windows PowerShell):
 
-
-<div align="center">
+```powershell
+git clone https://github.com/index-tts/index-tts.git
+cd index-tts
+git lfs pull
+```
   <a href='https://arxiv.org/abs/2506.21619'>
     <img src='https://img.shields.io/badge/ArXiv-2506.21619-red?logo=arxiv'/>
-  </a>
-  <br/>
-  <a href='https://github.com/index-tts/index-tts'>
-    <img src='https://img.shields.io/badge/GitHub-Code-orange?logo=github'/>
-  </a>
-  <a href='https://index-tts.github.io/index-tts2.github.io/'>
-    <img src='https://img.shields.io/badge/GitHub-Demo-orange?logo=github'/>
-  </a>
-  <br/>
-  <a href='https://huggingface.co/spaces/IndexTeam/IndexTTS-2-Demo'>
-    <img src='https://img.shields.io/badge/HuggingFace-Demo-blue?logo=huggingface'/>
+If you prefer using a mirror for faster downloads, pass the `-i` option to pip. Example:
+
+```powershell
+python -m pip install -e . -i https://mirrors.aliyun.com/pypi/simple/
+```
+<!-- mirrors omitted for brevity -->
   </a>
   <a href='https://huggingface.co/IndexTeam/IndexTTS-2'>
     <img src='https://img.shields.io/badge/HuggingFace-Model-blue?logo=huggingface' />
@@ -55,10 +52,16 @@ Furthermore, IndexTTS2 achieves disentanglement between emotional expression and
 To enhance speech clarity in highly emotional expressions, we incorporate GPT latent representations and design a novel three-stage training paradigm to improve the stability of the generated speech. Additionally, to lower the barrier for emotional control, we designed a soft instruction mechanism based on text descriptions by fine-tuning Qwen3, effectively guiding the generation of speech with the desired emotional orientation.
 
 Finally, experimental results on multiple datasets show that IndexTTS2 outperforms state-of-the-art zero-shot TTS models in terms of word error rate, speaker similarity, and emotional fidelity. Audio samples are available at: <a href="https://index-tts.github.io/index-tts2.github.io/">IndexTTS2 demo page</a>.
+Run the web UI with your Python interpreter (after activating the project venv):
 
-**Tips:** Please contact the authors for more detailed information. For commercial usage and cooperation, please contact <u>indexspeech@bilibili.com</u>.
+```powershell
+python webui.py
+```
 
 
+```powershell
+python webui.py -h
+```
 ### Feel IndexTTS2
 
 <div align="center">
