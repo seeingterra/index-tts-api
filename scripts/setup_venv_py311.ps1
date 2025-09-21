@@ -114,28 +114,54 @@ Write-Host "Installing from $Requirements (this may take a while)..."
 
 # Helper: detect CUDA (nvcc or nvidia-smi) and return wheel tag like +cu121 or +cu120
 function Get-CudaWheelTag {
-    # Try nvcc --version first
+    # Detect CUDA version via nvcc or nvidia-smi, then map to a compatible torch wheel tag.
+    # Known compatible torch tags for this project's torch==2.8.* are commonly: +cu121, +cu120, +cu118, +cu117
+    $mapping = @{
+        '12.1' = '+cu121'
+        '12.0' = '+cu120'
+        '11.8' = '+cu118'
+        '11.7' = '+cu117'
+        '11.6' = '+cu116'
+    }
+
+    $detect = $null
     try {
         $nvcc = & nvcc --version 2>&1
         if ($nvcc -match "release\s+([0-9]+)\.([0-9]+)") {
-            $major = $matches[1]
-            $minor = $matches[2]
-            # Map to common torch tags (best-effort): e.g. 12.1 -> cu121
-            return "+cu$($major)$($minor)"
+            $detect = "$($matches[1]).$($matches[2])"
         }
     } catch { }
 
-    # Try nvidia-smi and parse CUDA Version
-    try {
-        $nvs = & nvidia-smi --query-gpu=driver_version --format=csv,noheader 2>&1
-        # nvidia-smi sometimes prints 'CUDA Version: 12.1' in older drivers; try a broader capture
-        $out = & nvidia-smi 2>&1
-        if ($out -match "CUDA Version:\s*([0-9]+)\.([0-9]+)") {
-            $major = $matches[1]
-            $minor = $matches[2]
-            return "+cu$($major)$($minor)"
+    if (-not $detect) {
+        try {
+            $out = & nvidia-smi 2>&1
+            if ($out -match "CUDA Version:\s*([0-9]+)\.([0-9]+)") {
+                $detect = "$($matches[1]).$($matches[2])"
+            }
+        } catch { }
+    }
+
+    if (-not $detect) { return $null }
+
+    # Exact map
+    if ($mapping.ContainsKey($detect)) { return $mapping[$detect] }
+
+    # Fallback: try to match major.minor to nearest known mapping, prefer same major then closest minor
+    $parts = $detect -split '\.'
+    if ($parts.Length -lt 2) { return $null }
+    $maj = [int]$parts[0]; $min = [int]$parts[1]
+    # Find mapping entries with same major
+    $candidates = $mapping.Keys | Where-Object { ($_ -split '\.')[0] -eq $maj.ToString() }
+    if ($candidates) {
+        # choose candidate with minimal minor difference
+        $best = $null; $bestDiff = 999
+        foreach ($k in $candidates) {
+            $km = [int]($k -split '\.')[1]
+            $d = [math]::Abs($km - $min)
+            if ($d -lt $bestDiff) { $bestDiff = $d; $best = $k }
         }
-    } catch { }
+        if ($best) { return $mapping[$best] }
+    }
 
     return $null
 }
