@@ -16,7 +16,7 @@ import httpx # 导入 httpx 用于发送 HTTP 请求
 from fastapi.middleware.cors import CORSMiddleware
 
 # 1. 导入新的 WebSocket 管理器
-from websocket_manager import router as websocket_router, manager as websocket_manager
+from .websocket_manager import router as websocket_router, manager as websocket_manager
 
 load_dotenv()
 
@@ -24,32 +24,35 @@ load_dotenv()
 async def lifespan(app: FastAPI):
     # Startup
     global gradio_client, MODEL_PROMPT_MAP
-    print("🚀 正在初始化服务...")
-    
-    # 动态加载模型参考语音
-    print("🔍 开始加载模型参考语音...")
+    print("🚀 Initializing service...")
+
+    # Load model reference audios
+    print("🔍 Loading model reference audios...")
     MODEL_PROMPT_MAP = load_model_prompt_map()
-    print("✅ 模型参考语音加载完成。")
+    print("✅ Model reference audios loaded.")
 
     # 打印 API 和 WebSocket 地址
     host = os.getenv("UVICORN_HOST", "127.0.0.1")
     port = int(os.getenv("UVICORN_PORT", "8010"))
-    print(f"\n🎉 服务已启动！")
-    print(f"🔗 API 文档 (Swagger UI): http://{host}:{port}/docs")
-    print(f"🔌 WebSocket 连接地址: ws://{host}:{port}/ws\n")
+    print(f"\n🎉 Service initialized")
+    print(f"🔗 API docs (Swagger UI): http://{host}:{port}/docs")
+    print(f"🔌 WebSocket endpoint: ws://{host}:{port}/ws\n")
 
-    for attempt in range(5):
+    # Try to connect to the Gradio API. Increase retries and use backoff to allow Gradio time to become ready.
+    max_attempts = 10
+    for attempt in range(max_attempts):
         try:
             gradio_client = Client(GRADIO_URL)
-            print(f"✅ Gradio 客户端连接成功！尝试次数: {attempt + 1}")
-            # 连接成功后，作为后台任务启动自动请求
+            print(f"✅ Gradio client connected (attempt {attempt + 1}/{max_attempts})")
+            # On successful connect, launch the startup test task
             asyncio.create_task(send_startup_request())
             break
         except Exception as e:
-            print(f"❌ Gradio 客户端连接失败 (尝试 {attempt + 1}/5): {e}")
-            await asyncio.sleep(2)
+            backoff = 2 * (attempt + 1)
+            print(f"❌ Gradio client connection failed (attempt {attempt + 1}/{max_attempts}): {e}. Retrying in {backoff}s...")
+            await asyncio.sleep(backoff)
     if not gradio_client:
-        print("🚨 警告：Gradio 客户端初始化失败，服务可能无法正常工作。" )
+        print("🚨 Warning: Gradio client initialization failed after retries; service may be degraded.")
     
     # 启动后台监控任务
     monitor_task = asyncio.create_task(monitor_inactivity())
@@ -112,7 +115,7 @@ def load_model_prompt_map():
     model_wav_dir = "model_wav"
     supported_extensions = (".wav", ".m4a")  # 支持的文件扩展名
     if not os.path.isdir(model_wav_dir):
-        print(f"⚠️ 警告：'{model_wav_dir}' 目录不存在，无法加载任何模型参考语音。")
+        print(f"⚠️ Warning: '{model_wav_dir}' directory not found; no model reference audios will be loaded.")
         return {}
 
     prompt_map = {}
@@ -123,7 +126,7 @@ def load_model_prompt_map():
             print(f"  - 发现模型: '{model_name}' -> '{prompt_map[model_name]}'")
     
     if not prompt_map:
-        print(f"⚠️ 警告：在 '{model_wav_dir}' 目录中没有找到任何支持的音频文件 ({', '.join(supported_extensions)})。")
+        print(f"⚠️ Warning: no supported audio files found in '{model_wav_dir}' ({', '.join(supported_extensions)}).")
         
     return prompt_map
 
@@ -297,18 +300,18 @@ async def monitor_inactivity():
     """后台任务，监控并处理服务长时间无活动的情况。"""
     global last_activity_time
     while True:
-        await asyncio.sleep(60)  # 每60秒检查一次
+        await asyncio.sleep(60)  # check every 60 seconds
         idle_time = time.time() - last_activity_time
-        
+
         if idle_time > INACTIVITY_TIMEOUT:
-            print(f"🚨 服务已空闲超过 {INACTIVITY_TIMEOUT} 秒，触发通知...")
-            # 3. 直接调用 websocket_manager 的广播方法
+            print(f"🚨 Service idle for more than {INACTIVITY_TIMEOUT} seconds; sending notification...")
+            # Broadcast a notification via the websocket manager
             await websocket_manager.broadcast("stop edge")
-            print(f"✅ 已通过 WebSocket 管理器发送通知。" )
-            # 重置计时器，防止在下一个周期立即重复发送
+            print(f"✅ Notification sent via WebSocket manager.")
+            # Reset timer to avoid immediate repeats
             last_activity_time = time.time()
         else:
-             print(f"🚨 服务已记录空闲时间 {idle_time:.2f} 秒 (当前连接数: {len(websocket_manager.active_connections)}) ======", flush=True)
+            print(f"Info: service idle time {idle_time:.2f}s (active connections: {len(websocket_manager.active_connections)})", flush=True)
 
 # --- 新增部分：自动发送请求 ---
 

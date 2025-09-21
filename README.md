@@ -3,7 +3,6 @@
 </div>
 
 <div align="center">
-<a href="docs/README_zh.md" style="font-size: 24px">简体中文</a> | 
 <a href="README.md" style="font-size: 24px">English</a>
 Discord: https://discord.gg/uT32E7KDmy
 ## 👉🏻 IndexTTS2 👈🏻
@@ -214,10 +213,11 @@ These helpers are convenience wrappers for Windows users; you can also manage th
 > [!NOTE]
 > In addition to the above models, some small models will also be automatically
 > downloaded when the project is run for the first time. If your network environment
-> has slow access to HuggingFace, it is recommended to execute the following
-> command before running the code:
-> 
-> 除了以上模型外，项目初次运行时还会自动下载一些小模型，如果您的网络环境访问HuggingFace的速度较慢，推荐执行：
+> has slow access to HuggingFace, it is recommended to set the HF mirror endpoint before running the code:
+>
+> ```bash
+> export HF_ENDPOINT="https://hf-mirror.com"
+> ```
 > 
 > ```bash
 > export HF_ENDPOINT="https://hf-mirror.com"
@@ -330,7 +330,7 @@ tts.infer(spk_audio_prompt='examples/voice_01.wav', text=text, output_path="gen.
 ```python
 from indextts.infer_v2 import IndexTTS2
 tts = IndexTTS2(cfg_path="checkpoints/config.yaml", model_dir="checkpoints", use_fp16=False, use_cuda_kernel=False, use_deepspeed=False)
-text = "酒楼丧尽天良，开始借机竞拍房间，哎，一群蠢货。"
+text = "This is an example emotional sentence for synthesis."
 tts.infer(spk_audio_prompt='examples/voice_07.wav', text=text, output_path="gen.wav", emo_audio_prompt="examples/emo_sad.wav", verbose=True)
 ```
 
@@ -341,7 +341,7 @@ tts.infer(spk_audio_prompt='examples/voice_07.wav', text=text, output_path="gen.
 ```python
 from indextts.infer_v2 import IndexTTS2
 tts = IndexTTS2(cfg_path="checkpoints/config.yaml", model_dir="checkpoints", use_fp16=False, use_cuda_kernel=False, use_deepspeed=False)
-text = "酒楼丧尽天良，开始借机竞拍房间，哎，一群蠢货。"
+text = "This is an example emotional sentence for synthesis."
 tts.infer(spk_audio_prompt='examples/voice_07.wav', text=text, output_path="gen.wav", emo_audio_prompt="examples/emo_sad.wav", emo_alpha=0.9, verbose=True)
 ```
 
@@ -359,7 +359,7 @@ tts.infer(spk_audio_prompt='examples/voice_07.wav', text=text, output_path="gen.
 ```python
 from indextts.infer_v2 import IndexTTS2
 tts = IndexTTS2(cfg_path="checkpoints/config.yaml", model_dir="checkpoints", use_fp16=False, use_cuda_kernel=False, use_deepspeed=False)
-text = "哇塞！这个爆率也太高了！欧皇附体了！"
+text = "Wow! This example uses a surprised emotion for demonstration."
 tts.infer(spk_audio_prompt='examples/voice_10.wav', text=text, output_path="gen.wav", emo_vector=[0, 0, 0, 0, 0, 0, 0.45, 0], use_random=False, verbose=True)
 ```
 
@@ -374,7 +374,7 @@ tts.infer(spk_audio_prompt='examples/voice_10.wav', text=text, output_path="gen.
 ```python
 from indextts.infer_v2 import IndexTTS2
 tts = IndexTTS2(cfg_path="checkpoints/config.yaml", model_dir="checkpoints", use_fp16=False, use_cuda_kernel=False, use_deepspeed=False)
-text = "快躲起来！是他要来了！他要来抓我们了！"
+text = "Hide! He's coming—he's going to grab us!"
 tts.infer(spk_audio_prompt='examples/voice_12.wav', text=text, output_path="gen.wav", emo_alpha=0.6, use_emo_text=True, use_random=False, verbose=True)
 ```
 
@@ -386,8 +386,8 @@ tts.infer(spk_audio_prompt='examples/voice_12.wav', text=text, output_path="gen.
 ```python
 from indextts.infer_v2 import IndexTTS2
 tts = IndexTTS2(cfg_path="checkpoints/config.yaml", model_dir="checkpoints", use_fp16=False, use_cuda_kernel=False, use_deepspeed=False)
-text = "快躲起来！是他要来了！他要来抓我们了！"
-emo_text = "你吓死我了！你是鬼吗？"
+text = "Hide! He's coming—he's going to grab us!"
+emo_text = "You scared me to death! Are you a ghost?"
 tts.infer(spk_audio_prompt='examples/voice_12.wav', text=text, output_path="gen.wav", emo_alpha=0.6, use_emo_text=True, emo_text=emo_text, use_random=False, verbose=True)
 ```
 
@@ -400,7 +400,7 @@ You can also use our previous IndexTTS1 model by importing a different module:
 from indextts.infer import IndexTTS
 tts = IndexTTS(model_dir="checkpoints",cfg_path="checkpoints/config.yaml")
 voice = "examples/voice_07.wav"
-text = "大家好，我现在正在bilibili 体验 ai 科技，说实话，来之前我绝对想不到！AI技术已经发展到这样匪夷所思的地步了！比如说，现在正在说话的其实是B站为我现场复刻的数字分身，简直就是平行宇宙的另一个我了。如果大家也想体验更多深入的AIGC功能，可以访问 bilibili studio，相信我，你们也会吃惊的。"
+text = "Hello everyone — I'm trying out the AIGC demo. The results are astonishing."
 tts.infer(voice, text, 'gen.wav')
 ```
 
