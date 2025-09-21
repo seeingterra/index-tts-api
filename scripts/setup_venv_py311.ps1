@@ -2,7 +2,8 @@ param(
     [string]$VenvPath = ".venv",
     [string]$Requirements = "requirements.txt",
     [string]$LockFile = "requirements-lock.txt",
-    [string]$PythonCmd = ""
+    [string]$PythonCmd = "",
+    [switch]$InstallCpuTorch
 )
 
 function Find-Python311 {
@@ -80,11 +81,66 @@ if (-not (Test-Path $Requirements)) {
     exit 1
 }
 
+# Optional: check for Microsoft Visual C++ runtime (vcruntime140.dll)
+function Test-VCRuntime {
+    # Try to find vcruntime140.dll in System32/WinSxS or loaded modules
+    $dllNames = @("vcruntime140.dll","msvcp140.dll")
+    foreach ($n in $dllNames) {
+        $found = Get-ChildItem -Path "$env:SystemRoot\System32\$n" -ErrorAction SilentlyContinue
+        if ($found) { return $true }
+    }
+    # Try checking common Program Files redist install locations in WinSxS (best-effort)
+    try {
+        $winsxs = Join-Path $env:SystemRoot 'WinSxS'
+        if (Test-Path $winsxs) {
+            foreach ($n in $dllNames) {
+                if (Get-ChildItem -Path $winsxs -Filter $n -Recurse -ErrorAction SilentlyContinue | Select-Object -First 1) {
+                    return $true
+                }
+            }
+        }
+    } catch { }
+    return $false
+}
+
+if (-not (Test-VCRuntime)) {
+    Write-Warning "Microsoft Visual C++ runtime not detected (vcruntime140.dll/msvcp140.dll). This may cause binary extensions (e.g., PyTorch) to fail to load (WinError 126)."
+    Write-Host "If you see WinError 126 when importing torch, install the 'Microsoft Visual C++ Redistributable (2015-2022) x64' from Microsoft:" -ForegroundColor Yellow
+    Write-Host "https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist" -ForegroundColor Yellow
+}
+
 Write-Host "Installing from $Requirements (this may take a while)..."
-python -m pip install -r $Requirements
-if ($LASTEXITCODE -ne 0) {
-    Write-Error "pip install failed. See output above."
-    exit $LASTEXITCODE
+
+# If user requested CPU-only torch wheels, install requirements except torch/torchaudio, then install CPU torch wheels explicitly
+if ($InstallCpuTorch) {
+    Write-Host "InstallCpuTorch flag set: filtering torch and torchaudio from requirements and installing CPU wheels afterwards..."
+    $tmpReq = Join-Path $env:TEMP "indextts_reqs_no_torch.txt"
+    Get-Content $Requirements | Where-Object { 
+        ($_ -notmatch '^(\s*#)') -and ($_ -notmatch '^(torch|torchaudio)') 
+    } | Out-File -FilePath $tmpReq -Encoding UTF8
+
+    python -m pip install -r $tmpReq
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "pip install (filtered) failed. See output above."
+        Remove-Item $tmpReq -ErrorAction SilentlyContinue
+        exit $LASTEXITCODE
+    }
+
+    Write-Host "Installing CPU-only PyTorch and torchaudio wheels (torch==2.8.*+cpu)..."
+    python -m pip install --index-url https://download.pytorch.org/whl/cpu "torch==2.8.*+cpu" "torchaudio==2.8.*+cpu" -f https://download.pytorch.org/whl/torch_stable.html
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "pip install of CPU PyTorch wheels failed. See output above."
+        Remove-Item $tmpReq -ErrorAction SilentlyContinue
+        exit $LASTEXITCODE
+    }
+
+    Remove-Item $tmpReq -ErrorAction SilentlyContinue
+} else {
+    python -m pip install -r $Requirements
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "pip install failed. See output above."
+        exit $LASTEXITCODE
+    }
 }
 
 # Freeze to lockfile
